@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 120" width="100" height="120">
+  <defs>
+    <!-- グラデーション設定（木目・漆のような質感） -->
+    <radialGradient id="tsuGrad" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#C29B38" />
+      <stop offset="50%" stop-color="#9E7627" />
+      <stop offset="100%" stop-color="#6B4D10" />
+    </radialGradient>
+    <radialGradient id="bellGrad" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#F2D06B" />
+      <stop offset="100%" stop-color="#B88A22" />
+    </radialGradient>
+    <!-- シャドウ効果 -->
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="1" dy="3" stdDeviation="2" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- 上部の組紐（赤・朱色） -->
+  <path d="M 50 5 C 45 15, 55 25, 50 35" stroke="#B83B3B" stroke-width="3" fill="none" stroke-linecap="round" />
+  <circle cx="50" cy="35" r="4" fill="#8C2B2B" />
+
+  <!-- 小さな和の鈴（ワンポイント） -->
+  <g transform="translate(62, 32)">
+    <circle cx="0" cy="0" r="7" fill="url(#bellGrad)" filter="url(#shadow)" />
+    <line x1="-3" y1="2" x2="3" y2="2" stroke="#6B4D10" stroke-width="1.5" />
+    <circle cx="0" cy="2" r="1.5" fill="#422E08" />
+  </g>
+
+  <!-- 根付け本体（「つ」の字を象った木彫り風デザイン） -->
+  <g id="netsuke-body" filter="url(#shadow)">
+    <!-- メインの「つ」デザイン -->
+    <path d="M 30 48 
+             C 55 45, 75 50, 75 68 
+             C 75 88, 48 95, 32 90 
+             C 25 88, 22 80, 28 80 
+             C 35 80, 58 84, 60 70 
+             C 62 58, 45 56, 30 56 
+             Z" 
+          fill="url(#tsuGrad)" stroke="#4A3408" stroke-width="1.5" stroke-linejoin="round" />
+    
+    <!-- ハイライト（ツヤ・立体感） -->
+    <path d="M 35 50 C 50 48, 68 52, 70 62" stroke="#E0C068" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6" />
+  </g>
+</svg>
