@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>園の紹介ページ</title>
+    <link rel="icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" href="../apple-touch-icon-180x180.png">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/subPage1.css">
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <script src="../assets/js/subPage1.js"></script>
+
+</head>
+
+<body>
+
+    <!-- ヘッダー部分です。ここから各下層ページにコピペしてください！ -->
+
+    <header>
+        <div class="flex inner-1 hd">
+            <h1>
+                <a href="../index.html"><img src="../assets/images/subPage2/logo1.svg" alt="社会福祉法人あおたけ会ロゴ" width="280" height="186"></a>
+            </h1>
+
+            <div class="cta">
+                <a href="#" class="cta-1">園児募集</a>
+                <a href="../subPage4/index.html" class="cta-2">保育士募集</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ↓　ここにハンバーガーボタンのコードを設置　↓ -->
+    <input type="checkbox" id="navSet" class="nav-switch">
+    <label for="navSet" class="nav-burger"></label>
+
+
+    <nav class="navi">
+        <ul class="flex inner-1">
+            <li><a href="#">園の紹介</a></li>
+            <li><a href="../subPage2/index.html">園での過ごし方</a></li>
+            <li><a href="../subPage3/index.html">他事業</a></li>
+            <li><a href="../subPage4/index.html">保育士募集</a></li>
+            <li><a href="../subPage5/index.html">お問い合わせ</a></li>
+        </ul>
+    </nav>
+    
+<!-- ここまでコピペ！！！ヘッダー部分 -->
+
+    <main class="inner-1">
+        <h1>
+            ～保育園一覧～
+        </h1>
+
+        <ul id="buttons" class="flex tab">
+            <li><a href="#tab1" class="current">高田馬場</a></li>
+            <li><a href="#tab2">四谷</a></li>
+            <li><a href="#tab3">神楽坂</a></li>
+        </ul>
+
+        <div id="contents">
+
+            
+            <div class="baba" id="tab1">
+                <div class="flex">
+                    <div>
+                        <h2>高田馬場あおたけ保育園</h2>
+
+                        <dl class="syosai">
+                            <div class="flex address">
+                                <dt>住所</dt>
+                                <dd>
+                                    <address>〒169-0075 東京都新宿区高田馬場２丁目１３−６</address>
+                                </dd>
+                            </div>
+
+                            <div class="flex open">
+                                <dt>開園時間</dt>
+                                <dd>7:30〜19:30</dd>
+                            </div>
+
+                            <div class="flex day">
+                                <dt>休園日</dt>
+                                <dd>日曜・祝日・年末年始</dd>
+                            </div>
+
+                            <div class="flex tel">
+                                <dt>電話番号</dt>
+                                <dd>03-XXXX-XXXX</dd>
+                            </div>
+
+                            <div class="flex acsess">
+                                <dt>アクセス</dt>
+                                <dd>JR山手線・東京メトロ東西線・西武新宿線高田馬場駅より徒歩5分</dd>
+                            </div>
+                        </dl>
+                    </div>
+
+                    <div class="gay">
+                        <div><img src="../assets/images/subPage1/takadanobaba.png" alt="高田馬場あおたけ保育園の写真" width="291"
+                                height="191">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.5569982423062!2d139.7048715111073!3d35.712517672462816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d3c199d3a89%3A0x546679e997f8dd1!2z44CSMTY5LTAwNzUg5p2x5Lqs6YO95paw5a6_5Yy66auY55Sw6aas5aC077yS5LiB55uu77yR77yT4oiS77yW!5e0!3m2!1sja!2sjp!4v1783388735840!5m2!1sja!2sjp"
+                        width="618" height="225" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="yotuya" id="tab2">
+                <div class="flex">
+                    <div>
+                        <h2>四谷あおたけ保育園</h2>
+
+                        <div class="syosai">
+                            <dl>
+                                <div class="flex address">
+                                    <dt>住所</dt>
+                                    <dd>
+                                        <address>〒160-0004 東京都新宿区四谷４丁目２５-１０</address>
+                                    </dd>
+                                </div>
+
+                                <div class="flex open">
+                                    <dt>開園時間</dt>
+                                    <dd>7:30〜19:30</dd>
+                                </div>
+
+                                <div class="flex day">
+                                    <dt>休園日</dt>
+                                    <dd>日曜・祝日・年末年始</dd>
+                                </div>
+
+                                <div class="flex tel">
+                                    <dt>電話番号</dt>
+                                    <dd>03-XXXX-XXXX</dd>
+                                </div>
+
+                                <div class="flex acsess">
+                                    <dt>アクセス</dt>
+                                    <dd>東京メトロ丸ノ内線新宿御苑前駅より徒歩10分</dd>
+                                </div>
+
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="gay">
+                        <div><img src="../assets/images/subPage1/yotuya.png" alt="四谷あおたけ保育園の写真" width="291"
+                                height="191">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.508513705844!2d139.71287131110637!3d35.68910207247037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188ce95d67e941%3A0x1c78108a83b5886d!2z44CSMTYwLTAwMDQg5p2x5Lqs6YO95paw5a6_5Yy65Zub6LC377yU5LiB55uu77yS77yV4oiS77yR77yQ!5e0!3m2!1sja!2sjp!4v1783388911680!5m2!1sja!2sjp"
+                        width="618" height="225" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin">
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="kagura" id="tab3">
+                <div class="flex">
+                    <div>
+                        <h2>神楽坂あおたけ保育園</h2>
+
+                        <div class="syosai">
+                            <dl>
+                                <div class="flex address">
+                                    <dt>住所</dt>
+                                    <dd>
+                                        <address>〒162-0825 東京都新宿区神楽坂３丁目２-１２</address>
+                                    </dd>
+                                </div>
+
+                                <div class="flex open">
+                                    <dt>開園時間</dt>
+                                    <dd>7:30〜19:30</dd>
+                                </div>
+
+                                <div class="flex day">
+                                    <dt>休園日</dt>
+                                    <dd>日曜・祝日・年末年始</dd>
+                                </div>
+
+                                <div class="flex tel">
+                                    <dt>電話番号</dt>
+                                    <dd>03-XXXX-XXXX</dd>
+                                </div>
+
+                                <div class="flex acsess">
+                                    <dt>アクセス</dt>
+                                    <dd>JR中央総武線・東京メトロ東西線・有楽町線・南北線・<br>
+                                        都営大江戸線飯田橋駅より徒歩15分</dd>
+                                </div>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="gay">
+                        <div><img src="../assets/images/subPage1/kagurazaka.png" alt="神楽坂あおたけ保育園の写真" width="291"
+                                height="191">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.0083727793835!2d139.73796561110694!3d35.701411572466405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c5ae434e42b%3A0x954753417ed47e53!2z44CSMTYyLTA4MjUg5p2x5Lqs6YO95paw5a6_5Yy656We5qW95Z2C77yT5LiB55uu77yS4oiS77yR77yS!5e0!3m2!1sja!2sjp!4v1783388946392!5m2!1sja!2sjp"
+                        width="618" height="225" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="omoi">
+            <div class="box1">
+                <h3>想い</h3>
+                <p>
+                    私たちは、子どもたち一人ひとりの「やってみたい」という気持ちを大切にし、<br>
+                    安心して過ごせる温かな環境の中で、その子らしい成長を支えていきます。<br>
+                    子どもを育てることは、家庭だけでなく、<br>
+                    地域に暮らす多くの人とのつながりの中で育まれていくものだと考えています。<br>
+                    3つの保育園での保育をはじめ、子ども食堂や学童保育などの活動を通して、<br>
+                    子どもたちや保護者の皆さま、地域の方々が気軽に集い、<br>
+                    笑顔でつながれる場所をつくってまいります。<br>
+                    子どもたちの笑顔は、地域の未来につながっています。<br>
+                    私たちは、子どもたちにとって「第二の家庭」のような安心できる居場所であり、<br>
+                    地域の皆さまにとっても身近で頼れる存在であり続けたいと願っています。<br>
+                    これからも、人と人とのつながりを大切にしながら、<br>
+                    子どもたちの健やかな成長と、温かい地域づくりに努めてまいります。
+                </p>
+
+                <div class="pic1"><img src="../assets/images/subPage1/omoi.png" alt="子供を抱く母と桜の写真" width="303"
+                        height="339"></div>
+            </div>
+        </div>
+
+        <div class="encho">
+            <div class="box2">
+                <h3>代表者あいさつ</h3>
+                <p>
+                    私たちは、3つの保育園の運営を中心に、子どもたちの毎日の成長を見守るとともに、<br>
+                    子ども食堂や学童保育など、地域の子育てを支えるさまざまな取り組みを行っております。<br>
+                    子どもたちの笑顔や「できた！」という喜び、保護者の皆さまの安心した表情、<br>
+                    地域の方々との温かな交流は、私たちの何よりの宝物です。<br>
+                    これからも、一人ひとりの子どもに丁寧に寄り添い、どんな時でも安心して<br>
+                    頼れる場所でありたいと考えています。<br>
+                    園の垣根を越えて地域に開かれた存在となり、子どもから大人まで世代を超えて<br>
+                    支え合える、温かな地域の輪を育んでまいります。<br>
+                    子どもたちが今日を楽しく過ごし、明日への希望を持って大きく育っていけるよう、<br>
+                    職員一同、心を込めて取り組んでまいります。<br>
+                    今後とも、皆さまの温かいご理解とご協力を賜りますよう、よろしくお願い申し上げます。<br>
+                    社会福祉法人あおたけ会<br>
+                    理事長　小林 和子
+                </p>
+                <div class="pic2"><img src="../assets/images/subPage1/enchyo.png" alt="園長の写真" width="284" height="335">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- フッターとTo-Top部分です。下層ページのコンテンツ最後部にコピペしてください -->
+    
+<div class="ft">
+        <div class="to-top">
+            <a href="#"><img src="../assets/images/subPage2/to-top.svg" alt="to-topボタン"></a>
+        </div>
+
+        <div class="tk inner-1">
+            <img src="../assets/images/subPage2/banboo.png" alt="竹とたけのこのイラスト">
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="flex inner-1">
+            <img src="../assets/images/subPage2/logo2.svg" alt="社会福祉法人あおたけ会ロゴ">
+
+            <ul>
+                <li><a href="../index.html">TOP</a></li>
+                <li><a href="../subPage1/index.html">園の紹介</a></li>
+                <li><a href="../subPage2/index.html">園での過ごし方</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="../subPage3/index.html">他事業</a></li>
+                <li><a href="../subPage4/index.html">保育士募集</a></li>
+                <li><a href="../subPage5/index.html">お問い合わせ</a></li>
+            </ul>
+
+            <address>
+                <p>社会福祉法人あおたけ会</p>
+                <p>〒160-8484 東京都新宿区歌舞伎町1-4-1</p>
+                <p>TEL: 03-1234-5678</p>
+            </address>
+
+            <img src="../assets/images/subPage2/insta.png" class="insta" alt="インスタグラム" width="50" height="50">
+        </div>
+        <small>&copy; 2026 社会福祉法人あおたけ会</small>
+    </footer>
+    <!-- ここまでコピペ！！！フッターとTo-Top部分 -->
+
+</body>
+
+</html>

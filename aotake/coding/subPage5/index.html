@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お問い合わせ</title>
+
+    <!-- ↓ faviconの読み込み -->
+    <link rel="icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" href="../apple-touch-icon-180x180.png">
+
+
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/subPage5.css">
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <script src="../assets/js/subPage5.js"></script>
+
+</head>
+
+<body>
+
+    <!-- ここから各下層ページにコピペしてください！ヘッダー部分です -->
+    <header>
+        <div class="flex inner-1 hd">
+            <h1>
+                <a href="../index.html"><img src="../assets/images/subPage2/logo1.svg" alt="社会福祉法人あおたけ会ロゴ" width="280"
+                        height="186"></a>
+            </h1>
+
+            <div class="cta">
+                <a href="#" class="cta-1">園児募集</a>
+                <a href="../subPage4/index.html" class="cta-2">保育士募集</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ↓　ここにハンバーガーボタンのコードを設置　↓ -->
+    <input type="checkbox" id="navSet" class="nav-switch">
+    <label for="navSet" class="nav-burger"></label>
+
+
+    <nav class="navi">
+        <ul class="flex inner-1">
+            <li><a href="../subPage1/index.html">園の紹介</a></li>
+            <li><a href="../subPage2/index.html">園での過ごし方</a></li>
+            <li><a href="../subPage3/index.html">他事業</a></li>
+            <li><a href="../subPage4/index.html">保育士募集</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+        </ul>
+    </nav>
+    <!-- ここまでコピペ！！！ヘッダー部分 -->
+
+    <main>
+        <section class="inner-1 qa">
+            <h2>よくあるご質問</h2>
+
+            <dl>
+                <dt class="koi">Q . 1日体験入園はありますか？</dt>
+                <dd>A. 今後計画していますが、時期は未定です。</dd>
+
+                <dt class="usu">Q . 何歳から入園できますか？</dt>
+                <dd>A. 生後57日以降小学校入学前までのお子さんにご入園いただけます。</dd>
+
+                <dt class="koi">Q . 保育時間を教えて下さい。</dt>
+                <dd>A. 7：30～19：30 です。</dd>
+
+                <dt class="usu">Q . 休園日はありますか？</dt>
+                <dd>A. 休園日は日・祝祭日と年末年始（12月29日～1月3日）です。</dd>
+
+                <dt class="koi">Q . 入園してから購入するものは何ですか？また、日々の持ち物は何ですか？</dt>
+                <dd>A. 園によって異なります。見学・一日体験入園の際にご案内いたします。</dd>
+
+                <dt class="usu">Q . 決められた制服やカバンはありますか？</dt>
+                <dd>A. 戸外活動の際は、園指定の帽子を着用いただきます。<br>
+                    また、すべての持ち物へお名前のご記入をお願いいたします。
+                </dd>
+
+                <dt class="koi">Q . 日々の子どもの様子はどのように教えてもらえますか？</dt>
+                <dd>A. 降園時にお話させていただいたり、今日の保育について掲示している園もございます。<br>
+                    また、連絡帳アプリを活用して、ご家庭での様子と園での様子の共有しています。
+                </dd>
+
+                <dt class="usu">Q . アレルギー対応について教えて下さい。</dt>
+                <dd>A. 医師の診断書をもとに、お子様の状態に合わせた除去食・代替食をご提供します。<br>
+                    アレルギー食対応の際には、担任と栄養士が中心となって具体的にお話しを伺います。
+                </dd>
+
+                <dt class="koi">Q . 具合が悪いときのお迎えの基準は何ですか？</dt>
+                <dd>A. 原則として、37.5度未満を基準としています。登園後、保育中に体温が37.5度以上に<br>
+                    なった場合、保護者の方にご連絡を致します。<br>
+                    あくまでも目安となりますので、37.5度未満でも、下記の症状がある場合は早めのお迎えを<br>
+                    お願いすることもございます。
+                </dd>
+            </dl>
+        </section>
+
+        <section class="inner-1 contact">
+            <h2>お問い合わせ</h2>
+
+            <form>
+                <dl>
+
+                    <dt class="koi">お客様区分</dt>
+                    <dd class="flex">
+                        <label><input type="radio" name="customer" value="team">自治体</label>
+                        <label><input type="radio" name="customer" value="company">法人</label>
+                        <label><input type="radio" name="customer" value="teamperson">個人</label>
+                        <label><input type="radio" name="customer" value="media">メディア</label>
+                        <span class="alert customer-alert">1つ以上お選びください。</span>
+                    </dd>
+
+                    <dt class="usu serect">お問い合わせ項目</dt>
+                    <dd>
+                        <label><input type="checkbox" name="serect" value="1">保育所の運営に関すること</label>
+                        <label><input type="checkbox" name="serect" value="2">新卒採用へのご応募・ご相談</label>
+                        <label><input type="checkbox" name="serect" value="3">実習・保育体験に関すること</label>
+                        <label><input type="checkbox" name="serect" value="4">中途採用（正社員・パートナー）へのご応募・ご相談</label>
+                        <label><input type="checkbox" name="serect" value="5">サービスに関するご提案</label>
+                        <label><input type="checkbox" name="serect" value="6">取材、執筆のご依頼｜その他</label>
+                        <span class="alert serect-alert">1つ以上お選びください。</span>
+                    </dd>
+
+                    <dt class="koi">お名前または法人名</dt>
+                    <dd>
+                        <input type="text" name="user_name" value="" placeholder="名前または法人名を入力">
+                        <span class="alert name-alert">内容を入力してください。</span>
+                    </dd>
+
+                    <dt class="usu">TEL</dt>
+                    <dd>
+                        <input type="tel" name="phone">
+                        <span class="alert phone-alert">内容を入力してください。</span>
+                    </dd>
+
+                    <dt class="koi">E-mail</dt>
+                    <dd>
+                        <input type="email" name="email">
+                        <span class="alert email-alert">内容を入力してください。</span>
+                    </dd>
+
+                    <dt class="usu">お問い合わせ内容</dt>
+                    <dd>
+                        <textarea name="message" rows="5" cols="30" placeholder="お問い合わせ内容を入力"></textarea>
+                        <span class="alert message-alert">内容を入力してください。</span>
+                    </dd>
+
+                </dl>
+
+                <p class="agree"><a href="#">プライバシーポリシー</a>に同意の上、「送信する」ボタンを押してください。</p>
+
+                <div class="pra">
+                    <label class="put"><input type="checkbox" name="agree" value="agree">プライバシーポリシーに同意する</label>
+                    <span class="alert agree-alert">同意するにチェックを入れてください。</span>
+                </div>
+
+                <div class="submit"><input type="submit" value="送信"></div>
+
+                <p class="attention">個人またはお客様からお預かりした個人情報は、利用目的の範囲内での取扱いを遵守します。<br>
+                    弊社の個人情報保護方針により厳密に管理し、 お客様の同意を得ないで外部へ提出することは<br>
+                    致しません。
+                </p>
+
+            </form>
+        </section>
+    </main>
+
+    <!-- 以下のコードを各自の下層ページにコピペしてください！フッターとTo-Top部分 -->
+    <div class="ft">
+        <div class="to-top">
+            <a href="#"><img src="../assets/images/subPage2/to-top.svg" alt="to-topボタン"></a>
+        </div>
+
+        <div class="tk inner-1">
+            <img src="../assets/images/subPage2/banboo.png" alt="竹とたけのこのイラスト">
+        </div>
+    </div>
+
+    <footer>
+        <div class="flex inner-1">
+            <img src="../assets/images/subPage2/logo2.svg" alt="社会福祉法人あおたけ会ロゴ">
+
+            <ul>
+                <li><a href="../index.html">TOP</a></li>
+                <li><a href="../subPage1/index.html">園の紹介</a></li>
+                <li><a href="../subPage2/index.html">園での過ごし方</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="../subPage3/index.html">他事業</a></li>
+                <li><a href="../subPage4/index.html">保育士募集</a></li>
+                <li><a href="#">お問い合わせ</a></li>
+            </ul>
+
+            <address>
+                <p>社会福祉法人あおたけ会</p>
+                <p>〒160-8484 東京都新宿区歌舞伎町1-4-1</p>
+                <p>TEL: 03-1234-5678</p>
+            </address>
+
+            <img src="../assets/images/subPage2/insta.png" class="insta" alt="インスタグラム" width="50" height="50">
+        </div>
+        <small>&copy; 2026 社会福祉法人あおたけ会</small>
+    </footer>
+    <!-- ここまでコピペ！！！フッターとTo-Top部分 -->
+
+</body>
+
+</html>

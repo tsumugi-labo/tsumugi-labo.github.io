@@ -1,0 +1,92 @@
+フォルダー パスの一覧:  ボリューム OS
+ボリューム シリアル番号は 3EFB-F84D です
+C:.
+│  5月.jpeg
+│  6月.jpeg
+│  7月.jpeg
+│  9-1.jfif
+│  iCloud写真.zip
+│  index.html
+│  lunchimages23.zip
+│  TOPページイメージ.png
+│  TOPページイメージ2.png
+│  TOPページイメージ3.png
+│  tree.txt
+│  とろろさんの「行った(口コミ)」お店一覧 [食べログ].pdf
+│  学校からのお題.jpeg
+│  高田馬場WIT周辺 みんなで育てるランチマップ.txt
+│  
+├─css
+│      style.css
+│      
+├─iCloud写真
+│      IMG_1494.jpg
+│      IMG_1495.jpg
+│      IMG_1496.jpg
+│      IMG_1497.jpg
+│      IMG_1500.jpg
+│      IMG_1515.JPEG
+│      IMG_1584.jpg
+│      IMG_1686.jpg
+│      IMG_1687.jpg
+│      IMG_1688.jpg
+│      IMG_1789.jpg
+│      IMG_1829.jpg
+│      IMG_1830.jpg
+│      IMG_2427.jpg
+│      IMG_2467.jpg
+│      IMG_2614.jpg
+│      IMG_2629.jpg
+│      IMG_2672.jpg
+│      IMG_2720.jpg
+│      IMG_2963.jpg
+│      IMG_3028.jpg
+│      IMG_4064.jpg
+│      IMG_9027.JPEG
+│      IMG_9028.JPEG
+│      IMG_9067.JPEG
+│      IMG_9068.jpg
+│      IMG_9069.jpg
+│      IMG_9124.jpg
+│      IMG_9125.JPEG
+│      IMG_9171.jpg
+│      IMG_9172.jpg
+│      IMG_9173.jpg
+│      IMG_9213.JPEG
+│      IMG_9214.jpg
+│      IMG_9216.JPEG
+│      IMG_9682.JPEG
+│      IMG_9683.jpg
+│      IMG_9756.jpg
+│      IMG_9757.jpg
+│      
+├─images
+│      9-1.png
+│      9-2.png
+│      9-3.png
+│      IMG_1494.jpg
+│      IMG_1495.jpg
+│      IMG_1496.jpg
+│      IMG_1497.jpg
+│      IMG_1500.jpg
+│      IMG_1515.JPEG
+│      IMG_1584.jpg
+│      IMG_1686.jpg
+│      IMG_1687.jpg
+│      IMG_1688.jpg
+│      IMG_1789.jpg
+│      IMG_1829.jpg
+│      IMG_1830.jpg
+│      IMG_2427.jpg
+│      IMG_2467.jpg
+│      IMG_2614.jpg
+│      IMG_2629.jpg
+│      IMG_2672.jpg
+│      IMG_2720.jpg
+│      IMG_2963.jpg
+│      IMG_3028.jpg
+│      IMG_4064.jpg
+│      
+└─js
+        script.js
+        

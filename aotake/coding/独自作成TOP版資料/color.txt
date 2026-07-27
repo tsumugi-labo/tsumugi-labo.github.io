@@ -1,0 +1,25 @@
+Corporate Color
+#59FFC2
+
+Dark Green
+#5C8F2B
+
+Background Beige
+#F8F4EA
+
+White
+#FFFFFF
+
+Body Text
+#333333
+
+Sub Text
+#666666
+
+Border
+#EEEEEE
+
+
+※グラデーションや装飾には
+Corporate Colorを基調として
+明度を調整した近似色を使用しています。

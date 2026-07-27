@@ -1,0 +1,131 @@
+フォルダー パスの一覧:  ボリューム OS
+ボリューム シリアル番号は 000000A6 3EFB:F84D です
+C:.
+|   color.txt
+|   dir.txt
+|   fonts.txt
+|   imaging.txt
+|   README.txt
+|   spacing.txt
+|   
++---ai
+|       aotake_top_design3_cs6.ai
+|       C_sub_3.ai
+|       logo_header.ai
+|       
++---exports
+|       C_sub_3.png
+|       C_top_3.png
+|       
++---fonts
+|       Bowlby_One,Noto_Sans_JP.zip
+|       
++---html
+|   +---css
+|   +---images
+|   |   +---1common
+|   |   |       deco_boy170x241.png
+|   |   |       deco_girl157x236.png
+|   |   |       leaf-br32x32.png
+|   |   |       leaf_bl30x30.png
+|   |   |       leaf_tl39x34.png
+|   |   |       leaf_tr36x36.png
+|   |   |       leaves49x74.png
+|   |   |       top_btn67x60.png
+|   |   |       
+|   |   +---2top
+|   |   |       mv1-994x385.png
+|   |   |       mv2-994x385.png
+|   |   |       mv3-994x385.png
+|   |   |       slide1-250x150.png
+|   |   |       slide2-250x150.png
+|   |   |       slide3-250x150.png
+|   |   |       slide4-250x150.png
+|   |   |       slide5-250x150.png
+|   |   |       slide6-250x150.png
+|   |   |       
+|   |   +---3other
+|   |   |       afterschool244x109.png
+|   |   |       cafeteria241x109.png
+|   |   |       children-foods284x143.png
+|   |   |       english145x88.png
+|   |   |       gakudou-fish152x88.png
+|   |   |       gakudou284x123.png
+|   |   |       othertop331x136.png
+|   |   |       rabbit163x88.png
+|   |   |       recruit304x130.png
+|   |   |       
+|   |   +---4contact
+|   |   +---5source
+|   |   |   +---トップページ
+|   |   |   |       bamboo (1).jpg
+|   |   |   |       bamboo (2).jpg
+|   |   |   |       mainvisual1.jpg
+|   |   |   |       mainvisual2.jpg
+|   |   |   |       mainvisual3.jpg
+|   |   |   |       nursery.jpg
+|   |   |   |       others.jpg
+|   |   |   |       parent and child (1).jpg
+|   |   |   |       parent and child (2).jpg
+|   |   |   |       schedule.jpg
+|   |   |   |       schedule2.jpg
+|   |   |   |       scroll2.jpg
+|   |   |   |       scroll3.jpg
+|   |   |   |       scroll4.jpg
+|   |   |   |       scroll5.jpg
+|   |   |   |       scroll6.jpg
+|   |   |   |       staff.jpg
+|   |   |   |       take.jpg
+|   |   |   |       
+|   |   |   +---他事業
+|   |   |   |       chicken.jpg
+|   |   |   |       children foods (1).jpg
+|   |   |   |       children foods (2).jpg
+|   |   |   |       gakudou (1).jpg
+|   |   |   |       gakudou (2).jpg
+|   |   |   |       gakudou (2).webp
+|   |   |   |       rabbit.jpg
+|   |   |   |       rabbit2.jpg
+|   |   |   |       rice3.jpg
+|   |   |   |       sports.jpg
+|   |   |   |       teacher and children (2).jpg
+|   |   |   |       
+|   |   |   +---保育士募集
+|   |   |   |       teacher and children.jpg
+|   |   |   |       
+|   |   |   +---園での過ごし方
+|   |   |   |       block.PNG
+|   |   |   |       picnic.jpg
+|   |   |   |       sand pool.PNG
+|   |   |   |       water.jpg
+|   |   |   |       
+|   |   |   +---園の紹介
+|   |   |   |       building (1).jpg
+|   |   |   |       building (1).png
+|   |   |   |       building (2).jpg
+|   |   |   |       building (3).jpg
+|   |   |   |       building (4).jpg
+|   |   |   |       building (5).jpg
+|   |   |   |       kagurazaka.png
+|   |   |   |       takadanobaba.png
+|   |   |   |       yotsuya.png
+|   |   |   |       
+|   |   |   \---私たちについて
+|   |   |           about_us.jpg
+|   |   |           man.png
+|   |   |           woman.png
+|   |   |           
+|   |   +---favicon
+|   |   \---logo
+|   |           logo.png
+|   |           logo.svg
+|   |           
+|   \---js
+\---project-docs
+        C_kyoyu.docx
+        C_kyoyu.txt
+        README.txt
+        あおたけHTML計画.txt
+        クライアントからの要求.txt
+        クライアントとの打ち合わせメモ.txt
+        

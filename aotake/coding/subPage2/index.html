@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>園での過ごし方</title>
+
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/subPage2.css">
+
+    <script src="../assets/js/jquery-3.7.1.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <script src="../assets/js/subPage2.js"></script>
+
+    <!-- ↓ faviconの読み込み -->
+    <link rel="icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" href="../apple-touch-icon-180x180.png">
+
+</head>
+
+
+<body>
+    <!-- ここから各下層ページにコピペしてください！ヘッダー部分です -->
+    <header>
+        <div class="flex inner-1 hd">
+            <h1>
+                <a href="../index.html"><img src="../assets/images/subPage2/logo1.svg" alt="社会福祉法人あおたけ会ロゴ" width="280"
+                        height="186"></a>
+            </h1>
+
+            <div class="cta">
+                <a href="#" class="cta-1">園児募集</a>
+                <a href="../subPage4/index.html" class="cta-2">保育士募集</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ↓　ここにハンバーガーボタンのコードを設置　↓ -->
+    <input type="checkbox" id="navSet" class="nav-switch">
+    <label for="navSet" class="nav-burger"></label>
+
+    <nav class="navi">
+        <ul class="flex inner-1">
+            <li><a href="../subPage1/index.html">園の紹介</a></li>
+            <li><a href="#">園での過ごし方</a></li>
+            <li><a href="../subPage3/index.html">他事業</a></li>
+            <li><a href="../subPage4/index.html">保育士募集</a></li>
+            <li><a href="../subPage5/index.html">お問い合わせ</a></li>
+        </ul>
+    </nav>
+    <!-- ここまでコピペ！！！ヘッダー部分 -->
+
+
+    <main>
+        <section class="section1 inner-1">
+            <h2>園での過ごし方</h2>
+
+            <div class="tabwrap">
+                <ul id="buttons" class="flex">
+                    <li class="tab1"><a href="#tab1" class="current">乳児</a></li>
+                    <li class="tab2"><a href="#tab2">幼児</a></li>
+                </ul>
+
+                <div id="contents">
+                    <div id="tab1" class="tab">
+                        <div class="flex h3">
+                            <img src="../assets/images/subPage2/clock.png" alt="">
+                            <h3>デイリースケジュール(一例)</h3>
+                        </div>
+
+                        <p>乳児クラス（0～2歳）</p>
+
+                        <div class="schedule flex">
+                            <img src="../assets/images/subPage2/line.png" alt="" width="21" height="507">
+                            <dl>
+                                <div class="row">
+                                    <dt>7:30</dt>
+                                    <dd>開園・順次登園（視診・検温）</dd>
+                                </div>
+                                <div class="row">
+                                    <dt>9:30</dt>
+                                    <dd>おやつ</dd>
+                                </div>
+                                <div class="row">
+                                    <dt>10:00</dt>
+                                    <dd>室内遊び・園庭遊び</dd>
+                                </div>
+                                <div class="row">
+                                    <dt>11:30</dt>
+                                    <dd>昼食・離乳食</dd>
+                                </div>
+                                <div class="row">
+                                    <dt>12:30</dt>
+                                    <dd>お昼寝</dd>
+                                </div>
+                                <div class="row">
+                                    <dt>15:00</dt>
+                                    <dd>おやつ</dd>
+                                </div>
+                                <div class="row">
+                                    <dt>15:30</dt>
+                                    <dd>自由遊び</dd>
+                                </div>
+                                <div class="row">
+                                    <dt>16:00</dt>
+                                    <dd>順次降園</dd>
+                                </div>
+                                <div class="row">
+                                    <dt>19:30</dt>
+                                    <dd>閉園</dd>
+                                </div>
+                            </dl>
+                        </div>
+
+                        <small>
+                            ※上記は一日の流れの一例です。お子さまの年齢や発達、体調に合わせて、活動内容や時間は適宜変更いたします。<br>
+                            ※水分補給や着替え、排泄、おむつ交換などは、お子さま一人ひとりの状況に合わせて適宜行っています。
+                        </small>
+                    </div>
+
+                    <div id="tab2" class="tab">
+                        <div class="flex h3">
+                            <img src="../assets/images/subPage2/clock.png" alt="">
+                            <h3>デイリースケジュール(一例)</h3>
+                        </div>
+
+                        <p>幼児クラス（3～5歳）</p>
+
+                        <div class="schedule flex">
+                            <img src="../assets/images/subPage2/line.png" alt="" width="21" height="507">
+                            <dl>
+                                <div class="row">
+                                    <dt>7:30</dt>
+                                    <dd>開園・順次登園（視診・検温）</dd>
+                                </div>
+
+                                <div class="row">
+                                    <dt>9:30</dt>
+                                    <dd>朝の会</dd>
+                                </div>
+
+                                <div class="row">
+                                    <dt>10:00</dt>
+                                    <dd>室内活動・戸外活動</dd>
+                                </div>
+
+                                <div class="row">
+                                    <dt>11:30</dt>
+                                    <dd>昼食</dd>
+                                </div>
+
+                                <div class="row">
+                                    <dt>13:00</dt>
+                                    <dd>絵本の読み聞かせ・お昼寝</dd>
+                                </div>
+
+                                <div class="row">
+                                    <dt>15:00</dt>
+                                    <dd>おやつ</dd>
+                                </div>
+
+                                <div class="row">
+                                    <dt>15:30</dt>
+                                    <dd>自由遊び</dd>
+                                </div>
+
+                                <div class="row">
+                                    <dt>16:00</dt>
+                                    <dd>帰りの会・順次降園</dd>
+                                </div>
+
+                                <div class="row">
+                                    <dt>19:30</dt>
+                                    <dd>閉園</dd>
+                                </div>
+
+                            </dl>
+                        </div>
+
+                        <small>
+                            ※上記は一日の流れの一例です。お子さまの年齢や発達、体調に合わせて、活動内容や時間は適宜変更いたします。<br>
+                            ※水分補給や着替え、排泄、おむつ交換などは、お子さま一人ひとりの状況に合わせて適宜行っています。
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section2">
+            <div class="inner-1">
+                <h2>年間スケジュール</h2>
+                <div class="gap">
+
+                    <div class="spring fadeUp-trigger delay-1">
+                        <div class="box">
+                            <img src="../assets/images/subPage2/spring.png" alt="春">
+
+                            <p>
+                                入園式　こどもの日会　保育参観
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="summer fadeUp-trigger delay-2">
+                        <div class="box">
+
+
+                            <img src="../assets/images/subPage2/summer.png" alt="夏">
+
+                            <p>
+                                七夕会　水遊び　夏まつり
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="autumn fadeUp-trigger delay-3">
+                        <div class="box">
+
+
+                            <img src="../assets/images/subPage2/autumn.png" alt="秋">
+
+                            <p>
+                                運動会　遠足　ハロウィン会
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="winter fadeUp-trigger delay-4">
+                        <div class="box">
+
+
+                            <img src="../assets/images/subPage2/winter.png" alt="冬">
+
+                            <p>
+                                クリスマス会　節分豆まき会
+                            </p>
+                            <p>
+                                ひなまつり　卒園式
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <small>
+                    ※年間行事は予定です。実施時期や内容は変更となる場合があります。<br>また、お子さまの年齢に応じて参加する行事が異なります。
+                </small>
+
+            </div>
+        </section>
+
+    </main>
+
+
+
+
+    <!-- 以下のコードを各自の下層ページにコピペしてください！フッターとTo-Top部分 -->
+    <div class="ft">
+        <div class="to-top">
+            <a href="#"><img src="../assets/images/subPage2/to-top.svg" alt="to-topボタン"></a>
+        </div>
+
+        <div class="tk inner-1">
+            <img src="../assets/images/subPage2/banboo.png" alt="竹とたけのこのイラスト">
+        </div>
+    </div>
+
+    <footer>
+        <div class="flex inner-1">
+            <img src="../assets/images/subPage2/logo2.svg" alt="社会福祉法人あおたけ会ロゴ">
+
+            <ul>
+                <li><a href="../index.html">TOP</a></li>
+                <li><a href="../subPage1/index.html">園の紹介</a></li>
+                <li><a href="#">園での過ごし方</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="../subPage3/index.html">他事業</a></li>
+                <li><a href="../subPage4/index.html">保育士募集</a></li>
+                <li><a href="../subPage5/index.html">お問い合わせ</a></li>
+            </ul>
+
+            <address>
+                <p>社会福祉法人あおたけ会</p>
+                <p>〒160-8484 東京都新宿区歌舞伎町1-4-1</p>
+                <p>TEL: 03-1234-5678</p>
+            </address>
+
+            <img src="../assets/images/subPage2/insta.png" class="insta" alt="インスタグラム" width="50" height="50">
+        </div>
+        <small>&copy; 2026 社会福祉法人あおたけ会</small>
+    </footer>
+    <!-- ここまでコピペ！！！フッターとTo-Top部分 -->
+
+</body>
+
+</html>

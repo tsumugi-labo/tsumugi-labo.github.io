@@ -1,0 +1,16 @@
+CTA
+
+font:
+14px Noto Sans JP
+
+園児募集 
+W 82px
+H 36px
+角丸 18px
+Color:#6A811E
+
+保育士募集
+W 108px
+H 36px
+角丸 18px
+Color:#70D7AB

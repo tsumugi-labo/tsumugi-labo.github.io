@@ -1,0 +1,486 @@
+        @charset "UTF-8";
+
+        body {
+            color: #534741;
+            line-height: 35px;
+            font-size: 24px;
+        }
+
+        /* コンテンツの幅を制御する記述 */
+        .wrap {
+            /* width: 1000px; */
+            /* margin: 0 auto; */
+        }
+
+        .inner-1 {
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .top-text {
+            background-image: url(../images/subPage3/top_sasa211x211.png);
+            background-repeat: no-repeat;
+            /* background-position: right top; */
+            background-position: right 88px top;
+            background-size: 210px 160px;
+            padding-top: 30px;
+            /* background-color: aqua; */
+            padding-left: 24px;
+            /* line-height: 1.5; */
+        }
+
+        .top-text p {
+            padding: 0 0 30px 30px;
+        }
+
+        /* イラストの部分を作り出す */
+
+        /* .top-text { */
+        /* position: relative; */
+        /* 位置の基準にする */
+        /* }  */
+
+
+        /* .top-text-nashi::after {
+            content: "";*/
+        /* 空っぽを差し込む  */
+        /* display: block; */
+        /* 幅と高さの指定を効かせるために指定 */
+        /* width: 264px; */
+        /* イラストの画像の幅 */
+        /* height: 195px; */
+        /* イラストの画像の高さ */
+
+        /* ↓ 画像の差し込み */
+        /* background: url(../images/tajigyo/leaf264x195.png) center center no-repeat; */
+
+        /* ↓ relativeを指定した親に対する配置位置を指定 */
+        /* position: absolute; */
+        /* right: 88px; */
+        /* bottom: 0; */
+        /* }  */
+
+        .tajigyo p {
+            padding: 0 153px 71px 30px;
+        }
+
+        .leaf-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            color: #5C8F2B;
+            font-size: 28px;
+            padding-bottom: 15px;
+        }
+
+        section .top-text-1 {
+            font-size: 24px;
+        }
+
+        .leaf-title::before {
+            content: "";
+            width: 28px;
+            height: 28px;
+            background: url("../images/subPage3/otherleaf37x39-2.png") center/contain no-repeat;
+        }
+
+        .top-title {
+            font-size: 48px;
+            color: #5C8F2B;
+            /* padding-left:84px; */
+            text-align: left;
+            /* padding-bottom: 35px; */
+        }
+
+        section h2 {
+            text-align: center;
+            margin: 45px auto;
+            color: #5C8F2B;
+            font-size: 28px;
+        }
+
+        h3 {
+            color: #5C8F2B;
+            font-size: 24px;
+        }
+
+        .cafeteria,
+        .gakudo {
+            padding-left: 140px;
+            padding-right: 120px;
+        }
+
+        .gakudo .txt11 {
+            padding-left: 20px;
+        }
+
+        .gakudo .txt12 {
+            /* padding-top: 15px; */
+            padding: 15px 24px 0 24px;
+        }
+
+
+        /* .cafeteria .textbox {
+            background-image: url("../images/tajigyo/kodomo-cafeteria278x140.png");
+            background-repeat: no-repeat;
+            /* background-position: right top; */
+        /* background-position: right 88px top; */
+        /* background-size: 278px 140px; */
+        /* }  */
+
+        /* .cafeteria .textbox { */
+        /* padding: 0 0 30px 30px; */
+        /* }  */
+
+        .txt1 .flex {
+            flex-wrap: wrap;
+            line-height: 35px;
+        }
+
+        .txt1 .txt11 {
+            width: 56%;
+        }
+
+        .txt1 .txt12 {
+            /* width: 100%; */
+        }
+
+        /* h1 {
+            color: #5C8F2B;
+            font-size: 48px;
+            padding-bottom: 35px;
+        } */
+
+        /* section div  {
+            width: 818px;
+            height: 171px;
+        } */
+
+        .li3set {
+            padding: 0 120px 0 140px;
+        }
+
+        ul li h3 {
+            padding: 20px 0 20px 0;
+        }
+
+        ul li div {
+            padding-bottom: 30px;
+        }
+
+        /* 真ん中のアイテムだけ上に余白を入れて下げる */
+        .li3set li:nth-of-type(2) {
+            padding-top: 32px;
+        }
+
+        .ft {
+            /* background-color: #f8f4ea; */
+        }
+
+        /* レスポンシブ対応 */
+        @media (max-width: 1000px) {
+
+            /* 方針 */
+            /* font-size小さく変更 */
+            /* 他事業は870pxに収めて作っているので、文字サイズのみ２割縮小対応  */
+            /* タブレット */
+            /* 1000px以下のとき */
+            header h1 img {
+                width: 220px;
+                height: auto;
+            }
+
+            header .cta {
+                flex-direction: column;
+            }
+
+            nav li a {
+                font-size: 16px;
+            }
+
+            .top-title {
+                font-size: 38px;
+                padding-left: 20px;
+            }
+
+            .cafeteria,
+            .gakudo {
+                padding: 0;
+            }
+
+            body {
+                font-size: 23px;
+            }
+
+            .wrap {
+                width: 90%;
+                max-width: 1000px;
+                /* min-width: 768px; */
+                /* width: 870px; */
+                margin: 0 auto;
+            }
+
+            section h2 {
+                margin: 25px auto;
+            }
+
+            .leaf-title {
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                padding-bottom: 5px;
+                font-size: 26px;
+            }
+
+            .top-text {
+                background-size: 210px 160px;
+            }
+
+            .cafeteria .txt11 {
+                margin-top: 0;
+            }
+
+            .cafeteria .txt12 {
+                padding: 0;
+                width: 80%;
+
+            }
+
+            .gakudo .txt11 {
+                /* padding-left: 20px; */
+                padding: 0 0 10px 0;
+                margin-top: 0;
+                /* width: 80%; */
+            }
+
+            .gakudo .txt12 {
+                padding: 0;
+                width: 80%;
+                /* padding-top: 15px; */
+            }
+
+            .cafeteria,
+            .gakudo {
+                margin: 0 auto;
+            }
+
+            section h2 {
+                text-align: left;
+                padding-left: 40px;
+                /* margin: auto 0; */
+            }
+
+            .txt1 .flex {
+                /* flex-wrap: wrap; */
+                line-height: 1.5;
+                display: block;
+                /* test */
+            }
+
+            section {
+                display: block;
+            }
+
+            section img {
+                max-width: 100%;
+                /* width: 100%; */
+                height: auto;
+                /* ペアで入れる */
+                margin: 0 auto;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .mv {
+                width: 100%;
+                text-align: center;
+                margin: 24px 0;
+            }
+
+            .li3set {
+                max-width: 100%;
+                /* width: 80%; */
+                height: auto;
+                /* ペアで入れる */
+            }
+
+            h3 {
+                color: #5C8F2B;
+                font-size: 20px;
+            }
+
+        }
+
+        @media (max-width: 768px) {
+
+            /* 方針 
+            レイアウト変更
+　　　　        横幅が狭くなるので三つ横並びの中止 
+        　　　　画像と文字の横並び中止 
+        　　　　文字をさらに２割減 */
+            /* スマホ */
+            /* 768px以下のとき */
+            /* ナビゲーションなくしてハンバーガーボタンにする */
+            /* ◆ ヘッダー */
+
+
+            header {
+                padding: 10px 0;
+            }
+
+            /* ↑上記でやっていること
+        ・ヘッダーをブラウザ上部に固定（スクロールしても上についたままになる）
+        ・fixedにより縮まってしまう横幅を直す
+        ・余白を小さめに調整 
+        最後にやる　*/
+
+
+            /* ◆ ロゴ */
+
+            header h1 {
+                line-height: 1;
+            }
+
+            /* ↑上記でやっていること
+        ・h1タグのline-heightによってついている余計な余白を外す
+         */
+
+            /* ◆ ロゴの画像 */
+
+            header h1 img {
+                width: 180px;
+                height: auto;
+            }
+
+            /* ↑上記でやっていること
+        ・ロゴの画像のサイズを小さくする
+        ・高さはautoにして縦横比を保護 */
+
+            nav {
+                /* display: none; */
+                overflow-x: auto;
+            }
+
+            nav li a {
+                font-size: 14px;
+            }
+
+            .wrap {
+                width: 80%;
+                max-width: 768px;
+                /* min-width: 500px; */
+                /* width: 766px; */
+                margin: 0 auto;
+            }
+
+            .top-title {
+                font-size: 30px;
+            }
+
+            body {
+                font-size: 16px;
+            }
+
+
+            .leaf-title {
+                font-size: 20px;
+            }
+
+            h2 {
+                color: #5C8F2B;
+                font-size: 18px;
+            }
+
+            .txt1 .flex {
+                flex-direction: column;
+            }
+
+
+            h3 {
+                color: #5C8F2B;
+                font-size: 18px;
+            }
+
+            h2 img {
+                max-width: 100%;
+                /* width: 100%; */
+                height: auto;
+                /* ペアで入れる */
+            }
+
+            .li3set {
+                max-width: 100%;
+                /* width: 100%; */
+                height: auto;
+                /* ペアで入れる */
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+            }
+        }
+
+        @media (max-width: 500px) {
+
+            /* 方針 
+　　　　        横幅が狭くなるので三つ横並びの中止 
+        　　　　画像と文字の横並び中止 
+        　　　　文字をさらに２割減
+                画像も縮小をやるか？
+                さらに調整するか？ */
+            /* スマホ */
+            /* 500px以下のとき */
+            /* ナビゲーションなくしてハンバーガーボタンにする */
+            /* ◆ ロゴの画像 */
+
+            header h1 img {
+                width: 140px;
+                height: auto;
+            }
+
+            .wrap {
+                width: 90%;
+                max-width: 768px;
+                /* min-width: 460px; */
+                /* width: 460px; */
+                margin: 0 auto;
+            }
+
+            nav li a {
+                font-size: 14px;
+            }
+
+            .top-title {
+                font-size: 24px;
+            }
+
+            body {
+                font-size: 13px;
+            }
+
+            .leaf-title {
+                font-size: 16px;
+            }
+
+            h2 {
+                color: #5C8F2B;
+                font-size: 14px;
+            }
+
+            h3 {
+                color: #5C8F2B;
+                font-size: 12px;
+            }
+
+            h2 img {
+                max-width: 100%;
+                /* width: 100%; */
+                height: auto;
+                /* ペアで入れる */
+            }
+
+            .nav {
+                display: none;
+            }
+        }

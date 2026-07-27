@@ -1,0 +1,57 @@
+toTOP反映のためのHTMLへの追記変更
+
+headでの読み込み
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>あおたけ会　他事業</title>
+    <meta name="description" content="あおたけ保育園のホームページ。園児募集、一日体験入園無料体験・見学受付中！保育士募集">
+    <meta name="keywords" content="あおたけ会,保育園,園児募集,一日体験入園無料体験,見学受付中,保育士募集,キッズ,幼児">
+    <link rel="icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" href="../apple-touch-icon-180x180.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <!-- ↓ 次にプラグインのcssファイルの読み込み -->
+    <!-- //CSS -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/tajigyo.css">
+    <!--★ 各種 jsファイルの読み込み -->
+    <!-- slick-carousel-jquery4 CSS -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://jsdelivr.net" >
+    <link rel="stylesheet" type="text/css" href="https://jsdelivr.net" > -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel-jquery4@4.0.2/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel-jquery4@4.0.2/slick/slick-theme.css" />
+
+    <!-- ↓ 初めにjQuery本体ファイルの読み込み -->
+    <script src="js/jquery-4.0.0.min.js"></script>
+    <!-- <script src="js/jquery-3.7.1.min.js"></script> -->
+
+    <!-- ↓ 次にプラグインのjsファイルの読み込み -->
+    <!-- slickが有名 -->
+    <!-- //JS -->
+    <script src="js/slick.js"></script>
+
+
+    <!-- jQuery 4.0.0 (または最新版)-->
+    <!-- <script src="https://jquery.com"></script> -->
+
+    <!-- slick-carousel-jquery4 JS -->
+    <!-- <script type="text/javascript" src="https://jsdelivr.net"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel-jquery4@4.0.2/slick/slick.min.js"></script>
+
+    <!-- ↓ 最後に自作jsファイルの読み込み -->
+    <script src="js/script.js"></script>
+</head>
+
+
+
+footerでたけのことのflexの外に出してあげて
+
+       <a class="to-top" href="#"> <img src="../assets/images/subPage2/to-top.svg" alt="to-topボタン"></a>
+
+
+あとは、
+script.jsでtoTopボタンをFRAMEINさせたい場所のclass名を以下のiretaiに記載
+
+let FRAMEIN = $(".iretai").offset().top - $("header").height();

@@ -1,0 +1,216 @@
+@charset "UTF-8";
+
+body {
+    color: #534741;
+}
+
+.section1 h2 {
+    /* background-color: red; */
+    text-align: center;
+    margin: 45px auto;
+
+}
+
+.section1 ul {
+    /* background-color: bisque; */
+    justify-content: flex-start;
+}
+
+#buttons li {
+    width: 150px;
+    line-height: 3;
+    text-align: center;
+}
+
+.tab1 {
+    background-color: #f0fff3;
+    border-top: 2px solid #59ffc2;
+    border-left: 2px solid #59ffc2;
+    border-right: 2px solid #59ffc2;
+}
+
+.tab2 {
+    background-color: #fefff0;
+    border-top: 2px solid #fbb03b;
+    border-left: 2px solid #fbb03b;
+    border-right: 2px solid #fbb03b;
+}
+
+#buttons a {
+    color: #33cc99;
+}
+
+
+#tab1 {
+    background-color: #f0fff3;
+    border: 2px solid #59ffc2;
+}
+
+.h3 {
+    justify-content: center;
+    /* background-color: palevioletred; */
+    align-items: center;
+    padding: 20px 0 20px;
+}
+
+.h3 h3 {
+    /* background-color: rebeccapurple; */
+    height: fit-content;
+    padding-left: 10px;
+}
+
+#tab2 {
+    background-color: #fefff0;
+    border: 2px solid #fbb03b;
+}
+
+.schedule {
+    gap: 20px;
+    justify-content: center;
+}
+
+.schedule dl {
+    
+    font-size: 16px;
+    /* background-color: peru; */
+    align-items: center;
+}
+
+.schedule dt {
+    color: #56d6aa;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    /* column-gap: 40px; */
+    align-items: center;
+    height: 61px;
+    border-bottom: 1px solid #56d6aa;
+}
+
+.schedule img {
+    margin-top: 20px;
+}
+
+.schedule dd {
+    margin: 0;
+    /* background-color: palegoldenrod; */
+}
+
+#contents p{
+    text-align: center;
+    padding-bottom: 40px;
+    color: #33cc99;
+}
+
+#contents small {
+    font-size: 12px;
+    display: block;
+    width: fit-content;
+    margin:  20px auto;
+}
+
+/* 年間スケジュール */
+.section2 {
+    background-color: #f8f4ea;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.section2 h2{
+    margin: 0 auto;
+    padding: 40px 0;
+    /* background-color: yellowgreen; */
+}
+
+.section2 h3 {
+    background-color: red;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 22px;
+    color: #fff;
+    font-size: 24px;
+}
+
+.section2 .gap {
+    /* background-color: tomato; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.spring {
+    background-color: #fff5f3;
+    border: solid 2px #ffcbc1;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.spring h3 {
+    background-color:#ffcbc1;
+}
+
+.summer {
+    background-color: #fef7f1;
+    border: solid 2px #ffd299;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.summer h3{
+    background-color: #ffd299;
+}
+
+.autumn {
+    background-color: #fdfbe3;
+    border: solid 2px #ead373;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.autumn h3{
+    background-color: #ead373;
+}
+
+.winter {
+    background-color: #f0f5fc;
+    border: solid 2px #b3ccf2;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+.winter h3 {
+    background-color: #b3ccf2;
+}
+
+.section2 img {
+    border-radius: 20px;
+    padding-bottom: 10px;
+}
+
+.section2 p {
+    /* background-color: aqua; */
+    line-height: 2;
+
+}
+
+.section2 .autumn p {
+    /* background-color: red; */
+    padding-top: 15px;
+}
+
+.section2 small {
+    /* background-color: red; */
+    display: block;
+    padding: 40px 0;
+}
+
+.ft {
+    background-color: #f8f4ea;
+}
+

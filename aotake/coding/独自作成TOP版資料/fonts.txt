@@ -1,0 +1,11 @@
+Heading
+Noto Sans JP Black
+
+Body
+Noto Sans JP Regular
+
+Bold
+Noto Sans JP Bold
+
+Header logo
+Noto Sans JP Black

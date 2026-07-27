@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- ファビコン・アプリアイコンの設定 -->
+    <link rel="icon" href="images/04_round_icon1.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/04_round_icon1.png">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <title>高田馬場WIT周辺 みんなで育てるランチマップ</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-logo-area">
+            <img src="images/06_simple_icon1.png" alt="WITロゴ" class="header-icon">
+            <h1>高田馬場WIT周辺 みんなで育てるランチマップ</h1>
+        </div>
+        <nav>
+            <a href="#search-section">ランチを探す</a>
+            <a href="#register-section">お店を登録する</a>
+        </nav>
+    </header>
+
+    <!-- ヒーローエリア (スライドショー画像) -->
+    <section class="hero-visual">
+        <div id="slideshow">
+            <img src="images/9-1.png" class="slide active" alt="ランチ写真1">
+            <img src="images/9-2.png" class="slide" alt="ランチ写真2">
+            <img src="images/9-3.png" class="slide" alt="ランチ写真3">
+        </div>
+    </section>
+
+    <section class="stats-container">
+        <div class="stat-card"><strong>42</strong><br>登録店舗</div>
+        <div class="stat-card"><strong>18</strong><br>参加学生</div>
+        <div class="stat-card"><strong>326</strong><br>投稿写真</div>
+        <div class="stat-card"><strong>411</strong><br>コメント</div>
+    </section>
+
+    <!-- 検索セクション -->
+    <section id="search-section">
+        <h2>🔍 ランチを探す（複数選択可）</h2>
+        <div class="category-checkboxes">
+            <label><input type="checkbox" name="category" value="gutsuri"> がっつり</label>
+            <label><input type="checkbox" name="category" value="cheap"> 安い(～800円)</label>
+            <label><input type="checkbox" name="category" value="near"> 徒歩5分以内</label>
+            <label><input type="checkbox" name="category" value="fast"> 提供が早い</label>
+            <label><input type="checkbox" name="category" value="ramen"> 🍜 ラーメン</label>
+            <label><input type="checkbox" name="category" value="curry"> 🍛 カレー</label>
+            <label><input type="checkbox" name="category" value="teishoku"> 🍚 定食</label>
+            <label><input type="checkbox" name="category" value="healthy"> 🥗 ヘルシー</label>
+            <label><input type="checkbox" name="category" value="soba"> うどん・そば</label>
+            <label><input type="checkbox" name="category" value="western"> 洋食</label>
+            <label><input type="checkbox" name="category" value="ethnic"> エスニック</label>
+            <label><input type="checkbox" name="category" value="takeout"> テイクアウト</label>
+        </div>
+        <button id="search-submit" class="submit-btn">この条件で探す</button>
+    </section>
+
+    <!-- その他セクション -->
+    <section id="recent-reviews">
+        <h2>🟢 新着レビュー（表示イメージ）</h2>
+        <div class="review-item"><span>12分前</span> 佐藤さん: キッチン谷沢を追加しました！</div>
+        <div class="review-item"><span>35分前</span> 庄さん: 炊きたてあり〼の写真を投稿しました！</div>
+    </section>
+
+    <section id="features">
+        <h2>おすすめコンテンツ</h2>
+        <div class="section-card">
+            <h3>今日のおすすめ</h3>
+            <p>評価の高い順に表示予定</p>
+        </div>
+        <div class="section-card">
+            <h3>ランキング</h3>
+            <p>投稿数・人気店・新着</p>
+        </div>
+        <div class="section-card">
+            <h3>このサイトの育て方</h3>
+            <p>投稿方法、更新ルール、AI活用について</p>
+        </div>
+    </section>
+
+    <!-- お店登録セクション -->
+    <section id="register-section" class="register-section">
+        <h2>🍜 新しいお店を登録する</h2>
+        <form id="store-form" novalidate>
+            <div class="form-group"><label>店名</label><input type="text" name="store_name" required></div>
+
+            <div class="form-group">
+                <label>GoogleMap URL (どちらかは必須)</label>
+                <input type="url" name="gmap_url" id="gmap" placeholder="必須 または 食べログURL">
+            </div>
+
+            <div class="form-group">
+                <label>食べログ URL (どちらかは必須)</label>
+                <input type="url" name="tabelog_url" id="tabelog" placeholder="必須 または GoogleMap URL">
+            </div>
+
+            <div class="form-group"><label>写真</label><input type="file" name="store_photo" accept="image/*" required></div>
+            <div class="form-group"><label>一言コメント</label><textarea name="comment" rows="3" required></textarea></div>
+
+            <div class="form-group">
+                <label>価格帯</label>
+                <label><input type="radio" name="price" value="low" required> ～800円</label>
+                <label><input type="radio" name="price" value="mid" required> 801～1000円</label>
+                <label><input type="radio" name="price" value="high" required> 1000円以上</label>
+            </div>
+
+            <div class="form-group">
+                <label>おすすめ属性</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="tags" value="gutsuri"> がっつり</label>
+                    <label><input type="checkbox" name="tags" value="cheap"> 安い</label>
+                    <label><input type="checkbox" name="tags" value="fast"> 提供が早い</label>
+                    <label><input type="checkbox" name="tags" value="healthy"> ヘルシー</label>
+                    <label><input type="checkbox" name="tags" value="ramen"> ラーメン</label>
+                    <label><input type="checkbox" name="tags" value="teishoku"> 定食</label>
+                    <label><input type="checkbox" name="tags" value="curry"> カレー</label>
+                    <label><input type="checkbox" name="tags" value="western"> 洋食</label>
+                    <label><input type="checkbox" name="tags" value="ethnic"> エスニック</label>
+                    <label><input type="checkbox" name="tags" value="takeout"> テイクアウト</label>
+                </div>
+            </div>
+            <button type="submit" class="submit-btn">登録</button>
+        </form>
+    </section>
+
+    <section id="future-features">
+        <h2>🚀 将来の機能拡張予定</h2>
+        <ul>
+            <li>✅ 検索結果の「値段順」「距離順」並び替え</li>
+            <li>✅ リアルタイム休業日表示（Googleカレンダー連携）</li>
+            <li>✅ ユーザーバッジ機能（投稿数に応じたランク付け）</li>
+        </ul>
+    </section>
+
+    <section id="ai-usage">
+        <h2>🤖 AI活用について</h2>
+        <ul>
+            <li>コンセプト・カテゴリ設計の提案</li>
+            <li>ワイヤーフレーム・HTML/CSS生成</li>
+            <li>キャッチコピーの作成</li>
+        </ul>
+        <p><small>※すべての提案をAIと対話し、最終採用判断は自分で行いました。</small></p>
+    </section>
+
+    <!-- フッター -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/03_square_logo1.png" alt="WIT Lunch Map Logo">
+            </div>
+            <div class="footer-info">
+                <h3>高田馬場WIT周辺 みんなで育てるランチマップ</h3>
+                <p>今日のランチ情報が、次の学生の役に立つ。</p>
+                <p class="copyright">&copy; 2026 WIT Lunch Map Project. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQueryとスクリプトの読み込み -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

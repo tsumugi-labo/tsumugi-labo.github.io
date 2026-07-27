@@ -1,0 +1,318 @@
+@charset "utf-8";
+
+ main > h1 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    color: #5C8F2B;
+    font-size: 25px;
+}
+
+main.inner-1{
+    position: relative;
+}
+
+.tab{
+    justify-content: flex-end;
+    padding-right: 60px;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+}
+
+
+.tab li {
+    width: 115px;
+    text-align: center;
+    
+}
+
+#buttons li a {
+    color: #f8f4ea;
+    display: block;
+    padding: 10px 0 30px;
+    background-color: #5c8f2b;
+    font-size: 20px;
+    border-radius: 15px 15px 0 0 ;
+    box-shadow: 1px -1px 3px
+    rgba(0, 0, 0, 0.3);
+    transition: opacity .3s;
+}
+
+#buttons li a:hover{
+	background:#5c8f2b;
+	color:#f8f4ea;
+    opacity: .7;
+}
+
+#buttons li a.current{
+	background:#f8f4ea;
+	color:#5c8f2b;
+}
+
+.address{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1em;
+}
+
+.open{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1em;
+}
+
+.day{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1em;
+}
+
+.tel{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1em;
+}
+
+.acsess{
+    display: flex;
+    justify-content: flex-start;
+    gap: 1em;
+}
+
+.map{
+    margin-left: 150px;
+}
+
+
+.baba {
+    background-color: #F8F4EA;
+    width: 940px;
+    height: 500px;
+    border-radius: 50px;
+    margin: 50px auto 0;
+    position: relative;
+    z-index: 2;
+}
+
+.baba h2 {
+    color: #5C8F2B;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 125px;
+}
+
+.syosai{
+    margin-left: 20px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.gay{
+    margin-top: 40px;
+    margin-right: 50px;
+}
+
+.yotuya {
+    background-color: #F8F4EA;
+    width: 940px;
+    height: 500px;
+    border-radius: 50px;
+    margin: 50px auto 0;
+    position: relative;
+    z-index: 2;
+}
+
+.yotuya h2 {
+    color: #5C8F2B;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 125px;
+}
+
+.kagura {
+    background-color: #F8F4EA;
+    width: 940px;
+    height: 500px;
+    border-radius: 50px;
+    margin: 50px auto 0;
+    position: relative;
+    z-index: 2;
+}
+
+.kagura h2 {
+    color: #5C8F2B;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 125px;
+}
+
+.omoi{
+    margin-top: 40px;
+}
+
+.omoi h3 {
+    color: #5C8F2B;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.encho{
+    margin-top: 40px;
+}
+
+.encho h3 {
+    color: #5C8F2B;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.omoi p{
+    color: #666666;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.encho p{
+    color: #666666;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.box1{
+    background-color: #fff;
+    width: 765px;
+    height: 515px;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    box-shadow: 3px 3px 3px
+    rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.box2{
+    background-color: #fff;
+    width: 765px;
+    height: 515px;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    box-shadow: 3px 3px 3px
+    rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1;
+    margin-bottom: 40px;
+}
+
+.pic1{
+    position: absolute;
+    top: 65px;
+    right: -220px;
+}
+
+.pic2{
+    position: absolute;
+    top: 65px;
+    right: -220px;
+}
+
+.pic1::after{
+    content: "";
+    position: absolute;
+    width: 238px;
+    height: 237px;
+    background-image: url(../images/subPage1/sasa.png) ;
+
+    right: -20px;
+    bottom: -150px;
+    z-index: 2;
+}
+
+.pic2::after{
+    content: "";
+    position: absolute;
+    width: 238px;
+    height: 237px;
+    background-image: url(../images/subPage1/sasa.png) ;
+
+    right: -10px;
+    bottom: -150px;
+    z-index: 2;
+}
+
+@media screen and (max-width: 1000px) {
+    .inner-1{
+        width: 100%;
+    }
+
+    .baba,.yotuya,.kagura{
+        width: 100%;
+        height: auto;
+        padding: 30px;
+    }
+
+    .map{
+        margin-left: 0;
+    }
+
+    .map iframe{
+        width: 100%;
+    }
+
+    .box1,.box2{
+        width: 100%;
+        height: auto;
+        padding-bottom: 130px;
+    }
+
+    .pic1,.pic2{
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: 30px auto 50px;
+        width: fit-content;
+        height: auto;
+        
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .baba > .flex,
+    .yutuya > .flex,
+    .kagura > .flex{
+        flex-direction: column;
+    }
+
+    .baba h2,.yotuya h2,.kagura h2{
+        margin-left: 0;
+    }
+
+    .gay{
+        margin: 20px 0 0;
+    }
+
+    .syosai{
+        margin-left: 0;
+    }
+
+    .box1,.box2{
+        padding: 20px;
+    }
+
+   .pic1,.pic2{
+        position: relative;
+        top: auto;
+        right: auto;
+        margin: 30px auto 120px;
+        width: fit-content;
+    }
+
+    
+}
+
+

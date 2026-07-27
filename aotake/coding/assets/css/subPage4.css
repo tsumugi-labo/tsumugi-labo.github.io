@@ -1,0 +1,390 @@
+@charset "UTF-8";
+
+
+/* 採用ページメインビジュアル */
+.top {
+    width: 1000px;
+    /* height: 650px; */
+    /* padding-top: 15px; */
+    margin: 15px auto 0;
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+
+.top img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+/*採用メインビジュアルの上に文字を置く*/
+.mv-text {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+
+/* 採用情報 */
+.mv-text h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0 0 24px;
+    color: #4f7f25;
+}
+
+
+/* 保育士 */
+.mv-text p {
+    display: inline-block;
+    font-size: 26px;
+    color: #4f7f25;
+    border: 2px solid #4f7f25;
+    border-radius: 999px;
+    padding: 8px 25px;
+    background-color: #ffffff;
+}
+
+/* キャッチコピー 　あおたけ会では～のところ*/
+p .cc {
+    color: #5C8F2B;
+    font-size: 24px;
+}
+
+.top-text {
+    text-align: center;
+    margin: 70px 0;
+    text-align: center;
+}
+
+
+/* サブビジュアル 子供たちの画像*/
+.mv02 {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.mv02-box {
+    background-color: #FFFDF8;
+    width: 920px;
+    height: 480px;
+    border-radius: 20px;
+    margin: 0 auto 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.15);
+
+}
+
+
+/* 保育士募集要項全体 ↓*/
+.bosyu {
+    background-color: #FFFDF8;
+    border-radius: 20px;
+    color: #333333;
+    margin: 0 auto 50px;
+    padding: 45px 70px 65px;
+    box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+}
+
+/* タイトル  保育士募集要項の文字*/
+.bosyu-title {
+    margin: 0 0 48px;
+    text-align: center;
+    font-size: 26px;
+    color: #375600;
+    font-weight: bold;
+}
+
+
+/* dl全体 */
+.bosyu-list {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+/* 中央の縦線を１本だけ作る */
+.bosyu-list::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 250px;
+    width: 1px;
+    background-color: #375600;
+}
+
+
+
+/* 左右をまとめるクラス */
+.bosyu-row {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    column-gap: 48px;
+    min-height: 72px;
+    align-items: center;
+}
+
+/* 左側　勤務時間等 */
+.bosyu-row dt {
+    color: #375600;
+    font-size: 25px;
+    line-height: 1.8;
+}
+
+
+/* 右側 実働８時間～のところ＊*/
+.bosyu-row dd {
+    margin: 0;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+
+
+
+
+/* 選考の流れ */
+.senkou {
+    background-color: #FFFDF8;
+    color: #333333;
+    margin: 0 auto 70px;
+    padding: 45px 0 55px;
+    border-radius: 20px;
+    box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+}
+
+
+/* タイトル */
+.senkou-title {
+    margin: 0 0 35px;
+    text-align: center;
+    font-size: 26px;
+    color: #375600;
+}
+
+/* dl全体 */
+.senkou-list {
+    counter-reset: flow-number;
+}
+
+
+/* 1つずつの白いカード */
+.senkou-row {
+    position: relative;
+    width: 820px;
+    min-height: 200px;
+    margin: 0 auto 40px;
+    padding: 28px 50px 28px 100px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.11);
+    box-sizing: border-box;
+}
+
+
+
+/* 左の丸数字 */
+.senkou-row::before {
+    counter-increment: flow-number;
+    content: counter(flow-number);
+
+    position: absolute;
+    left: 18px;
+    top: 18px;
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+
+    background-color: #5C8F2B;
+    color: #ffffff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+
+/* dt:応募・見学など */
+.senkou-row dt {
+    margin: 0 0 12px;
+    font-size: 25px;
+    color: #375600;
+}
+
+/* dd 説明文 */
+.senkou-row dd {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+/* 注釈 */
+.senkou-note {
+    font-size: 16px;
+    color: #666666;
+}
+
+
+
+
+/* ctaボタン */
+main .cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F8F4EA;
+    width: 445px;
+    height: 68px;
+    font-size: 24px;
+    margin: 0 auto;
+
+    box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+
+/* pを箱いっぱいにする。リンククリックを箱全体で押すため */
+main .cta p {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* aタグを箱全体に広げる。リンククリック箱全体のため */
+main .cta a {
+    background-color: #FF8A5B;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+    color: #F8F4EA;
+}
+
+
+/* ホバー */
+main .cta:hover {
+    background-color: #ec5927;
+}
+
+
+/* レスポンシブ対応 */
+
+/* 1000px */
+@media (max-width: 1000px) {
+    .inner-1 {
+        width: 100%;
+    }
+
+    .top {
+        width: 100%;
+
+    }
+
+    .mv02-box {
+        width: 100%;
+    }
+
+    .senkou-row {
+        width: 100%;
+    }
+
+    .mv-text h2 {
+        font-size: 40px;
+    }
+
+    .mv-text p {
+        font-size: 20px;
+    }
+
+
+}
+
+
+
+/* スマホ 768px以下で～の項目 */
+@media (max-width: 768px) {
+    .inner-1 {
+        width: 100%;
+    }
+
+    .mv02-box {
+        width: 100%;
+    }
+
+    .senkou-row {
+        width: 100%;
+    }
+
+  .mv-text h2 {
+        font-size: 26px;
+    }
+
+    .mv-text p {
+        font-size: 14px;
+    }
+
+
+
+    /* 募集要項の文字を縦並びにする */
+
+    .bosyu {
+        width: 92%;
+        padding: 36px 24px 44px;
+        box-sizing: border-box;
+    }
+
+    .bosyu-list::before {
+        display: none;
+    }
+
+    .bosyu-row {
+        display: block;
+        min-height: auto;
+        margin-bottom: 28px;
+    }
+
+    .bosyu-row dt {
+        font-size: 20px;
+        margin-bottom: 6px;
+        line-height: 1.6;
+    }
+
+    .bosyu-row dd {
+        font-size: 16px;
+        line-height: 1.8;
+        margin: 0;
+    }
+
+
+    /* ctaボタンを縮める */
+    main .cta {
+        width: 100%;
+        max-width: 445px;
+        height: 68px;
+        font-size: 18px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+
+}

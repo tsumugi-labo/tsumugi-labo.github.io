@@ -1,0 +1,126 @@
+あおたけHTML計画
+
+
+
+aotake-project/
+
+├── client/
+│    ├── text/
+│    ├── images/
+│    ├── logo/
+│    └── meeting/
+│
+├── ai/
+├── images/
+├── css/
+├── js/
+├── html/
+├── export/
+└── documents/kyoyu.docs
+
+
+logo/
+logo.ai
+logo.svg
+logo.png
+
+common/
+header.ai
+footer.ai
+button.ai
+icon.ai
+
+top/
+top.ai
+
+other/
+other.ai
+
+contact/
+contact.ai
+
+
+images/
+├── common/
+│   ├── logo.svg
+│   ├── btn_top.png
+│   ├── deco_boy.png
+│   ├── deco_girl.png
+│   ├── leaf_lt.png
+│   ├── leaf_rt.png
+│   └── bamboo.png
+│
+├── top/
+│   ├── mv01.webp
+│   ├── mv02.webp
+│   ├── mv03.webp
+│   ├── slide01.webp
+│   ├── slide02.webp
+│   ├── slide03.webp
+│   ├── slide04.webp
+│   └── slide05.webp
+│
+├── recruit/
+│   └── recruit.webp
+│
+├── other/
+│   ├── cafeteria.webp
+│   └── afterschool.webp
+│
+└── contact/
+    └── contact_mv.webp
+
+
+
+css/
+js/
+
+images/
+    1common/
+        deco_boy170x241.png
+        deco_girl157x236.png
+        leavs49x74.png
+	leaf_tl39x34.png
+	leaf_tr36x36.png
+	leaf_bl30x30.png
+	leaf-br32x32.png
+        top_btn67x60.png
+
+    2top/
+        mv1-994x385.png
+        mv2-994x385.png
+        mv3-994x385.png
+
+        slide2-250x150.png
+        slide3-250x150.png
+        slide4-250x150.png
+        slide5-250x150.png
+
+    3other/
+        recruit304x130.png
+        cafeteria241x109.png
+        afterschool244x109.png
+
+	othertop331x136.png
+	children-foods284x143.png
+	english145x88.png
+	rabbit163x88.png
+	gakudou-fish152x88.png
+
+    4contact/
+        
+
+ logo
+
+
+
+
+fonts/
+用途	フォント	太さ
+ロゴ以外全部	Noto Sans BLACK JP	Regular〜Bold
+メインコピー	Noto Sans BLACK JP Black	900
+見出し	Noto Sans BLACK JP Bold	700
+本文	Noto Sans BLACK JP Regular	400
+ナビ	Noto Sans BLACK JP Medium	500
+
+個人情報保護方針、情報公開、サイトマップはダミーで#
