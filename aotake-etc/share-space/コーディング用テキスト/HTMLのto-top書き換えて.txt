@@ -1,9 +1,0 @@
-<div class="ft">
-        <div class="to-top">
-            <a href="#"><img src="../assets/images/subPage2/to-top.svg" alt="to-topボタン"></a>
-        </div>
-
-        <div class="tk inner-1">
-            <img src="../assets/images/subPage2/banboo.png" alt="竹とたけのこのイラスト">
-        </div>
-    </div>
