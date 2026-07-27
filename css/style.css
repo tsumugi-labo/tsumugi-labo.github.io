@@ -87,7 +87,7 @@ ol {
 }
 
 .section {
-  padding: 80px 0;
+  padding: 20px 0;
 }
 
 .section-obi {
@@ -100,7 +100,7 @@ ol {
 
 @media (max-width: 768px) {
   .section {
-    padding: 50px 0;
+    padding: 10px 0;
   }
 }
 
@@ -641,15 +641,16 @@ ol {
 
 .case-cat {
   display: inline-block;
-  padding: 4px 10px;
+  padding: 5px 12px;
   border-radius: 999px;
-  /* color: var(--color-primary); */
-  background: var(--color-navy);
+
+  background: var(--color-primary);
   color: #fff;
-  font-size: 0.8rem;
-  font-weight: bold;
-  letter-spacing: 0.08em;
+
+  font-size: 0.72rem;
   font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .case-title {
@@ -932,10 +933,45 @@ ol {
   /* color: #888; */
   background: #35357D;
   color: #f6f3ea;
-  padding: 30px 20px;
+  padding: 4px 10px 12px;
   text-align: center;
   font-size: 0.85rem;
+  border-top: 2px solid var(--color-accent);
 }
+
+.footer-logo {
+  text-align: center;
+  margin: 1px auto 0;
+  width: 320px;
+  max-width: 80%;
+}
+
+.footer-logo-img {
+  width: 420px;
+  max-width: 85%;
+  height: auto;
+  opacity: 0.3;
+}
+
+.footer-message {
+  margin-top:4px;
+  margin:2px 0 10px;
+
+  color: rgba(255, 255, 255, .78);
+
+  font-size: 1.05rem;
+  letter-spacing: .08em;
+  line-height: 1.8;
+  opacity: 0.7;
+}
+
+.copyright {
+  margin-top:6px;
+  padding:0;
+  font-size:.85rem;
+  opacity:.75;
+}
+
 
 /* ===========================
    Scroll Fade Up
