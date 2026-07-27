@@ -1,0 +1,118 @@
+<!-- ヘッダー部分です。ここから各下層ページにコピペしてください！ -->
+
+    <header>
+        <div class="flex inner-1 hd">
+            <h1>
+                <a><img src="../assets/images/subPage2/logo1.svg" alt="社会福祉法人あおたけ会ロゴ" width="280" height="186"></a>
+            </h1>
+
+            <div class="cta">
+                <a href="#" class="cta-1">園児募集</a>
+                <a href="#" class="cta-2">保育士募集</a>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="flex inner-1">
+            <li><a href="#">園の紹介</a></li>
+            <li><a href="#">園での過ごし方</a></li>
+            <li><a href="#">他事業</a></li>
+            <li><a href="#">保育士募集</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+        </ul>
+    </nav>
+    
+<!-- ここまでコピペ！！！ヘッダー部分 -->
+
+
+
+
+
+
+
+
+
+
+<!-- フッターとTo-Top部分です。下層ページのコンテンツ最後部にコピペしてください -->
+    <div class="ft flex">
+        <img src="../assets/images/subPage2/banboo.png" alt="竹とたけのこのイラスト">
+        <img src="../assets/images/subPage2/to-top.svg" alt="to-topボタン">
+    </div>
+
+    <footer>
+        <div class="flex inner-1">
+            <img src="../assets/images/subPage2/logo2.svg" alt="社会福祉法人あおたけ会ロゴ">
+
+            <ul>
+                <li><a href="#">TOP</a></li>
+                <li><a href="#">園の紹介</a></li>
+                <li><a href="#">園での過ごし方</a></li>
+            </ul>
+
+            <ul>
+                <li><a href="#">他事業</a></li>
+                <li><a href="#">保育士募集</a></li>
+                <li><a href="#">お問い合わせ</a></li>
+            </ul>
+
+            <address>
+                <p>社会福祉法人あおたけ会</p>
+                <p>〒160-8484 東京都新宿区歌舞伎町1-4-1</p>
+                <p>TEL: 03-1234-5678</p>
+            </address>
+
+            <img src="../assets/images/subPage2/insta.png" alt="インスタグラム" width="50" height="50">
+        </div>
+        <small>&copy; 2026 社会福祉法人あおたけ会</small>
+    </footer>
+    <!-- ここまでコピペ！！！フッターとTo-Top部分 -->
+
+
+
+
+
+
+
+
+2026.7.8
+★ファビコン追記★
+
+
+
+
+
+<!-- ↓ faviconの読み込み -->
+    <link rel="icon" href="../favicon.ico">
+    <link rel="apple-touch-icon" href="../apple-touch-icon-180x180.png">
+
+
+
+
+2026/07/09　追記分
+
+★ヘッダーの下に追記してください。
+
+    <!-- ↓　ここにハンバーガーボタンのコードを設置　↓ -->
+    <input type="checkbox" id="navSet" class="nav-switch">
+    <label for="navSet" class="nav-burger"></label>
+
+★navタグにクラス名naviを追記してください。
+
+
+★インスタアイコンにクラス名instaを追記してください。記入例↓
+
+<img src="assets/images/subPage2/insta.png" class="insta" alt="インスタグラム" width="50" height="50">
+
+
+
+
+
+
+
+
+
+
+
+
+
