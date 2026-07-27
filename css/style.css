@@ -640,10 +640,16 @@ ol {
 }
 
 .case-cat {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  /* color: var(--color-primary); */
+  background: var(--color-navy);
+  color: #fff;
   font-size: 0.8rem;
   font-weight: bold;
-  color: var(--color-primary);
-  letter-spacing: .08em;
+  letter-spacing: 0.08em;
+  font-weight: 700;
 }
 
 .case-title {
@@ -667,12 +673,13 @@ ol {
 
 /* CSSで自動付与する例 */
 .case-link[href^="http"]::after {
-    content: "\f35d";
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    margin-left: 0.4em;
-    font-size: 0.8em;
+  content: "\f35d";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  margin-left: 0.4em;
+  font-size: 0.8em;
 }
+
 /* ==========================================================================
    Career Section
    ========================================================================== */
