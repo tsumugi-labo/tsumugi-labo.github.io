@@ -171,6 +171,11 @@ ol {
   opacity: 0.9;
 }
 
+.nav-pc a.is-active {
+  color: var(--color-accent);
+  border-bottom: 2px solid var(--color-accent);
+}
+
 /* ハンバーガーボタン */
 .hamburger-btn {
   display: none;
@@ -660,6 +665,14 @@ ol {
   display: inline-block;
 }
 
+/* CSSで自動付与する例 */
+.case-link[href^="http"]::after {
+    content: "\f35d";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-left: 0.4em;
+    font-size: 0.8em;
+}
 /* ==========================================================================
    Career Section
    ========================================================================== */

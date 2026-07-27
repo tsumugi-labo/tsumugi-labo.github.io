@@ -105,4 +105,18 @@ $(function () {
 
   fadeItems.forEach(item => observer.observe(item));
 
+
+  // スクロール位置に応じたナビゲーションの強調表示
+  $(window).on('scroll', function () {
+    const scrollPos = $(window).scrollTop() + 100;
+    $('section[id]').each(function () {
+      const top = $(this).offset().top;
+      const bottom = top + $(this).outerHeight();
+      const id = $(this).attr('id');
+      if (scrollPos >= top && scrollPos < bottom) {
+        $('.nav-pc a').removeClass('is-active');
+        $('.nav-pc a[href="#' + id + '"]').addClass('is-active');
+      }
+    });
+  });
 });
