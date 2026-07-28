@@ -119,4 +119,36 @@ $(function () {
       }
     });
   });
+
+
+// ==========================================
+// News Accordion
+// ==========================================
+
+const newsButtons = document.querySelectorAll(".news-toggle");
+
+  newsButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+
+      const detail = button.nextElementSibling;
+      const icon = button.querySelector(".news-icon");
+
+      const isOpen = detail.style.display === "block";
+
+      // 一旦すべて閉じる
+      document.querySelectorAll(".news-detail").forEach((item) => {
+        item.style.display = "none";
+      });
+
+      document.querySelectorAll(".news-icon").forEach((item) => {
+        item.textContent = "▶";
+      });
+
+      // 閉じていたら開く
+      if (!isOpen) {
+        detail.style.display = "block";
+        icon.textContent = "▼";
+      }
+    });
+  });
 });
