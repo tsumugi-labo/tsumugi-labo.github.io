@@ -1,0 +1,631 @@
+/* =====================================
+   Graduation Showcase
+   style.css
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+body {
+
+    font-family: "Noto Sans JP", sans-serif;
+
+    color: #333;
+
+    background: #f8f6f1;
+    background-color: #f6f4ee;
+    line-height: 1.9;
+
+}
+
+/* -------------------------------- */
+
+img {
+
+    max-width: 100%;
+
+    display: block;
+
+}
+
+a {
+
+    text-decoration: none;
+
+}
+
+ul {
+
+    padding-left: 1.5rem;
+
+}
+
+/* -------------------------------- */
+
+.section {
+    padding: 120px 8%;
+    position: relative;
+}
+
+.section::before {
+    content: "";
+    display: block;
+    height: 12px;
+    background:
+        url("../images/line-kihachijyov6.png") repeat-x;
+    background-size: auto 12px;
+    margin-bottom: 80px;
+}
+
+.container {
+
+    max-width: 1200px;
+
+    margin: auto;
+
+}
+
+.cta {
+
+    background-image:
+        linear-gradient(rgba(0, 0, 0, .15),
+            rgba(0, 0, 0, .15)),
+
+        url("../images/miyako2.png");
+
+    background-size: cover;
+
+}
+
+h2::after {
+
+    content: "";
+
+    display: block;
+
+    margin-top: 12px;
+
+    height: 6px;
+
+    background-image:
+        url("../images/line-kihachijyov6.png");
+
+    background-repeat: no-repeat;
+
+    background-size: 220px auto;
+
+}
+
+/* =====================================
+Hero
+===================================== */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 120px 8%;
+    color: #1f4d34;
+    background: #f8f6f1;
+    background-image:
+        linear-gradient(...),
+        url(images/mv_ryukyukasuri_yellow.webp);
+}
+
+.hero-inner {
+    max-width: 1100px;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    letter-spacing: .2em;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 60px;
+}
+
+.catch {
+    font-size: 2rem;
+    line-height: 2;
+    margin-bottom: 60px;
+}
+
+.profile {
+    margin-bottom: 80px;
+}
+
+.profile p {
+    font-size: 1.2rem;
+}
+
+.profile h3 {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.scroll {
+
+    color: #777;
+
+    font-size: 1rem;
+
+}
+
+/* =====================================
+Section
+===================================== */
+
+.section h2 {
+
+    font-size: 3rem;
+
+    color: #215336;
+
+    margin-bottom: 20px;
+
+}
+
+.section h2 span {
+
+    display: block;
+
+    font-size: 2rem;
+
+    font-weight: 400;
+
+    margin-top: 10px;
+
+}
+
+.lead {
+
+    font-size: 1.5rem;
+
+    margin-bottom: 40px;
+
+    color: #666;
+
+}
+
+/* =====================================
+Purpose
+===================================== */
+
+.check-list li {
+
+    font-size: 1.6rem;
+
+    margin-bottom: 20px;
+
+}
+
+.button-area {
+
+    margin-top: 60px;
+
+}
+
+.site-preview {
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, .12);
+
+}
+
+/* =====================================
+Button
+===================================== */
+
+.btn {
+    display: inline-block;
+    background: #295d3f;
+    color: #fff;
+    padding:
+        18px 40px;
+    border-radius: 40px;
+    font-size: 1.2rem;
+    transition: .3s;
+    background-image:
+        url("../images/button_kihachi_明るい緑.png");
+    background-size: cover;
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+}
+
+.btn:hover {
+    background: #1f472f;
+    background-image:
+        url("../images/button_kihachi_深緑.png");
+}
+
+/* =====================================
+Concept
+===================================== */
+
+.concept-box {
+    /* background: white; */
+    padding: 50px;
+    border-radius: 16px;
+    margin-bottom: 50px;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, .08);
+    background:
+        rgba(255, 255, 255, .93) url("../images/yuukitsumugi_brown.png)
+    }
+
+    .concept-box h3 {
+        color: #295d3f;
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+
+    .concept-box h4 {
+
+        font-size: 2.4rem;
+
+        margin-bottom: 30px;
+
+        color: #214c34;
+
+        line-height: 1.6;
+
+    }
+
+    .concept-box p {
+
+        font-size: 1.25rem;
+
+    }
+
+    .concept-card {
+
+        background: rgba(255, 255, 255, .92) url("../images/yuukitsumugi_brown.png");
+
+        background-size: cover;
+        background-blend-mode: screen;
+
+    }
+
+    /* =====================================
+Features
+===================================== */
+
+    .feature {
+
+        padding: 60px 0;
+
+        border-bottom: 1px solid #ddd;
+
+    }
+
+    .feature h3 {
+
+        font-size: 2.2rem;
+
+        color: #295d3f;
+
+        margin-bottom: 20px;
+
+    }
+
+    .feature p {
+
+        font-size: 1.35rem;
+
+    }
+
+    /* =====================================
+   Future
+===================================== */
+
+    .future-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 40px;
+        margin-top: 60px;
+    }
+
+    .future-card {
+        background: #fff;
+        border-radius: 20px;
+        padding: 40px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: .35s;
+    }
+
+    .future-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 18px 40px rgba(0, 0, 0, .12);
+    }
+
+    .future-card h3 {
+        font-size: 2rem;
+        color: #295d3f;
+        margin-bottom: 30px;
+    }
+
+    .future-card li {
+        font-size: 1.3rem;
+        margin-bottom: 16px;
+    }
+
+    .future-card .btn {
+        margin-top: 40px;
+        align-self: flex-start;
+    }
+
+
+    /* =====================================
+   Learned
+===================================== */
+
+    .learn-grid {
+        display: grid;
+        gap: 40px;
+        margin-top: 60px;
+        max-width: 900px;
+    }
+
+    .learn-grid article {
+        padding-bottom: 40px;
+        border-bottom: 1px solid #ddd;
+        padding: 45px 0;
+    }
+
+    .learn-grid h3 {
+        font-size: 2rem;
+        color: #295d3f;
+        margin-bottom: 15px;
+        margin-bottom: 18px;
+    }
+
+    .learn-grid p {
+        font-size: 1.3rem;
+        line-height: 2;
+    }
+
+    blockquote {
+
+        margin-top: 100px;
+
+        text-align: center;
+
+        font-size: 2.6rem;
+
+        font-weight: 700;
+
+        color: #295d3f;
+
+    }
+
+
+    /* =====================================
+   Message
+===================================== */
+    #message {
+        padding-top: 180px;
+        padding-bottom: 180px;
+    }
+
+    .message-title {
+        /* font-size: 5rem !important; */
+        text-align: center;
+        margin-bottom: 60px !important;
+        letter-spacing: .05em;
+        font-size: 3.5rem !important;
+    }
+
+    .message-lead {
+
+        font-size: 1.8rem;
+
+        text-align: center;
+
+        line-height: 2;
+
+        margin-bottom: 80px;
+
+    }
+
+    .message-links {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 40px;
+        margin-bottom: 80px;
+        margin-top: 80px;
+    }
+
+    .message-links div {
+        background: #fff;
+        border-radius: 20px;
+        padding: 35px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, .08);
+        min-height: 220px;
+    }
+
+    .message-links h3 {
+
+        color: #295d3f;
+
+        font-size: 1.8rem;
+
+        margin-bottom: 15px;
+
+    }
+
+    .message-links p {
+
+        font-size: 1.2rem;
+
+    }
+
+    .closing-message {
+        font-size: 2rem;
+        text-align: center;
+        line-height: 2;
+        margin: 100px auto;
+        max-width: 900px;
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+
+    .last-message {
+        text-align: center;
+        font-size: 2.5rem;
+        color: #295d3f;
+        margin-bottom: 80px;
+        font-size: 3rem;
+        line-height: 2;
+    }
+
+
+    /* =====================================
+   Footer
+===================================== */
+
+    footer {
+        /* padding: 80px 0; */
+        padding: 160px 0 80px;
+        text-align: center;
+        /* color: #666; */
+
+        background-image: linear-gradient(rgba(0, 0, 0, .20),
+            rgba(0, 0, 0, .20)),
+
+        url("../images/miyako2.png");
+
+        color: white;
+
+    }
+
+    footer p {
+        /* font-size: 2rem; */
+        margin-bottom: 20px;
+        font-size: 2.8rem;
+        /* color: #295d3f; */
+        color:#d8d2be;
+    }
+
+    footer small {
+        font-size: 1rem;
+        color: #888;
+        line-height: 2;
+    }
+
+    /* =====================================
+   Purpose Layout
+===================================== */
+
+    #purpose .container {
+
+        display: grid;
+
+        grid-template-columns: 1.2fr 1fr;
+
+        gap: 80px;
+
+        align-items: center;
+
+    }
+
+    .purpose-image {
+
+        display: flex;
+
+        justify-content: center;
+
+    }
+
+    .dummy-image {
+        width: 100%;
+        aspect-ratio: 16 / 10;
+        border: 3px dashed #b8b2a8;
+        border-radius: 18px;
+        background: #efebe2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #888;
+        font-size: 1.4rem;
+        font-weight: bold;
+        min-height: 420px;
+    }
+
+
+    /* =====================================
+Responsive
+===================================== */
+
+    @media(max-width:900px) {
+
+        #purpose .container {
+
+            grid-template-columns: 1fr;
+
+        }
+
+        .future-grid {
+
+            grid-template-columns: 1fr;
+
+        }
+
+        .message-links {
+
+            grid-template-columns: 1fr;
+
+        }
+
+        .hero h1 {
+
+            font-size: 3.2rem;
+
+        }
+
+        .hero h2 {
+
+            font-size: 2rem;
+
+        }
+
+        .hero-image {
+            background-image: linear-gradient(90deg,
+                rgba(247, 245, 239, .95) 0%,
+                rgba(247, 245, 239, .65) 25%,
+                rgba(247, 245, 239, .10) 45%,
+                rgba(247, 245, 239, 0) 60%),
+            url("../images/mv_ryukyukasuri_yellow.png");
+
+            background-size: cover;
+            background-position: right center;
+        }
+    }

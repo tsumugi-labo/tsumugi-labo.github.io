@@ -1,0 +1,11 @@
+フォルダー パスの一覧:  ボリューム OS
+ボリューム シリアル番号は 000000CF 3EFB:F84D です
+C:.
+│  index.html
+│  tree.txt
+│  
+├─css
+│      style.css
+│      
+├─images
+└─js
