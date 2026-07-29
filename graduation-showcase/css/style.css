@@ -586,7 +586,25 @@ Features
         min-height: 420px;
     }
 
+        /* ===========================
+Fade In
+=========================== */
 
+        .section,
+        .concept-box,
+        .future-card,
+        .learn-grid article {
+
+            opacity:0;
+            transform:translateY(30px);
+
+            transition: opacity .8s ease,
+            transform .8s ease;
+
+        }
+
+
+        
     /* =====================================
 Responsive
 ===================================== */
@@ -633,23 +651,6 @@ Responsive
 
             background-size: cover;
             background-position: right center;
-        }
-
-        /* ===========================
-Fade In
-=========================== */
-
-        .section,
-        .concept-box,
-        .future-card,
-        .learn-grid article {
-
-            opacity:0;
-            transform:translateY(30px);
-
-            transition: opacity .8s ease,
-            transform .8s ease;
-
         }
 
         .show {
