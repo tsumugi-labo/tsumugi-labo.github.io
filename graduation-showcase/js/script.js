@@ -4,23 +4,31 @@
 // ======================================
 
 // フェードイン
+// const targets = document.querySelectorAll(
+//     ".section, .concept-box, .future-card, .learn-grid article"
+// );
+
 const targets = document.querySelectorAll(
-    ".section, .concept-box, .future-card, .learn-grid article"
+".concept-box, .feature, .future-card, .learn-grid article, .message-links > div, blockquote"
 );
+
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
 
         if (entry.isIntersecting) {
 
-            entry.target.classList.add("show");
+            setTimeout(() => {
+                // entry.target.style.background = "red";
+                entry.target.classList.add("show");
+            }, 300);
 
         }
 
     });
 
 }, {
-    threshold: 0.15
+    threshold: 0.2
 });
 
 targets.forEach(target => {
@@ -57,3 +65,4 @@ buttons.forEach(btn => {
     });
 
 });
+
