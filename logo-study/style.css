@@ -473,6 +473,9 @@ header p {
 /*=========================
   スマホ
 =========================*/
+/*=========================
+  スマホ
+=========================*/
 
 @media (max-width:900px) {
 
@@ -480,31 +483,28 @@ header p {
         padding: 10px;
     }
 
-    /* レイアウト */
-
     .main-layout {
         display: block;
     }
 
-    /*--------------------
-      上部固定
-    --------------------*/
+    /* 上部固定 */
 
     .preview-area {
 
-        position: sticky;
+        position: fixed;
 
         top: 0;
+        left: 0;
+
+        width: 100%;
 
         z-index: 999;
 
         background: #f7f5f1;
 
-        padding: 10px 0;
+        padding: 10px 15px 15px;
 
         border-bottom: 2px solid #ddd;
-
-        margin-bottom: 15px;
     }
 
     .preview-area h2 {
@@ -514,33 +514,32 @@ header p {
         margin-bottom: 5px;
     }
 
-    /*--------------------
-      ロゴ
-    --------------------*/
+    /* ロゴ */
 
     .logo {
 
         width: 220px;
-
         height: 220px;
 
-        margin: 5px auto;
+        margin: 0 auto;
 
         transform: scale(.60);
 
         transform-origin: center;
     }
 
+    /* 色名 */
+
     #colorName {
 
-        margin-top: 5px;
+        margin-top: 35px;
 
         font-size: 1.2rem;
+
+        color: #5A4030;
     }
 
-    /*--------------------
-      HEXを横並び
-    --------------------*/
+    /* HEX */
 
     .hex-area {
 
@@ -550,12 +549,12 @@ header p {
 
         gap: 8px;
 
-        margin-top: 12px;
+        margin-top: 15px;
     }
 
     .hex-area div {
 
-        padding: 6px;
+        padding: 8px;
 
         font-size: .75rem;
     }
@@ -567,16 +566,18 @@ header p {
         word-break: break-all;
     }
 
-    /*--------------------
-      比較
-    --------------------*/
+    /* 比較 */
 
     #history {
 
         display: none;
     }
 
+    /* パレット */
+
     .palette {
+
+        margin-top: 420px;
 
         max-height: none;
 
@@ -587,7 +588,7 @@ header p {
 
     .palette h2 {
 
-        margin-top: 10px;
+        margin-top: 0;
     }
 
     .palette-grid {
