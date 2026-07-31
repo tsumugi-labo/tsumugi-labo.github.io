@@ -526,13 +526,15 @@ header p {
         transform: scale(.60);
 
         transform-origin: center;
+        margin-bottom: 30px;
+        transform: translateX(-30px) scale(.60);
     }
 
     /* 色名 */
 
     #colorName {
 
-        margin-top: 35px;
+        margin-top: 80px;
 
         font-size: 1.2rem;
 
