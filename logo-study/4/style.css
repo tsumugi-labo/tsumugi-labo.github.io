@@ -1,0 +1,625 @@
+/*==========================================
+つむぎ研究所 配色シミュレーター
+style.css
+==========================================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --v: #4B3621;
+    --h1: #E8DCC8;
+    --h2: #2E4A62;
+}
+
+body {
+    font-family:
+        "Yu Gothic",
+        "Hiragino Sans",
+        sans-serif;
+
+    background: #f7f5f1;
+    color: #333;
+    padding: 30px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #5A4030;
+}
+
+header p {
+    color: #777;
+    margin-top: 10px;
+}
+
+/*=========================
+ レイアウト
+=========================*/
+
+.main-layout {
+
+    display: grid;
+
+    grid-template-columns: 420px 1fr;
+
+    gap: 40px;
+
+    align-items: start;
+
+}
+
+/*=========================
+ 左
+=========================*/
+
+.preview-area {
+
+    position: sticky;
+
+    top: 20px;
+
+    text-align: center;
+
+}
+
+.logo {
+
+    position: relative;
+
+    width: 360px;
+
+    height: 360px;
+
+    margin: 30px auto;
+
+}
+
+/*=========================
+ 共通
+=========================*/
+
+.bundle {
+
+    position: absolute;
+
+}
+
+/*=========================
+ 縦糸
+=========================*/
+
+.bundle.vertical {
+
+    width: 40px;
+
+    height: 120px;
+
+}
+
+.bundle.vertical::before {
+
+    content: "";
+
+    display: block;
+
+    width: 10px;
+
+    height: 120px;
+
+    background: var(--v);
+
+    border-radius: 8px;
+
+    box-shadow:
+
+        14px 0 var(--v),
+
+        28px 0 var(--v);
+
+}
+
+/*=========================
+ 横糸
+=========================*/
+
+.bundle.horizontal {
+
+    width: 120px;
+
+    height: 40px;
+
+}
+
+.bundle.horizontal::before {
+
+    content: "";
+
+    display: block;
+
+    width: 120px;
+
+    height: 10px;
+
+    border-radius: 8px;
+
+}
+
+.horizontal.top::before {
+
+    background: var(--h1);
+
+    box-shadow:
+
+        0 14px var(--h1),
+
+        0 28px var(--h1);
+
+}
+
+.horizontal.bottom::before {
+
+    background: var(--h2);
+
+    box-shadow:
+
+        0 14px var(--h2),
+
+        0 28px var(--h2);
+
+}
+
+/*=========================
+ 配置
+=========================*/
+
+.vertical.left.top {
+
+    left: 135px;
+
+    top: 20px;
+
+}
+
+.vertical.right.top {
+
+    left: 215px;
+
+    top: 20px;
+
+}
+
+.vertical.left.bottom {
+
+    left: 135px;
+
+    top: 220px;
+
+}
+
+.vertical.right.bottom {
+
+    left: 215px;
+
+    top: 220px;
+
+}
+
+.horizontal.left.top {
+
+    left: 20px;
+
+    top: 135px;
+
+}
+
+.horizontal.right.top {
+
+    left: 220px;
+
+    top: 135px;
+
+}
+
+.horizontal.left.bottom {
+
+    left: 20px;
+
+    top: 215px;
+
+}
+
+.horizontal.right.bottom {
+
+    left: 220px;
+
+    top: 215px;
+
+}
+
+/*=========================
+ 名前
+=========================*/
+
+#colorName {
+
+    margin-top: 10px;
+
+    font-size: 1.5rem;
+
+    color: #5A4030;
+
+}
+
+/*=========================
+ HEX
+=========================*/
+
+.hex-area {
+
+    margin-top: 25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+.hex-area div {
+
+    background: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    padding: 10px;
+
+}
+
+.hex-area span {
+
+    display: block;
+
+    margin-top: 5px;
+
+    font-family: Consolas, monospace;
+
+    color: #8a5c2e;
+
+    font-weight: bold;
+
+}
+
+/*=========================
+ 右
+=========================*/
+
+.palette {
+
+    max-height: calc(100vh - 40px);
+
+    overflow-y: auto;
+
+    padding-right: 15px;
+
+}
+
+.palette h2 {
+
+    margin-bottom: 20px;
+
+}
+
+.palette h3 {
+
+    margin-top: 30px;
+
+    margin-bottom: 15px;
+
+    color: #6A5038;
+
+}
+
+/*=========================
+ グリッド
+=========================*/
+
+.palette-grid {
+
+    display: grid;
+
+    grid-template-columns:
+
+        repeat(auto-fill, minmax(170px, 1fr));
+
+    gap: 14px;
+
+    margin-bottom: 25px;
+
+}
+
+/*=========================
+ カード
+=========================*/
+
+.color-card {
+
+    background: white;
+
+    border: 1px solid #ddd;
+
+    border-radius: 12px;
+
+    padding: 16px;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    transition: .25s;
+
+}
+
+.color-card:hover {
+
+    transform: translateY(-4px);
+
+    border-color: #9C7747;
+
+    box-shadow:
+
+        0 8px 18px rgba(0, 0, 0, .15);
+
+}
+
+.color-card.active {
+
+    background: #F4EAD8;
+
+    border: 2px solid #9C7747;
+
+}
+
+/*=========================
+ 色見本
+=========================*/
+
+.color-preview {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    margin-bottom: 12px;
+
+}
+
+.color-preview span {
+
+    width: 12px;
+
+    height: 42px;
+
+    border-radius: 4px;
+
+    border: 1px solid rgba(0, 0, 0, .15);
+
+}
+
+/*=========================
+ カード名
+=========================*/
+
+.card-name {
+
+    font-weight: bold;
+
+    color: #444;
+
+    margin-bottom: 8px;
+
+    font-size: .95rem;
+
+}
+
+/*=========================
+ HEX
+=========================*/
+
+.card-hex {
+
+    font-family: Consolas, monospace;
+
+    font-size: .82rem;
+
+    color: #8a5c2e;
+
+}
+
+/*=========================
+ スクロールバー
+=========================*/
+
+.palette::-webkit-scrollbar {
+
+    width: 10px;
+
+}
+
+.palette::-webkit-scrollbar-thumb {
+
+    background: #b8aa95;
+
+    border-radius: 20px;
+
+}
+
+/*=========================
+ スマホ
+=========================*/
+/*=========================
+  スマホ
+=========================*/
+/*=========================
+  スマホ
+=========================*/
+
+@media (max-width:900px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .main-layout {
+        display: block;
+    }
+
+    /* 上部固定 */
+
+    .preview-area {
+
+        position: fixed;
+
+        top: 0;
+        left: 0;
+
+        width: 100%;
+
+        z-index: 999;
+
+        background: #f7f5f1;
+
+        padding: 10px 15px 15px;
+
+        border-bottom: 2px solid #ddd;
+    }
+
+    .preview-area h2 {
+
+        font-size: 1.1rem;
+
+        margin-bottom: 5px;
+    }
+
+    /* ロゴ */
+
+    .logo {
+
+        width: 220px;
+        height: 220px;
+
+        margin: 0 auto;
+
+        transform: scale(.60);
+
+        transform-origin: center;
+        margin-bottom: 30px;
+        transform: translateX(-30px) scale(.60);
+    }
+
+    /* 色名 */
+
+    #colorName {
+
+        margin-top: 80px;
+
+        font-size: 1.2rem;
+
+        color: #5A4030;
+    }
+
+    /* HEX */
+
+    .hex-area {
+
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 8px;
+
+        margin-top: 15px;
+    }
+
+    .hex-area div {
+
+        padding: 8px;
+
+        font-size: .75rem;
+    }
+
+    .hex-area span {
+
+        font-size: .72rem;
+
+        word-break: break-all;
+    }
+
+    /* 比較 */
+
+    #history {
+
+        display: none;
+    }
+
+    /* パレット */
+
+    .palette {
+
+        margin-top: 420px;
+
+        max-height: none;
+
+        overflow: visible;
+
+        padding-right: 0;
+    }
+
+    .palette h2 {
+
+        margin-top: 0;
+    }
+
+    .palette-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 10px;
+    }
+
+    .color-card {
+
+        padding: 12px;
+    }
+
+    .card-name {
+
+        font-size: .85rem;
+    }
+
+    .card-hex {
+
+        font-size: .72rem;
+    }
+
+    .color-preview span {
+
+        width: 10px;
+
+        height: 30px;
+    }
+
+}

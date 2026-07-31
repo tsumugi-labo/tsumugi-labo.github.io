@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)http://192.168.1.252/~osawa/ -->
+<html lang="ja"><!--PHP変数読みこむための指定--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <!--それぞれのページの上のほうにある$page ==■■（topなど）の時に始まる式-->
+      <title>アシスタントからのお知らせ</title>
+      
+  
+    
+
+
+  <!--グーグルフォント-->
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+  <link href="./アシスタントからのお知らせ_files/css2" rel="stylesheet">
+
+  <!--グーグルフォントここまで-->
+
+  <link rel="stylesheet" href="./アシスタントからのお知らせ_files/common.css">
+  <!--それぞれのcss-->
+  <!--$page=="top"もしindex.phpで指定してある名前がtopだったときはhome.cssを読み込む:-->
+      <link rel="stylesheet" href="./アシスタントからのお知らせ_files/top.css">
+      
+  
+    
+
+  <!--フォントオーサム-->
+  <link rel="stylesheet" href="./アシスタントからのお知らせ_files/all.min.css">
+  <!--jQuery-->
+  <script src="./アシスタントからのお知らせ_files/jquery-3.7.1.min.js.ダウンロード"></script>
+  <script src="./アシスタントからのお知らせ_files/jquery.inview.min.js.ダウンロード"></script>
+  <script src="./アシスタントからのお知らせ_files/script_common.js.ダウンロード"></script>
+      <script src="./アシスタントからのお知らせ_files/script_home.js.ダウンロード"></script>
+    
+
+  <!--ファビコンはheadにいれるよ-->
+  <link rel="icon" href="http://192.168.1.252/~osawa/favicon.ico">
+
+  <!--スマホ用のメタタグ-->
+  <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+  <div class="sky">
+    <div class="Star01">
+      <div class="Star02">
+        <div class="cloud02">
+          <div class="cloud01">
+
+            <!--ヘッダー-->
+            <header>
+              <div class="leaf">
+                <div class="inner relative">
+                  <div class="flex nav-box">
+
+                    <a href="http://192.168.1.252/~osawa/index.php">
+                      <h1 class="title">
+                        <img src="./アシスタントからのお知らせ_files/logo.svg" alt="アシスタントからのお知らせロゴ" class="purupuru-02" width="50">
+                        アシスタントからの<br>お知らせ<br><span>Assistant News</span>
+                      </h1>
+                    </a>
+
+                    <nav>
+                      <ul class="flex pc">
+                        <li class="nav01 current"><a href="http://192.168.1.252/~osawa/index.php">おしらせ<br><span>Home</span></a></li>
+                        <li class="nav05 "><a href="http://192.168.1.252/~osawa/coursecontent/index.php">授業内容<br><span>CourseContent</span></a></li>
+                        <li class="nav06 "><a href="http://192.168.1.252/~osawa/help/index.php">困った時<br><span>Help</span></a></li>
+                        <li class="nav07 "><a href="http://192.168.1.252/~osawa/ai_lab/index.php">AI研究所<br><span>AI Lab</span></a></li>
+                        <li class="nav02 "><a href="http://192.168.1.252/~osawa/profile/index.php">アシスタント紹介<br><span>Profile</span></a></li>
+                      </ul>
+
+                      <!--スマホ版のメニュー-->
+                      <ul class="sp">
+                        <li class="nav01"><a href="http://192.168.1.252/~osawa/index.php">おしらせ<br><span>Home</span></a></li>
+                        <li id="cc_diaryLink" class="nav05">授業内容<br><span>CourseContent</span>
+                          <ul>
+                            <li><a href="http://192.168.1.252/~osawa/coursecontent/index.php">授業内容トップ</a></li>
+                            <li><a href="http://192.168.1.252/~osawa/coursecontent/index.php#cc_index">授業INDEX</a></li>
+                          </ul>
+                        </li>
+                        <li class="nav06"><a href="http://192.168.1.252/~osawa/help/index.php">困った時<br><span>Help</span></a></li>
+                        <!-- <li class="nav06"><a href="download/index.php">ダウンロード<br><span>Download</span></a></li> -->
+                        <li class="nav02"><a href="http://192.168.1.252/~osawa/profile/index.php">アシスタント紹介<br><span>Profile</span></a></li>
+                      </ul>
+                    </nav>
+                    <!--
+                    <div class="sns">
+                      <a href="#" class="sns twitter">
+                        <!snsのiconにホバーするとぴょこぴょこするのはjsでやるよ>
+                        <i class="fa-brands fa-twitter fa-2xl"></i>
+                      </a>
+                      <a href="#" class="sns instagram">
+                        <i class="fa-brands fa-instagram fa-2xl"></i>
+                      </a>
+                    </div>-->
+
+                    <!--ハンバーガーメニューを入れる場所-->
+                    <div class="openbtn"><span></span><span></span><span></span></div>
+                    <!--ハンバーガーメニューを入れる場所-->
+
+                  </div>
+
+
+                  <!--下へ行く↓ -->
+                  <div class="toend">
+                    <a href="http://192.168.1.252/~osawa/#end">
+                      <img src="./アシスタントからのお知らせ_files/btn_toend.svg" alt="最後へ行くボタン" width="35">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </header>
+<!--ヘッダーをphpで読み込む時の変数指定。
+ $kaiso = 1（１階層）の時は直下のフォルダ、２の時は../のついたフォルダ指定にする、
+ $page = "top"; このページはtopって名前という宣言。header.phpでcss読み込みに使用
+-->
+
+
+<main>
+
+  <div class="inner flex center block wrap">
+
+    <div class="left">
+      <section class="sec01">
+        <div class="flex title">
+          <h2 id="h01" class="anchor">おしらせ</h2>
+          <p class="eng">News</p>
+        </div>
+        <div class="box1">
+
+
+
+          <!-- <dl>
+            <dt>
+               <p class="d_title03">■日にち■</p>
+               <p class="d_title">◆</p>
+            </dt>
+            <dd>
+              ◆
+            </dd>
+          </dl> -->
+
+          <dl>
+            <dt>
+              <p class="d_title03">2026/7/30</p>
+              <p class="d_title">修了制作おつかれさま～！</p>
+            </dt>
+            <dd>
+              みんながんばりましたね～！ここまで頑張れたって自信もっていいよ～(^o^)<br>
+              明日は修了おめでと～！
+            </dd>
+          </dl>
+
+          <dl>
+            <dt>
+              <p class="d_title03">2026/7/23</p>
+              <p class="d_title">あの伝説のカメレオンに再び会える！</p>
+            </dt>
+            <dd>
+              AI授業で廣岡先生がGeminiに描いてもらったイラストをもらったので美術展風にしてみました<br>
+              制作の息抜きにどうぞ～AI研究所にあるよ
+            </dd>
+          </dl>
+
+          <dl>
+            <dt>
+              <p class="d_title03">2026/7/17</p>
+              <p class="d_title">AIの授業に触発されて</p>
+            </dt>
+            <dd>
+              大澤もゲーム作ってみました！<br>
+              自分で描いたちょうどいいイラストがあったので使ってみたよ。AI研究所からどうぞ～
+            </dd>
+          </dl>
+
+          <dl>
+            <dt>
+              <p class="d_title03">2026/7/2</p>
+              <p class="d_title">就職ラボにONさんが来るよ</p>
+            </dt>
+            <dd>
+              <p>
+                就職ラボに来てくださるONさんはこんな会社です！
+              </p>
+              <a href="https://zoccon.me/" target="_blank" rel="noopener noreferrer">株式会社ON</a>
+              <a href="https://recruit.zoccon.me/" target="_blank" rel="noopener noreferrer">株式会社ON_採用サイト</a>
+              <p>
+                いわゆるSESに近い形態ですが、研修をしながらやりたい方向性を一緒に考えて、合いそうな現場に出向するような働き方の会社さんで、研修制度もあるんだって！
+              </p>
+              <p>
+                あとONさんの採用サイトはすごい動いてて面白いからちょっとのぞいてみなよ！
+              </p>
+
+              <p>
+                ★雇用形態はONさんの正社員です<br>
+                派遣とは違う新しい働き方だなって思います(^o^)
+              </p>
+              <p>
+                7/9(木)帰るまでに今の所の出欠○×よろしくお願いします！
+              </p>
+            </dd>
+          </dl>
+
+          <dl>
+            <dt>
+              <p class="d_title03">2026/6/23</p>
+              <p class="d_title">ついに…jQueryがはじまっちゃいました</p>
+            </dt>
+            <dd>
+              中ボスです!<br>
+              難しいのでサクサク理解できなくていいやつです！<br>
+              私も自信ないよ~がんばろう(^o^)
+            </dd>
+          </dl>
+
+          <dl>
+            <dt>
+              <p class="d_title03">2026/6/4</p>
+              <p class="d_title">なんと6/3は台風で休校!</p>
+            </dt>
+            <dd>
+              6:00に休校かどうかのお知らせが上がると伝えてしまってすみません7:00でしたね…<br>
+              大雨の中来てしまった方もいたらしく申し訳ないです!!<br>
+              今日は皆さん無事で来てくれて良かった～…
+            </dd>
+          </dl>
+
+          <dl>
+            <dt>
+              <p class="d_title03">2026/6/2</p>
+              <p class="d_title">明日の台風</p>
+            </dt>
+            <dd>
+              ひどくありませんように！水害にならずにダムにお水が溜まりますように!!<br>
+              あと虹が見たい!
+            </dd>
+          </dl>
+
+          <dl>
+            <dt>
+              <p class="d_title03">2026/5/27</p>
+              <p class="d_title">遅刻やお休みする時</p>
+            </dt>
+            <dd>
+              <p>
+                電車遅延で遅刻だ～とか、熱が出たりして急にお休みする時がありますよね<br>
+                そんな時はあわてずにメールか電話でお知らせください<br>
+                早めに知らせておけばあわてずに学校にこれますよ！<br>
+                就活の時も「しっかり連絡してくれる人だな～」と思われてお得です(^o^)
+              </p>
+              <p>
+                電話の時は「5月生の○○（氏名）です、電車遅延で遅刻します」とか言うとわかりやすいです<br>
+                メールの時は「件名」に「5月生○○（フルネーム）」を書いて送ってください。他のクラスの方のメールも来るので5月生って書いてくれると助かります！
+              </p>
+            </dd>
+          </dl>
+
+          <dl>
+            <dt>
+              <p class="d_title03">2026/5/13</p>
+              <p class="d_title">ケバブサンドでがんばる </p>
+            </dt>
+            <dd>
+              <p>
+                連日のてんこ盛り授業で疲れてきたころじゃないかな？<br>
+                元気を出すために肉を食べたい人は、学校の近くの「レイスケバブ」がおいしいよ。<br>
+                なんとケバブサンド390円！<br>
+                ちょっと前まで350円だったんだぜ…がんばってくれてたよ…
+              </p>
+              <p>
+                亀井さんに教えてもらったソース２種類かけてもらうのがおすすめ。<br>
+                大澤は「甘口＆ヨーグルトニンニクのミックス」が好きです。うまい。中辛はけっこう辛いです！もっと辛いのはどうなってしまうのか！
+              </p>
+            </dd>
+            <dd>
+              <iframe src="./アシスタントからのお知らせ_files/embed.html" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </dd>
+
+            <dt>
+              <p class="d_title">バインミーもおいしいね</p>
+            </dt>
+            <dd>
+              ベトナム出身の生徒さんから教えてもらったバインミーもありますよ～。<br>
+              ベトナムハムとかエビアボカドとかおいしいメニューがもりだくさん！パンがおいしいのだ。<br>
+              そしてなんとパクチー抜きにできるのです!!やったね(^o^)<br>
+              <span>駅の向こう側なので、時間にご注意を～。</span><br>
+              並んでたりしてちょっと待つときがあります。<br>
+              大澤が好きなのはエビアボカド・甘辛チリソース・パクチー抜き！
+            </dd>
+            <dd>
+              <iframe src="./アシスタントからのお知らせ_files/embed(1).html" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </dd>
+          </dl>
+
+
+          <dl>
+            <dt>
+              <p class="d_title03">2026/5/8</p>
+              <p class="d_title">記号のタイピング練習</p>
+            </dt>
+            <dd>
+              記号って普段打ってないから苦手だよ…という人へおすすめタイピング練習がこちら<br>
+              <a href="https://typing.twi1.me/game/114043" target="_blank" rel="noopener noreferrer">ひよこタイピング_HTML＆CSS</a><br>
+              大澤も記号で苦労しました…！
+            </dd>
+          </dl>
+
+
+          <dl>
+            <dt>
+              <p class="d_title03">2026/5/1</p>
+              <p class="d_title">入校おめでとうございます！</p>
+            </dt>
+            <dd>
+              <p>
+                ご縁があって一緒に学ぶことになりました！<br>
+                みんなでがんばっていきましょう～。<br>
+                アシスタントの大澤もこの学校の修了生なので楽しかったこと大変だったこと、あんな事こんな事あったのでお手伝いしますね(^o^)
+              </p>
+              <p>
+                そして通路とトイレはゆずりあいが大事です。男子トイレの個室が1個しかないのが辛いところです…
+              </p>
+            </dd>
+          </dl>
+
+
+
+
+
+
+      </div></section>
+
+      <section class="sec02 inview_re fadeIn_up">
+        <div class="flex title">
+          <h2 id="h02" class="anchor">時間割</h2>
+          <p class="eng">Class Timetable</p>
+        </div>
+        <table class="time">
+          <caption>703教室</caption>
+          <tbody><tr>
+            <th>1限</th>
+            <td> 9:30 ~ 10:20</td>
+          </tr>
+          <tr>
+            <th>2限</th>
+            <td>10:30~11:20</td>
+          </tr>
+          <tr>
+            <th>3限</th>
+            <td>11:30 ~ 12:20</td>
+          </tr>
+          <tr>
+            <th><span>昼休み</span></th>
+            <td><span>12:20 ~ 13:20</span></td>
+          </tr>
+          <tr>
+            <th>4限</th>
+            <td>13:20 ~ 14:10</td>
+          </tr>
+          <tr>
+            <th>5限</th>
+            <td>14:20 ~ 15:10</td>
+          </tr>
+          <tr>
+            <th>6限</th>
+            <td>15:20 ~ 16:10</td>
+          </tr>
+        </tbody></table>
+        <p>お昼休み、休憩室は他の教室の方も使います。<br>
+          レンジとポットは仲良く使ってくださいね。
+        </p>
+      </section>
+
+      <div class="last">
+        <section class="sec03 fadeUp-trigger" style="transform: translateY(30px); opacity: 0;">
+          <div class="flex title">
+            <h2 id="h03" class="anchor">連絡先</h2><br>
+            <p class="eng">Contact</p>
+          </div>
+          <div class="flex box03">
+            <img src="./アシスタントからのお知らせ_files/cat200px_01.png" alt="電話する猫の絵">
+            <dl>
+              <div class="flex">
+                <dt class="d_title">電話</dt>
+                <dd>03-3205-9222</dd>
+              </div>
+              <div class="flex">
+                <dt class="d_title">メール</dt>
+                <dd>info@wit-it.co.jp</dd>
+              </div>
+              <div class="flex">
+                <dt class="d_title">サイト</dt>
+                <a href="https://www.wit-it.co.jp/" target="_blank">
+                  <dd>https://www.wit-it.co.jp</dd>
+                </a>
+              </div>
+            </dl>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="right last">
+      <aside>
+        <h2 class="title">INDEX</h2>
+        <ul>
+          <a href="http://192.168.1.252/~osawa/index.php#h01" class="link">
+            <li>おしらせ</li>
+          </a>
+          <a href="http://192.168.1.252/~osawa/index.php#h02" class="link">
+            <li>時間割</li>
+          </a>
+          <a href="http://192.168.1.252/~osawa/index.php#h03" class="link">
+            <li>連絡先</li>
+          </a>
+        </ul>
+
+      </aside>
+    </div>
+  </div>
+
+
+  <!--フッターPHPで読み込み-->
+  <!--フッター-->
+<!--上へ-->
+<div class="totop inner">
+  <a href="http://192.168.1.252/~osawa/#top">
+    <img src="./アシスタントからのお知らせ_files/btn_totop.svg" alt="一番上へ行くボタン" width="35">
+  </a>
+</div>
+</main>
+<!--mainここまで-->
+<footer id="end">
+  <div class="leaf02">
+    <div class="flex inner">
+      <div class="banner">
+        <a href="https://copipeya.wit-it.co.jp/" target="_blank" rel="noopener noreferrer">
+          <img src="./アシスタントからのお知らせ_files/banner_copipeya.png" alt="コピペ屋さんバナー" width="150">
+        </a>
+      </div>
+      <div class="end-logo">
+        <a href="http://192.168.1.252/~osawa/index.php">
+          <img src="./アシスタントからのお知らせ_files/logo.svg" alt="Assistant News" width="50px">
+        </a><br>
+      </div>
+    </div>
+    <small>© Assistant News 2024-2026</small>
+  </div>
+</footer>
+<!--空BGを閉じるdiv5つ必要-->
+</div>
+</div>
+</div>
+</div>
+</div>
+  
+
+
+
+</body><!--フッターPHPで読み込みここまで--></html>

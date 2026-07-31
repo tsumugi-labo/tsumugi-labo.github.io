@@ -1,0 +1,59 @@
+$(function () {
+//時間割： サイトからプラグイン下からわっと繰り返し‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐‐
+$(".inview_re").on("inview", function (event, isInView) {
+    if (isInView) {
+      $(this).stop().addClass("is-show");
+    } else {
+      $(this).stop().removeClass("is-show");
+    }
+  });
+
+//連絡先：澁谷先生のふわっと---------------------------------------------------------------------------------------------------------
+
+    // ★コンテンツがブラウザに入る瞬間にアニメーションを実行させる（今回はフェードアップするようなアニメーション）
+
+    // 1:アニメーションさせたいコンテンツには「fadeUp-trigger」というclass名を付けておく
+
+    // 2:HTMLでクラス「.fadeUp-trigger」がついている箱の位置を30px下げ、透明状態にしておく。
+    // これがないと一回消えて出てくるような動きになる。cssには「fadeUp-trigger」の記述は無い状態でOK
+    $(".fadeUp-trigger").css("transform","translateY(30px)").css("opacity","0");
+
+    // 3: ◆cssファイルにアニメーション用の記述を行っておく。
+    // （ @keyframesによる動き方の指定 & animationプロパティを使用したアニメーションの適用 ）
+    
+    // 4: コンテンツがブラウザに入る瞬間にアニメーションが再生されるように、
+    //　　アニメーション適用のためのclass名がつくタイミングを制御するための関数「addClass_fadeUp」を作る。
+
+    function addClass_fadeUpActive(){
+        // ↑ 「addClass_fadeUp」という名前の関数を作る。
+
+        $(".fadeUp-trigger").each(function(){
+            // ↑クラス名 fadeUp-trigger がついている要素ひとつひとつに以下の処理を行う。
+
+            var frameIn = $(this).offset().top - $(window).height();
+            // ↑「クラス名 fadeUp-trigger がついた要素の縦位置」 - 「ブラウザのウィンドウの高さ」を計算すると、
+            // アニメーションさせたい要素がウィンドウにフレームインするために必要なスクロール量がわかる。
+            // それを変数「frameIn」に代入しておく。
+
+            if( frameIn <= $(window).scrollTop() - 100){
+            // ↑ 変数「frameIn」の値と、現在のスクロール量を比べる。
+            //  2つの値が「等しい」もしくは現在のスクロール量のほうが「大きかったら」・・・
+
+                $(this).addClass("fadeUpActive");
+                // ↑ クラス名 fadeUp-trigger がついた要素に、cssアニメを適用するためのクラス名「fadeUpActive」を追加する。
+            }
+        });
+    }
+
+    // 5: 上記で作った関数「addClass_fadeUp」を呼び出して実行する。（名前付きの関数は基本的に書くだけでは実行されない）
+
+    $(window).scroll(function(){    //ブラウザがスクロールされるたびに、
+        addClass_fadeUpActive();    //関数「addClass_fadeUp」に書かれている内容を実行する。
+    });
+
+    addClass_fadeUpActive();        //ページの読み込み時にも実行（すでにブラウザ内にあるコンテンツの動作を保証）
+
+    //---------------------------------------------------------------------------------------------------------
+  
+
+});

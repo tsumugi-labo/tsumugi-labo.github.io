@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>
+        つむぎ研究所 配色シミュレーター
+    </title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+<h1>
+
+            つむぎ研究所
+
+        </h1>
+<p>
+
+            Japanese Textile Color Simulator
+
+        </p>
+</header>
+<main class="main-layout">
+<section class="preview-area">
+<h2>
+
+                ロゴプレビュー
+
+            </h2>
+<div class="logo">
+<div class="bundle vertical left top"></div>
+<div class="bundle vertical right top"></div>
+<div class="bundle horizontal left top"></div>
+<div class="bundle horizontal right top"></div>
+<div class="bundle horizontal left bottom"></div>
+<div class="bundle horizontal right bottom"></div>
+<div class="bundle vertical left bottom"></div>
+<div class="bundle vertical right bottom"></div>
+</div>
+<h3 id="colorName">
+
+                大島紬
+
+            </h3>
+<div class="hex-area">
+<div>
+
+                    縦
+
+                    <span id="hexV">
+
+                        #4B3621
+
+                    </span>
+</div>
+<div>
+
+                    横上
+
+                    <span id="hexH1">
+
+                        #E8DCC8
+
+                    </span>
+</div>
+<div>
+
+                    横下
+
+                    <span id="hexH2">
+
+                        #2E4A62
+
+                    </span>
+</div>
+</div>
+<h3>比較</h3>
+<div id="history"></div>
+</section>
+<section class="palette">
+<h2>
+
+                配色ライブラリ
+
+            </h2>
+<h3>
+
+                紬
+
+            </h3>
+<div class="palette-grid">
+<div class="color-card" data-h1="#E8DCC8" data-h2="#2E4A62" data-name="大島紬" data-v="#4B3621">
+<div class="card-name">
+
+                        大島紬
+
+                    </div>
+<div class="card-hex">
+
+                        #4B3621
+
+                    </div>
+</div>
+<div class="color-card" data-h1="#BBA27A" data-h2="#555555" data-name="泥大島" data-v="#2E2A27">
+<div class="card-name">
+
+                        泥大島
+
+                    </div>
+<div class="card-hex">
+
+                        #2E2A27
+
+                    </div>
+</div>
+<div class="color-card" data-h1="#DDD6C9" data-h2="#6D8196" data-name="白大島" data-v="#BDB7AF">
+<div class="card-name">
+
+                        白大島
+
+                    </div>
+<div class="card-hex">#BDB7AF</div>
+</div>
+<div class="color-card" data-h1="#D9E0E8" data-h2="#4F6F8C" data-name="藍大島" data-v="#283B63">
+<div class="card-name">
+
+                        藍大島
+
+                    </div>
+<div class="card-hex">
+
+                        #283B63
+
+                    </div>
+</div>
+<div class="color-card" data-h1="#E5E2D8" data-h2="#5A7C6F" data-name="牛首紬" data-v="#3E3A39">
+<div class="card-name">
+
+                        牛首紬
+
+                    </div>
+<div class="card-hex">
+
+                        #3E3A39
+
+                    </div>
+</div>
+<div class="color-card" data-h1="#ECE5D8" data-h2="#5A84A4" data-name="牛首（藍）" data-v="#2E4366">
+<div class="card-name">
+
+                        牛首（藍）
+
+                    </div>
+<div class="card-hex">
+
+                        #2E4366
+
+                    </div>
+</div>
+<div class="color-card" data-h1="#F7F2E8" data-h2="#7F9D7E" data-name="牛首（生成）" data-v="#88745A">
+<div class="card-name">
+
+                        牛首（生成）
+
+                    </div>
+<div class="card-hex">
+
+                        #88745A
+
+                    </div>
+</div>
+<div class="color-card" data-h1="#F3EFE7" data-h2="#7C9DA8" data-name="夏牛首" data-v="#617184">
+<div class="card-name">
+
+                        夏牛首
+
+                    </div>
+<div class="card-hex">
+
+                        #617184
+
+                    </div>
+</div>
+<div class="color-card" data-h1="#F0E3C2" data-h2="#6A7F46" data-name="結城紬" data-v="#7A5A3A">
+<div class="card-name">
+
+                        結城紬
+
+                    </div>
+<div class="card-hex">
+
+                        #7A5A3A
+
+                    </div>
+</div>
+<div class="color-card" data-h1="#D8C8BA" data-h2="#8E7A68" data-name="結城紬（胡桃）" data-v="#745B49">
+<div class="card-name">
+
+                        結城紬（胡桃）
+
+                    </div>
+<div class="card-hex">
+
+                        #745B49
+
+                    </div>
+</div>
+<div class="color-card" data-h1="#E8DBC2" data-h2="#506D8B" data-name="信州紬" data-v="#6A5038">
+<div class="card-name">
+
+                        信州紬
+
+                    </div>
+<div class="card-hex">
+
+                        #6A5038
+
+                    </div>
+</div>
+<div class="color-card" data-h1="#EADFC8" data-h2="#4C5D8A" data-name="米沢紬" data-v="#5D4435">
+<div class="card-name">
+
+                        米沢紬
+
+                    </div>
+<div class="card-hex">
+
+                        #5D4435
+
+                    </div>
+</div>
+<div class="color-card" data-h1="#EFECE6" data-h2="#698A54" data-name="塩沢紬" data-v="#565656">
+<div class="card-name">
+
+                        塩沢紬
+
+                    </div>
+<div class="card-hex">
+
+                        #565656
+
+                    </div>
+</div>
+</div>
+<!-- ===== 上布 ===== -->
+<h3>
+
+                上布
+
+            </h3>
+<div class="palette-grid">
+<div class="color-card" data-h1="#ECE8DE" data-h2="#7A8792" data-name="宮古上布" data-v="#4B535E">
+<div class="card-name">宮古上布</div>
+<div class="card-hex">#4B535E</div>
+</div>
+<div class="color-card" data-h1="#DDD6CA" data-h2="#666C72" data-name="宮古上布（墨）" data-v="#2E343C">
+<div class="card-name">宮古上布（墨）</div>
+<div class="card-hex">#2E343C</div>
+</div>
+<div class="color-card" data-h1="#D8CEBB" data-h2="#72695F" data-name="宮古上布（生成）" data-v="#988D7E">
+<div class="card-name">宮古上布（生成）</div>
+<div class="card-hex">#988D7E</div>
+</div>
+<div class="color-card" data-h1="#F4F3EE" data-h2="#73926B" data-name="越後上布" data-v="#595959">
+<div class="card-name">越後上布</div>
+<div class="card-hex">#595959</div>
+</div>
+</div>
+<!-- ===== 琉球 ===== -->
+<h3>
+
+                琉球・花織
+
+            </h3>
+<div class="palette-grid">
+<div class="color-card" data-h1="#E6E8EA" data-h2="#7B9CB5" data-name="琉球絣" data-v="#596B7A">
+<div class="card-name">琉球絣</div>
+<div class="card-hex">#596B7A</div>
+</div>
+<div class="color-card" data-h1="#CDD9E7" data-h2="#91A8BE" data-name="琉球絣（藍）" data-v="#41536E">
+<div class="card-name">琉球絣（藍）</div>
+<div class="card-hex">#41536E</div>
+</div>
+<div class="color-card" data-h1="#3E4C62" data-h2="#F7F2D7" data-name="琉球絣（黄）" data-v="#E5C84B">
+<div class="card-name">琉球絣（黄）</div>
+<div class="card-hex">#E5C84B</div>
+</div>
+<div class="color-card" data-h1="#F0E5D0" data-h2="#2E6FA3" data-name="知花花織" data-v="#4B3A2D">
+<div class="card-name">知花花織</div>
+<div class="card-hex">#4B3A2D</div>
+</div>
+<div class="color-card" data-h1="#EAD6A9" data-h2="#5F70A4" data-name="知花花織（藍）" data-v="#3E4D80">
+<div class="card-name">知花花織（藍）</div>
+<div class="card-hex">#3E4D80</div>
+</div>
+</div>
+<!-- ===== 黄八丈 ===== -->
+<h3>
+
+                黄八丈
+
+            </h3>
+<div class="palette-grid">
+<div class="color-card" data-h1="#CFAE45" data-h2="#4D6D2D" data-name="黄八丈" data-v="#7F531F">
+<div class="card-name">黄八丈</div>
+<div class="card-hex">#7F531F</div>
+</div>
+<div class="color-card" data-h1="#6D3E18" data-h2="#F7E8AF" data-name="黄八丈（黄金）" data-v="#D7A11A">
+<div class="card-name">黄八丈（黄金）</div>
+<div class="card-hex">#D7A11A</div>
+</div>
+<div class="color-card" data-h1="#B89D28" data-h2="#E7D98C" data-name="黄八丈（萌黄）" data-v="#43602D">
+<div class="card-name">黄八丈（萌黄）</div>
+<div class="card-hex">#43602D</div>
+</div>
+<div class="color-card" data-h1="#FFF1AF" data-h2="#754B22" data-name="黄八丈（山吹）" data-v="#C89015">
+<div class="card-name">黄八丈（山吹）</div>
+<div class="card-hex">#C89015</div>
+</div>
+</div>
+<!-- ===== 帯 ===== -->
+<h3>
+
+                帯・アクセント
+
+            </h3>
+<div class="palette-grid">
+<div class="color-card" data-h1="#F2E6BF" data-h2="#2E78B7" data-name="花織帯" data-v="#7A6040">
+<div class="card-name">花織帯</div>
+<div class="card-hex">#7A6040</div>
+</div>
+<div class="color-card" data-h1="#F3E8C2" data-h2="#7CA4CF" data-name="花織帯（青）" data-v="#416796">
+<div class="card-name">花織帯（青）</div>
+<div class="card-hex">#416796</div>
+</div>
+<div class="color-card" data-h1="#DDD6C9" data-h2="#95ADC2" data-name="花織帯（白）" data-v="#C7BFB3">
+<div class="card-name">花織帯（白）</div>
+<div class="card-hex">#C7BFB3</div>
+</div>
+<div class="color-card" data-h1="#F6E3AE" data-h2="#6A4B2A" data-name="花織帯（金茶）" data-v="#A06C2A">
+<div class="card-name">花織帯（金茶）</div>
+<div class="card-hex">#A06C2A</div>
+</div>
+</div>
+<!-- ===== 和色 ===== -->
+<h3>
+
+                和の伝統色
+
+            </h3>
+<div class="palette-grid">
+<div class="color-card" data-h1="#E5E0D6" data-h2="#5E7A8B" data-name="藍鉄" data-v="#30475E">
+<div class="card-name">藍鉄</div>
+<div class="card-hex">#30475E</div>
+</div>
+<div class="color-card" data-h1="#D7D0C3" data-h2="#8D9283" data-name="利休鼠" data-v="#766C60">
+<div class="card-name">利休鼠</div>
+<div class="card-hex">#766C60</div>
+</div>
+<div class="color-card" data-h1="#DDD8CC" data-h2="#8794A0" data-name="白練" data-v="#C8C0B3">
+<div class="card-name">白練</div>
+<div class="card-hex">#C8C0B3</div>
+</div>
+<div class="color-card" data-h1="#C2AB4D" data-h2="#D8CA86" data-name="萌黄" data-v="#4B662C">
+<div class="card-name">萌黄</div>
+<div class="card-hex">#4B662C</div>
+</div>
+<div class="color-card" data-h1="#D8BF67" data-h2="#7B4D24" data-name="山吹" data-v="#BE861B">
+<div class="card-name">山吹</div>
+<div class="card-hex">#BE861B</div>
+</div>
+<div class="color-card" data-h1="#D8B7B0" data-h2="#8A4B5A" data-name="蘇芳" data-v="#6A2C3A">
+<div class="card-name">蘇芳</div>
+<div class="card-hex">#6A2C3A</div>
+</div>
+<div class="color-card" data-h1="#E7F5F6" data-h2="#3C6775" data-name="浅葱" data-v="#6FA6B2">
+<div class="card-name">浅葱</div>
+<div class="card-hex">#6FA6B2</div>
+</div>
+<div class="color-card" data-h1="#E7F2DE" data-h2="#6E6B37" data-name="若竹" data-v="#4F8A4A">
+<div class="card-name">若竹</div>
+<div class="card-hex">#4F8A4A</div>
+</div>
+<div class="color-card" data-h1="#D6D6D6" data-h2="#707070" data-name="墨色" data-v="#2F2F2F">
+<div class="card-name">墨色</div>
+<div class="card-hex">#2F2F2F</div>
+</div>
+<div class="color-card" data-h1="#E4D7C5" data-h2="#92816F" data-name="煤竹" data-v="#715B46">
+<div class="card-name">煤竹</div>
+<div class="card-hex">#715B46</div>
+</div>
+<div class="color-card" data-h1="#DDDCD7" data-h2="#5C6870" data-name="銀鼠" data-v="#7F858A">
+<div class="card-name">銀鼠</div>
+<div class="card-hex">#7F858A</div>
+</div>
+<div class="color-card" data-h1="#E9D8B4" data-h2="#2E6E6A" data-name="つむぎ研究所" data-v="#5C4632">
+<div class="card-name">つむぎ研究所</div>
+<div class="card-hex">#5C4632</div>
+</div>
+</div>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
