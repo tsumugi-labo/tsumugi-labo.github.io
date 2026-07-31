@@ -470,100 +470,153 @@ header p {
 /*=========================
  スマホ
 =========================*/
+/*=========================
+  スマホ
+=========================*/
 
-@media(max-width:900px) {
+@media (max-width:900px) {
+
+    body {
+        padding: 10px;
+    }
+
+    /* レイアウト */
 
     .main-layout {
-
-        grid-template-columns: 1fr;
-
+        display: block;
     }
+
+    /*--------------------
+      上部固定
+    --------------------*/
 
     .preview-area {
 
-        position: static;
+        position: sticky;
 
+        top: 0;
+
+        z-index: 999;
+
+        background: #f7f5f1;
+
+        padding: 10px 0;
+
+        border-bottom: 2px solid #ddd;
+
+        margin-bottom: 15px;
+    }
+
+    .preview-area h2 {
+
+        font-size: 1.1rem;
+
+        margin-bottom: 5px;
+    }
+
+    /*--------------------
+      ロゴ
+    --------------------*/
+
+    .logo {
+
+        width: 220px;
+
+        height: 220px;
+
+        margin: 5px auto;
+
+        transform: scale(.60);
+
+        transform-origin: center;
+    }
+
+    #colorName {
+
+        margin-top: 5px;
+
+        font-size: 1.2rem;
+    }
+
+    /*--------------------
+      HEXを横並び
+    --------------------*/
+
+    .hex-area {
+
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 8px;
+
+        margin-top: 12px;
+    }
+
+    .hex-area div {
+
+        padding: 6px;
+
+        font-size: .75rem;
+    }
+
+    .hex-area span {
+
+        font-size: .72rem;
+
+        word-break: break-all;
+    }
+
+    /*--------------------
+      比較
+    --------------------*/
+
+    #history {
+
+        display: none;
     }
 
     .palette {
 
         max-height: none;
 
+        overflow: visible;
+
+        padding-right: 0;
     }
 
-    .logo {
+    .palette h2 {
 
-        transform: scale(.8);
-
-        transform-origin: center;
-
+        margin-top: 10px;
     }
 
     .palette-grid {
 
-        grid-template-columns:
-
-            repeat(2, 1fr);
-
-    }
-
-    /*=========================
-比較
-=========================*/
-
-    #history {
-
-        margin-top: 20px;
-
-        display: flex;
-
-        flex-direction: column;
-
-        gap: 12px;
-
-    }
-
-    .history-card {
-
-        display: flex;
-
-        align-items: center;
+        grid-template-columns: repeat(2, 1fr);
 
         gap: 10px;
-
-        background: white;
-
-        border: 1px solid #ddd;
-
-        border-radius: 10px;
-
-        padding: 10px;
-
     }
 
-    .history-preview {
+    .color-card {
 
-        display: flex;
-
-        gap: 4px;
-
+        padding: 12px;
     }
 
-    .history-preview span {
+    .card-name {
 
-        width: 8px;
-
-        height: 26px;
-
-        border-radius: 3px;
-
+        font-size: .85rem;
     }
 
-    .history-name {
+    .card-hex {
 
-        font-size: .9rem;
-
-        font-weight: bold;
-
+        font-size: .72rem;
     }
+
+    .color-preview span {
+
+        width: 10px;
+
+        height: 30px;
+    }
+
 }
