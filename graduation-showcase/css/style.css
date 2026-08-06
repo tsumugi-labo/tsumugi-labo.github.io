@@ -85,12 +85,12 @@ Fade In
 .feature,
 .future-card,
 .learn-grid article,
-.message-links > div,
+.message-links>div,
 blockquote {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 1.2s ease,
-                transform 1.2s ease;
+        transform 1.2s ease;
 }
 
 .show {
@@ -131,9 +131,11 @@ blockquote {
 
 .number {
     display: block;
-    font-size: 5rem;
+    font-size: 5.5rem;
     font-weight: 700;
     line-height: 1;
+    color: #5C8F2B;
+    /* opacity: .2; */
 }
 
 

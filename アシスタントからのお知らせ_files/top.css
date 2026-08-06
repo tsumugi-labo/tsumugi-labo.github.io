@@ -1,0 +1,384 @@
+@charset "utf-8";
+
+.sky {
+  background-image: linear-gradient(rgb(48, 106, 215), rgba(127, 223, 244, 1), rgba(217, 237, 254, 0.5), rgba(255, 255, 255, 0));
+  z-index: 10;
+}
+
+@keyframes cloud01 {
+  0% {
+    background-position: 0 80vh;
+  }
+
+  100% {
+    background-position: 100vw 0;
+  }
+}
+
+@keyframes cloud02 {
+  0% {
+    background-position: 0 8vh;
+  }
+
+  100% {
+    background-position: 100vw 0;
+  }
+}
+
+@keyframes cloud03 {
+  0% {
+    background-position: 0 500vh;
+  }
+
+  100% {
+    background-position: 100vw 0;
+  }
+}
+
+.cloud01 {
+  background-image: url(../images/bg_cloud01r.png);
+  background-repeat: repeat;
+  background-position: top;
+  animation: cloud01 180s infinite;
+}
+
+.cloud02 {
+  background-image: url(../images/bg_cloud02r.png);
+  background-repeat: repeat;
+  background-position: top;
+  animation: cloud02 300s infinite;
+}
+/* 
+
+main .left:first-child {
+  justify-content: center;
+  padding-top: 100px;
+} */
+
+
+main .center {
+  margin: auto;
+  box-sizing: border-box;
+}
+
+main section {
+  box-sizing: border-box;
+  margin: 0px 10px 30px 0;
+  padding: 15px;
+  width: 720px;
+  border-radius: 16px;
+  background: linear-gradient(rgba(255, 255, 255, 0.75) 65%, rgba(235, 246, 247, 0.75));
+  box-shadow: 1px 1px 7px rgba(95, 158, 160, 0.6);
+}
+
+main .box1 {
+  width: 500px;
+  margin: auto;
+}
+
+main .box1 dl div {
+  margin: 5px 0 15px;
+}
+
+main .box1 dl:first-child {
+  font-size: 18px;
+  font-weight: bold;
+  color: #8f2e14;
+}
+
+
+
+main .last:last-of-type {
+  padding-bottom: 100px;
+}
+
+main section .title {
+  box-sizing: border-box;
+  justify-content: left;
+  font-family: 'Kaisei HarunoUmi', serif;
+  color: #333;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 10px 0 8px 3px;
+}
+
+main section .title .eng {
+  justify-content: left;
+  font-family: 'Averia Serif Libre', serif;
+  color: #333333;
+  font-size: 18px;
+  line-height: 20px;
+  padding-left: .6em;
+}
+
+main section h3 {
+  font-family: 'Kaisei HarunoUmi', serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 8px 0;
+}
+
+/* あしらい */
+main .sec01 .d_title {
+  width: fit-content;
+  background-image: linear-gradient(0deg, rgb(98 230 230 / 50%) 35%, transparent 35%);
+  /* border-radius: 50%; */
+}
+
+main .sec01 .d_title::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 0 0px;
+  background-color: rgb(60 147 230 / 50%);
+  border-radius: 50%;
+  position: relative;
+  top: 4px;
+  left: -5px;
+}
+
+main .sec01 .d_title::after {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 0 0px;
+  background-color: rgba(56, 202, 180, 0.5);
+  border-radius: 50%;
+  position: relative;
+  top: 4px;
+  right: -5px;
+}
+
+/* あしらいここまで*/
+
+
+/* :first-childあしらい */
+main .sec01 dl:first-child .d_title {
+  background-image: linear-gradient(0deg, rgba(252, 200, 0, 0.5) 35%, transparent 35%);
+  color: #640125;
+  font-size: 22px;
+
+}
+
+main .sec01 dl:first-child .d_title::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 0 0px;
+  background-color: rgba(255, 101, 139, 0.5);
+  border-radius: 50%;
+  position: relative;
+  top: 4px;
+  left: -5px;
+}
+
+main .sec01 dl:first-child .d_title::after {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 0 0px;
+  background-color: rgba(56, 202, 180, 0.5);
+  border-radius: 50%;
+  position: relative;
+  top: 4px;
+  right: -5px;
+}
+
+/* first-childあしらいここまで*/
+
+
+main section div .wrap {
+  box-sizing: border-box;
+  /*幅掛けるとwrapしなくなった
+  width: 600px;*/
+  flex-wrap: wrap;
+}
+
+main section .cont .title02 {
+  box-sizing: border-box;
+  text-align: center;
+  font-family: 'Kaisei HarunoUmi', serif;
+  color: #333;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 7px 0 10px;
+}
+
+main section .cont .title02 small {
+  font-size: 12px;
+}
+
+main section table {
+  margin: auto;
+  border-collapse: collapse;
+  width: 240px;
+}
+
+main section table caption {
+  font-size: 28px;
+  line-height: 2em;
+  color: #2da6b8;
+}
+
+main section table tr span {
+  color: #393ff7;
+}
+
+main section .time th {
+  box-sizing: border-box;
+  height: 36px;
+}
+
+main section .time td {
+  box-sizing: border-box;
+  height: 36px;
+  font-size: 20px;
+  text-align: center;
+}
+
+main section .img {
+  text-align: center;
+}
+
+main .box03 dt {
+  width: 88px;
+}
+
+main .box03 dt::before {
+  content: "★";
+  color: #2da6b8;
+}
+
+main .box03 dd {
+  padding: 0 0 0 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+main section dl dd {
+  line-height: 2em;
+  padding: 0.7em 0 2em;
+}
+
+main section dl dd p{
+  margin-bottom: 1.5em;
+}
+
+/* 時間割：繰り返しフェードアップ */
+.fadeIn_up {
+  opacity: 0;
+  transform: translate(0, 10%);
+  transition: 2s;
+}
+
+.fadeIn_up.is-show {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+/* 時間割：繰り返しフェードアップここまで */
+
+/* ★ 澁谷先生のfadeUpアニメ */
+@keyframes fadeUp {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.fadeUpActive {
+  animation: fadeUp 1s ease forwards;
+}
+
+
+main aside h2 {
+  box-sizing: border-box;
+  justify-content: left;
+  font-family: 'Kaisei HarunoUmi', serif;
+  color: #333;
+  font-size: 18px;
+  line-height: 20px;
+  padding: 10px 0 8px 3px;
+}
+
+.sec02 p {
+  text-align: center;
+  padding: 10px;
+}
+
+/*スマホレスポンシブここから*/
+@media screen and (max-width:640px) {
+  .block {
+    display: block;
+  }
+
+  .mainvisual {
+    padding-top: 10vh;
+  }
+
+  main .left .last:last-of-type {
+    padding-bottom: 0px;
+  }
+
+
+  main .last:last-of-type {
+    padding-bottom: 0px;
+  }
+
+  main section {
+    width: 100%;
+  }
+
+  main .sec03 .flex {
+    flex-direction: column;
+  }
+
+  main .sec01 dl:first-child .d_title {
+    font-size: 20px;
+  }
+
+  main .mainvisual div img {
+    width: 30vw;
+  }
+
+  main .box1 {
+    width: auto;
+  }
+
+  /*不要？
+  main section .list .box1 {
+    margin-bottom: 5vh;
+    padding: 16px;
+  } */
+
+  main section .list .box1 .cont {
+    box-sizing: border-box;
+    width: 18vw;
+    height: 25vw;
+    box-shadow: 2px 3px 7px rgba(95, 158, 160, 0.6);
+    margin: 2vh 4vw 8vh;
+  }
+
+  main section .list .box1 .cont a {
+    background-size: cover;
+  }
+
+  main section .list .box1 .cont p {
+    line-height: 16px;
+  }
+
+  main aside {
+    margin: 10px 0 0 0px;
+  }
+
+}

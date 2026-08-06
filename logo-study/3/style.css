@@ -1,105 +1,3 @@
-<<<<<<< HEAD
-/*==================================================
-  Color Pattern Preview
-==================================================*/
-
-body{
-
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-
-    gap:80px;
-
-    padding:40px;
-
-}
-
-
-/*----------------------------------
-  Pattern A
-----------------------------------*/
-
-.pattern-a{
-
-    --color-vertical:#B56B3D;
-    --color-horizontal-top:#D7B542;
-    --color-horizontal-bottom:#8DAE45;
-
-}
-
-
-/*----------------------------------
-  Pattern B
-----------------------------------*/
-
-.pattern-b{
-
-    --color-vertical:#5B3A29;
-    --color-horizontal-top:#E8DFC9;
-    --color-horizontal-bottom:#355E8C;
-
-}
-
-
-/*----------------------------------
-  Pattern C
-----------------------------------*/
-
-.pattern-c{
-
-    --color-vertical:#C84A31;
-    --color-horizontal-top:#E2A42A;
-    --color-horizontal-bottom:#6B8E23;
-
-}
-
-
-/*----------------------------------
-  Pattern D
-----------------------------------*/
-
-.pattern-d{
-
-    --color-vertical:#243C7A;
-    --color-horizontal-top:#C6CCD3;
-    --color-horizontal-bottom:#7FBF6A;
-
-}
-
-
-/*----------------------------------
-  Vertical
-----------------------------------*/
-
-.logo .bundle.vertical span{
-
-    background:var(--color-vertical);
-
-}
-
-
-/*----------------------------------
-  Horizontal Top
-----------------------------------*/
-
-.logo .lu span,
-.logo .ru span{
-
-    background:var(--color-horizontal-top);
-
-}
-
-
-/*----------------------------------
-  Horizontal Bottom
-----------------------------------*/
-
-.logo .ld span,
-.logo .rd span{
-
-    background:var(--color-horizontal-bottom);
-=======
 /*==========================================
 つむぎ研究所 配色シミュレーター
 style.css
@@ -572,157 +470,100 @@ header p {
 /*=========================
  スマホ
 =========================*/
-/*=========================
-  スマホ
-=========================*/
-/*=========================
-  スマホ
-=========================*/
 
-@media (max-width:900px) {
-
-    body {
-        padding: 10px;
-    }
+@media(max-width:900px) {
 
     .main-layout {
-        display: block;
-    }
 
-    /* 上部固定 */
+        grid-template-columns: 1fr;
+
+    }
 
     .preview-area {
 
-        position: fixed;
+        position: static;
 
-        top: 0;
-        left: 0;
-
-        width: 100%;
-
-        z-index: 999;
-
-        background: #f7f5f1;
-
-        padding: 10px 15px 15px;
-
-        border-bottom: 2px solid #ddd;
     }
-
-    .preview-area h2 {
-
-        font-size: 1.1rem;
-
-        margin-bottom: 5px;
-    }
-
-    /* ロゴ */
-
-    .logo {
-
-        width: 220px;
-        height: 220px;
-
-        margin: 0 auto;
-
-        transform: scale(.60);
-
-        transform-origin: center;
-        margin-bottom: 30px;
-        transform: translateX(-30px) scale(.60);
-    }
-
-    /* 色名 */
-
-    #colorName {
-
-        margin-top: 80px;
-
-        font-size: 1.2rem;
-
-        color: #5A4030;
-    }
-
-    /* HEX */
-
-    .hex-area {
-
-        display: grid;
-
-        grid-template-columns: repeat(3, 1fr);
-
-        gap: 8px;
-
-        margin-top: 15px;
-    }
-
-    .hex-area div {
-
-        padding: 8px;
-
-        font-size: .75rem;
-    }
-
-    .hex-area span {
-
-        font-size: .72rem;
-
-        word-break: break-all;
-    }
-
-    /* 比較 */
-
-    #history {
-
-        display: none;
-    }
-
-    /* パレット */
 
     .palette {
 
-        margin-top: 420px;
-
         max-height: none;
 
-        overflow: visible;
-
-        padding-right: 0;
     }
 
-    .palette h2 {
+    .logo {
 
-        margin-top: 0;
+        transform: scale(.8);
+
+        transform-origin: center;
+
     }
 
     .palette-grid {
 
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+
+            repeat(2, 1fr);
+
+    }
+
+    /*=========================
+比較
+=========================*/
+
+    #history {
+
+        margin-top: 20px;
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 12px;
+
+    }
+
+    .history-card {
+
+        display: flex;
+
+        align-items: center;
 
         gap: 10px;
+
+        background: white;
+
+        border: 1px solid #ddd;
+
+        border-radius: 10px;
+
+        padding: 10px;
+
     }
 
-    .color-card {
+    .history-preview {
 
-        padding: 12px;
+        display: flex;
+
+        gap: 4px;
+
     }
 
-    .card-name {
+    .history-preview span {
 
-        font-size: .85rem;
+        width: 8px;
+
+        height: 26px;
+
+        border-radius: 3px;
+
     }
 
-    .card-hex {
+    .history-name {
 
-        font-size: .72rem;
+        font-size: .9rem;
+
+        font-weight: bold;
+
     }
-
-    .color-preview span {
-
-        width: 10px;
-
-        height: 30px;
-    }
->>>>>>> a15e4a240fd47429d72094fe8b35db40b3813f81
-
 }

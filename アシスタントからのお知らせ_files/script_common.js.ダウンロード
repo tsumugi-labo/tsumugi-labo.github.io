@@ -1,0 +1,95 @@
+$(function () {
+
+    /*ハンバーガーメニュー*/
+    $(".openbtn").click(function () {
+        $(this).toggleClass('active');
+        $("header nav").slideToggle(300);
+    });
+
+
+   /*ページ内リンクスクロール*/
+   $("a").click(function () {
+    var target = $($(this).attr("href")).offset().top;
+
+    target -= 120;
+
+    $("html,body").animate({ scrollTop: target }, 500);
+
+    return false;
+});
+    //ページ内リンクスクロール ここまで
+
+
+
+    // 授業ページなどのリンクトグルメニュー
+    $("#aArrow01").click(function () {
+        $(".ul01").slideToggle(200);
+    });
+    $("#aArrow02").click(function () {
+        $(".ul02").slideToggle(200);
+    });
+    $("#aArrow03").click(function () {
+        $(".ul03").slideToggle(200);
+    });
+    $("#aArrow04").click(function () {
+        $(".ul04").slideToggle(200);
+    });
+    $("#aArrow05").click(function () {
+        $(".ul05").slideToggle(200);
+    });
+    $("#aArrow06").click(function () {
+        $(".ul06").slideToggle(200);
+    });
+    $("#aArrow07").click(function () {
+        $(".ul07").slideToggle(200);
+    });
+    $("#aArrow08").click(function () {
+        $(".ul08").slideToggle(200);
+    });
+    $("#aArrow09").click(function () {
+        $(".ul09").slideToggle(200);
+    });
+    $("#aArrow10").click(function () {
+        $(".ul10").slideToggle(200);
+    });
+    $("#aArrow11").click(function () {
+        $(".ul11").slideToggle(200);
+    });
+    $("#aArrow12").click(function () {
+        $(".ul12").slideToggle(200);
+    });
+    $("#aArrow13").click(function () {
+        $(".ul13").slideToggle(200);
+    });
+    $("#aArrow14").click(function () {
+        $(".ul14").slideToggle(200);
+    });
+    $("#aArrow15").click(function () {
+        $(".ul15").slideToggle(200);
+    });
+
+
+    // トグル矢印回転させたい
+    $("dt").on('click', function () {
+        $(this).toggleClass("trans");
+    });
+    // 授業ページなどのリンクトグルメニューここまで
+
+    //  レスポンシブメニュー授業リンク開閉
+
+    $("#cc_diaryLink").click(function () {
+        $("#cc_diaryLink ul").slideToggle(200)
+    })
+
+
+
+
+    // 【ChatGPT君のコード】
+    $('aside dt').on('click', function () {
+        // クリックされたdt以外のすべてのdtにothersクラスを追加
+        $('aside dt').not(this).toggleClass('others');
+    });
+
+
+});
+
