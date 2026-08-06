@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>つむぎ研究所（仮）| 人・情報・文化を紡ぎ、価値あるものを未来へ届ける</title>
+    <meta name="description" content="WebやAIなどのデジタル技術を活用し、企業・地域・個人が持つ情報や文化の価値を分かりやすく伝え、課題解決と地域文化の振興を支援します。">
+
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&family=Shippori+Mincho:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="js/main.js"> -->
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-inner">
+            <div class="site-logo">
+                <a href="index.html">
+                    <img src="../images/logo.png" alt="つむぎ研究所">
+                </a>
+            </div>
+
+            <nav class="nav-pc" aria-label="デスクトップ用ナビゲーション">
+                <ul>
+                    <li><a href="#mission">Mission</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#case-studies">Case Studies</a></li>
+                    <li><a href="#career">Career</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#contact" class="nav-btn">Contact</a></li>
+                </ul>
+            </nav>
+
+            <button class="hamburger-btn" id="js-hamburger" aria-label="メニューを開く" aria-expanded="false"
+                aria-controls="js-nav-sp">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <nav class="nav-sp" id="js-nav-sp" aria-label="スマートフォン用ナビゲーション" aria-hidden="true">
+            <ul>
+                <li><a href="#mission">Mission</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#case-studies">Case Studies</a></li>
+                <li><a href="#career">Career</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-bg">
+                <img src="images/natsuushikubi.JPEG" alt="背景テクスチャ" class="hero-bg-img">
+            </div>
+            <div class="hero-content">
+                <div class="hero-symbol">
+                    <img src="../images/tsu-kimono.png" alt="「つ」の着物">
+                </div>
+                <h1 class="hero-title">つむぎ研究所</h1>
+                <p class="hero-catch">人・情報・文化を紡ぎ、<br class="sp-only">価値あるものを未来へ届ける</p>
+            </div>
+        </section>
+
+        <section id="mission" class="section mission">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="en">Mission</span>
+                    <span class="ja">理念</span>
+                </h2>
+                <div class="mission-inner">
+                    <p class="mission-text">
+                        人・情報・文化を未来へ紡ぐ。
+                    </p>
+                    <p class="mission-description">
+                        企業・地域・個人が大切にしてきた想いや文化の価値を分かりやすく言葉と形に変換します。課題解決のためにWebやAIなどのデジタル技術を活用し、継承されるべき価値とより過ごしやすい便利な世の中を次世代へ届けることを目指します。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="en">About</span>
+                    <span class="ja">つむぎ研究所とは</span>
+                </h2>
+                <div class="about-content">
+                    <div class="about-block">
+                        <h3>名前の由来</h3>
+                        <p>「つむぎ研究所」の「つむぎ」には、<strong>人・情報・文化を紡ぎ、新しい価値を生み出したい</strong>という想いを込めています。
+                            これまで受け継がれてきた文化や、さまざまな場所に存在する情報をつなぎ合わせます。
+                            さらに新しいアイデアを加えることで、次の世代へつながるサービスや仕組みを生み出したいと考えています。
+                            そのためには、情報だけではなく、人との出会いや信頼関係を大切に育みながら紡いでいくことが欠かせません。文化や情報を未来へつないでいきたいという想いを、「つむぐ」という言葉で表現しました。
+                            また、「つむぎ」は私の趣味でもある<strong>紬（つむぎ）の着物</strong>にも由来しています。一本の糸から布が織り上がるように、多くの人や知識、経験をつなぎ合わせて価値を生み出したいという意味も込めています。このサイトのデザインにも、自分が所有する着物や帯の写真を取り入れています。
+                        </p>
+                        <!-- <p>一つひとつの糸を丁寧に織り合わせて上質な布（紬）にするように、途切れそうな歴史・文化・個人の想いを現代のデジタル技術で未来へ紡ぎ直す場所でありたい、という想いから名付けました。</p> -->
+                    </div>
+                    <div class="about-block">
+                        <h3>目指す姿</h3>
+                        <p>限られた時間や予算の中で、何を実現し、何を優先するか。その判断を支えるのは、最後は<strong>人の想い</strong>だと考えています。
+
+                            また、より良いサービスや業務改革を実現するためには、信頼できる人や企業との連携が欠かせません。同じ時間やコストでも、協力し合うことで、より大きな価値を生み出せると考えています。
+
+                            つむぎ研究所は、人・文化・技術を紡ぎながら、Webサイト構築、業務改革、コンサルティングなどを通じて、より良い社会づくりに貢献することを目指しています。</p>
+                        <!-- <p>WebディレクションやAI活用を通じて課題を解決し、地域文化の振興や個人の大切な記録の継承をサポートするパートナーを目指します。</p> -->
+                    </div>
+                </div>
+                <div class="about-closing about-block">
+                    <h3>人・情報・文化を紡ぎ、価値ある未来へ。</h3>
+                    <p class="about-catch">
+                        一つひとつの出会いと想いを大切にしながら、
+                        次の世代へつながる価値を紡いでいきます。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="service" class="section service">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="en">Service</span>
+                    <span class="ja">事業内容</span>
+                </h2>
+                <div class="service-grid">
+                    <div class="service-card fade-up fade-delay-1">
+                        <div class="service-icon">01</div>
+                        <h3>Web企画・Web制作</h3>
+                        <p>企業・個人の強みや文化の価値を伝えるWebサイトの企画・制作を行います。</p>
+                    </div>
+                    <div class="service-card fade-up fade-delay-2">
+                        <div class="service-icon">02</div>
+                        <h3>情報活用・課題解決支援</h3>
+                        <p>WebやAIなどのデジタルツールを活用し、情報発信や業務課題の解決をトータル支援します。</p>
+                    </div>
+                    <div class="service-card fade-up fade-delay-3">
+                        <div class="service-icon">03</div>
+                        <h3>地域・文化振興支援</h3>
+                        <p>地域文化のデジタルアーカイブ化や、伝統文化の継承に関する発信活動を後押しします。</p>
+                    </div>
+                    <div class="service-card fade-up fade-delay-4">
+                        <div class="service-icon">04</div>
+                        <h3>Webディレクション・コンサルティング</h3>
+                        <p>現状の課題整理からプロジェクト推進、ターゲット層へ伝わる設計まで伴走型で支援します。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="case-studies" class="section case-studies">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="en">Case Studies</span>
+                    <span class="ja">制作事例・課題解決事例</span>
+                </h2>
+                <div class="cases-grid">
+                    <article class="case-card fade-up">
+                        <div class="case-img">
+                            <img src="../images/kyoto-hp1_01l.png" alt="京都文化財デジタルアーカイブ">
+                        </div>
+                        <div class="case-body">
+                            <div class="case-header">
+                                <i class="fa-solid fa-torii-gate case-badge-icon" aria-hidden="true"></i>
+                                <span class="case-cat">CULTURE</span>
+                            </div>
+                            <h3 class="case-title">京都文化財複製プロジェクト</h3>
+                            <p class="case-desc">課題：伝統文化の記録と発信<br>提案：デジタル複製画プロジェクト設計・提案と導入</p>
+                            <a href="../kyoto/kyoto-project.html" class="case-link">詳細を見る →</a>
+                        </div>
+                    </article>
+
+                    <article class="case-card fade-up">
+                        <div class="case-img">
+                            <img src="../images/kikue-header-logo3.png" alt="Family Archive">
+                        </div>
+                        <div class="case-body">
+                            <div class="case-header">
+                                <i class="fa-solid fa-users-rectangle case-badge-icon" aria-hidden="true"></i>
+                                <span class="case-cat">ARCHIVE</span>
+                            </div>
+                            <h3 class="case-title">Family Archive（家族の記録）</h3>
+                            <p class="case-desc">課題：個人の想い出や文化の継承<br>提案：デジタル保存と亡き母の父と親族向けの設計</p>
+                            <a href="../family-archive/index.html" class="case-link">詳細を見る →</a>
+                        </div>
+                    </article>
+
+                    <article class="case-card fade-up">
+                        <div class="case-img">
+                            <img src="../images/case-takadanobaba.png" alt="高田馬場 2丁目 ランチマップ">
+                        </div>
+                        <div class="case-body">
+                            <div class="case-header">
+                                <i class="fa-solid fa-utensils case-badge-icon" aria-hidden="true"></i>
+                                <span class="case-cat">COMMUNITY</span>
+                            </div>
+                            <h3 class="case-title">高田馬場 2丁目 ランチマップ</h3>
+                            <p class="case-desc">課題：地域店舗の活性化と情報発信<br>提案：視認性の高いマップとWeb展開</p>
+                            <a href="https://takadanobaba-community.github.io/grow-lunch-map/" class="case-link">詳細を見る
+                                →</a>
+                        </div>
+                    </article>
+
+                    <article class="case-card fade-up">
+                        <div class="case-img">
+                            <img src="../images/logo1.png" alt="グループ制作 あおたけ保育園">
+                        </div>
+                        <div class="case-body">
+                            <div class="case-header">
+                                <i class="fa-solid fa-child-reaching case-badge-icon" aria-hidden="true"></i>
+                                <span class="case-cat">WEB DESIGN</span>
+                            </div>
+                            <h3 class="case-title">グループ制作「あおたけ保育園」</h3>
+                            <p class="case-desc">課題：保育園向け課題解決支援<br>提案：保護者への入園児募集と保育士募集をやさしく伝えるWebデザイン</p>
+                            <a href="../aotake/coding/index.html" class="case-link">詳細を見る
+                                →</a>
+                        </div>
+                    </article>
+
+                    <article class="case-card fade-up">
+                        <div class="case-img">
+                            <img src="../images/AO2026JanIMG_3652ps1580x1988.jpg" alt="初代プロフィールサイト">
+                        </div>
+                        <div class="case-body">
+                            <div class="case-header">
+                                <i class="fa-solid fa-address-card case-badge-icon" aria-hidden="true"></i>
+                                <span class="case-cat">PROFILE</span>
+                            </div>
+                            <h3 class="case-title">初代プロフィールサイト</h3>
+                            <p class="case-desc">
+                                課題：Webディレクターとして経験や実績を分かりやすく発信したい<br>提案：2026年7月10日に初代プロフィールサイトを制作。現在の「つむぎ研究所」サイトの原点となる作品。
+                            </p>
+                            <a href="../profile-v1/index.html" class="case-link">詳細を見る
+                                →</a>
+                        </div>
+                    </article>
+
+                    <article class="case-card fade-up">
+                        <div class="case-img">
+                            <img src="../profile-v0/images/AO2026JanIMG_3652.JPEG" alt="プロフィールサイト">
+                        </div>
+                        <div class="case-body">
+                            <div class="case-header">
+                                <i class="fa-solid fa-address-card case-badge-icon" aria-hidden="true"></i>
+                                <span class="case-cat">PROTOTYPE</span>
+                            </div>
+                            <h3 class="case-title">最初のポートフォリオサイト</h3>
+                            <p class="case-desc">
+                                課題：経験と趣味を分かりやすく発信したい<br>提案：
+                                2026年5月に制作した最初のポートフォリオサイト。
+                                HTML/CSSを学びながら構成・デザイン・コーディングを行い、
+                                ツールチップ（吹き出し）の実装ではAI（Tip）との対話を活用。
+                            </p>
+                            <a href="../profile-v0/index.html" class="case-link">詳細を見る
+                                →</a>
+                        </div>
+                    </article>
+
+                    <article class="case-card">
+
+                        <img src="../images/graduation-showcase.webp" alt="卒業制作">
+
+                        <div class="case-body">
+
+                            <span class="case-category">
+                                Graduation
+                            </span>
+
+                            <h3>
+                                卒業制作サイト
+                            </h3>
+
+                            <p>
+                                Webクリエイター科卒業制作の発表をパワポではなく、
+                                サイトとして発表すべく、制作しました。
+                            </p> 
+                            <a href="../graduation-showcase/index.html" class="case-link">
+                                詳細を見る→
+                            </a>
+
+                        </div>
+
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="career" class="section career">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="en">Career</span>
+                    <span class="ja">経歴・プロフィール</span>
+                </h2>
+                <div class="career-content">
+                    <div class="profile-card fade-up">
+                        <h3>佐藤 慶直（Satoh Yoshinao）</h3>
+                        <p class="profile-title">つむぎ研究所（仮）代表 / Webディレクター</p>
+
+                        <dl class="career-list">
+                            <div class="career-item">
+                                <dt class="company-logo-wrap">
+                                    <img src="../images/logo-hp.png" alt="日本ヒューレット・パッカード株式会社"
+                                        class="company-logo company-logo-hp">
+                                </dt>
+                                <dd class="career-detail">
+                                    <span class="company-name">日本ヒューレット・パッカード株式会社</span>
+                                    <span class="job-title">公共営業部（1年半）</span>
+                                </dd>
+                            </div>
+
+                            <div class="career-item">
+                                <dt class="company-logo-wrap">
+                                    <img src="../images/logo-oracle.png" alt="日本オラクル株式会社" class="company-logo">
+                                </dt>
+                                <dd class="career-detail">
+                                    <span class="company-name">日本オラクル株式会社</span>
+                                    <span class="job-title">公共営業本部（3年）</span>
+                                </dd>
+                            </div>
+
+                            <div class="career-item">
+                                <dt class="company-logo-wrap">
+                                    <img src="../images/logo-mcafee.png" alt="マカフィー株式会社" class="company-logo">
+                                </dt>
+                                <dd class="career-detail">
+                                    <span class="company-name">マカフィー株式会社</span>
+                                    <span class="job-title">公共営業部（3年）</span>
+                                </dd>
+                            </div>
+
+                            <div class="career-item">
+                                <dt class="company-logo-wrap">
+                                    <img src="../images/logo-ibm.png" alt="日本アイ・ビー・エム株式会社" class="company-logo">
+                                </dt>
+                                <dd class="career-detail">
+                                    <span class="company-name">日本アイ・ビー・エム株式会社</span>
+                                    <span class="job-title">TSSビジネス開発（3年）</span>
+                                </dd>
+                            </div>
+
+                            <div class="career-item">
+                                <dt class="company-logo-wrap">
+                                    <img src="../images/logo-Planetway.png" alt="Planetway"
+                                        class="company-logo company-logo-planetway">
+                                </dt>
+                                <dd class="career-detail">
+                                    <span class="company-name">Planetway Japan株式会社</span>
+                                    <span class="job-title">エストニア データ連携基盤 X-Road国内展開（技術・PM）（2年）</span>
+                                </dd>
+                            </div>
+
+                            <div class="career-item">
+                                <dt class="company-logo-wrap">
+                                    <img src="../images/OZ1-logo-166x40-1.png" alt="OZ1" class="company-logo">
+                                </dt>
+                                <dd class="career-detail">
+                                    <span class="company-name">株式会社 OZ1</span>
+                                    <span class="job-title">エストニア データ連携基盤 X-Road国内展開（技術・PM）（5年半）</span>
+                                </dd>
+                            </div>
+
+                            <div class="career-item current">
+                                <dt class="company-logo-wrap">
+                                    <img src="../images/logo-tsumugi.png" alt="つむぎ研究所"
+                                        class="company-logo company-logo-tsumugi">
+                                </dt>
+                                <dd class="career-detail">
+                                    <span class="company-name">現在</span>
+                                    <span class="job-title">つむぎ研究所（仮）立ち上げ</span>
+                                </dd>
+                            </div>
+                        </dl>
+
+                        <!-- 追加：経歴リスト下の詳細リンク -->
+                        <div class="career-more">
+                            <a href="career.html" class="career-more-link">詳細はこちら →</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="news" class="section news">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="en">News</span>
+                    <span class="ja">お知らせ</span>
+                </h2>
+                <ul class="news-list">
+                    <li class="news-item">
+                        <button class="news-toggle">
+                            <time>2026.07.29</time>
+                            <span class="news-cat">SITE</span>
+                            <span class="news-icon">▶</span>
+                            <span class="news-text">
+                                卒業制作サイトを公開しました
+                            </span>
+                        </button>
+
+                        <div class="news-detail">
+                            Webクリエイター科卒業制作として制作した
+                            「つむぎ研究所（Graduation Showcase）」を公開しました。
+                            卒業制作で終わらないサイトとして、
+                            今後も継続的に更新していきます。
+                            <br><br>
+
+                            <a href="../graduation-showcase/index.html" class="btn-small">
+                                詳しく見る
+                            </a>
+                        </div>
+                    </li>
+
+                    <li class="news-item">
+                        <button class="news-toggle">
+                            <time datetime="2026-07-22">2026.07.22</time>
+                            <span class="news-cat">学び</span>
+                            <span class="news-icon">▶</span>
+                            <span class="news-text">
+                                WITITで学んだこと・制作過程の記録
+                            </span>
+                        </button>
+
+                        <div class="news-detail">
+                            <p>
+                                HTML/CSSでCSSの役割を改めて認識し、WEBサイトの書き方を知り、
+                            </p>
+                            <p>
+                                Adobe Illustratorでデザインを作り、1pxへのこだわりを知り、
+                            </p>
+                            <p>
+                                PhotoShopでWebサイト用の画像加工方法を学び、
+                            </p>
+                            <p>
+                                グループ制作で役割分担と情報連携の大事さを知り、
+                            </p>
+                            <p>
+                                AIでソース作成の上で分からない点や間違いの指摘や、画像作成、それぞれのAIの得意点を知り、
+                            </p>
+                            <p>
+                                最終系として企画書を作って、わからなくなったら立ち戻れる環境を作ってから政策に入ることの大事さを学びました。
+                            </p>
+                            <p>
+                                <a href=#>
+                                    制作したサイトは本サイトです。
+                                </a>
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="news-item">
+                        <time datetime="2026-07-28">2026.07.28</time>
+                        <span class="news-cat">学び</span>
+                        <a href="#" class="news-link">
+                            NEWS一覧 UI改善（HoverからAccordionへ）
+                            <span class="news-tip">
+                                <p>
+                                    当初はCSSのみでホバー式のツールチップを実装しました。
+                                </p>
+                                <p>
+                                    ホバー表現で重なりが透明になり、解消できず、先生に相談した結果、position や z-index
+                                    を学びながら形にはできることはわかりましたが、
+                                </p>
+                                <p>
+                                    スマートフォンではホバー操作がなく、
+                                    ホバー表示が重なった背面が操作できなくなる課題があることが分かりました。
+                                </p>
+                                <p>
+                                    「PCでもスマホでも同じように使えること」を優先し、アコーディオン方式へ設計を変更しました。
+                                </p>
+                                <p>
+                                    技術だけでなく、利用者目線で設計を見直すことの大切さを学びました。
+                                </p>
+                                <p>
+                                    ここだけあえてホバーを残して表現します。
+                                </p>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li class="news-item">
+                        <button class="news-toggle">
+                            <time datetime="2026-07-21">2026.07.21</time>
+                            <span class="news-cat">お知らせ</span>
+                            <span class="news-icon">▶</span>
+                            <span class="news-text">
+                                つむぎ研究所（仮）Webサイトの企画書を作成しました
+                            </span>
+                        </button>
+
+                        <div class="news-detail">
+                            <p>
+                                卒業課題として、企画書を作成したうえでの個人での制作に取り組む。
+                            </p>
+                            <p>
+                                以前から考えていた自分のプロフィールサイトの最終系として今後メンテしていくサイトを作成することとした。
+                            </p>
+                            <p>
+                                <a href=#>
+                                    制作したサイトは本サイトです。
+                                </a>
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="news-item">
+                        <button class="news-toggle">
+                            <time datetime="2026-07-16">2026.07.16</time>
+                            <span class="news-cat">制作</span>
+                            <span class="news-icon">▶</span>
+                            <span class="news-text">
+                                高田馬場ランチマップを公開
+                            </span>
+                        </button>
+
+                        <div class="news-detail">
+                            <p>
+                                個人制作で学校周辺でみんなで育てて進化するランチマップサイト制作
+                            </p>
+                            <p>
+                                入校以来ほぼ毎日外食で食べログで記録。学校の後輩の生徒に伝え、進化、育てていけるランチマップが欲しいと思い制作。
+                            </p>
+                            <p>
+                                今後の学生に引き継いでいって、ソースもいじっていただいて進化させてほしい。
+                            </p>
+                            <p>
+                                GitHubを初めてちゃんと利用して一般公開。
+                            </p>
+                            <p>
+                                学校と関係ないから学校名を外すように依頼受けて高田馬場周辺と修正は発表後に行った。
+                            </p>
+                            <p>
+                                <a href="../lunch-map/index.html">
+                                    制作したサイトを見る →
+                                </a>
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="news-item">
+                        <button class="news-toggle">
+                            <time datetime="2026-07-10">2026.07.10</time>
+                            <span class="news-cat">制作</span>
+                            <span class="news-icon">▶</span>
+                            <span class="news-text">
+                                「あおたけ保育園」をグループ制作
+                            </span>
+                        </button>
+
+                        <div class="news-detail">
+                            <p>
+                                4人で役割分担して制作。codingが得意な三橋さんがTOPとcommon.css、デザインが得意な丸山さんのデザインが顧客役チームにメインで採用。
+                            </p>
+                            <p>
+                                自分はCTAボタンだけ採用。３番目の下層ページを担当。
+                            </p>
+                            <p>
+                                役割分担意思伝達が手戻りを起こさせないために重要と感じた。
+                            </p>
+                            <p>
+                                <a href="../aotake/coding/index.html">
+                                    制作したサイトを見る →
+                                </a>
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="news-item">
+                        <button class="news-toggle">
+                            <time datetime="2026-07-10">2026.07.10</time>
+                            <span class="news-cat">制作</span>
+                            <span class="news-icon">▶</span>
+                            <span class="news-text">
+                                初代プロフィールサイトを制作
+                            </span>
+                        </button>
+
+                        <div class="news-detail">
+                            <p>
+                                最初のポートフォリオから改版。教わったjQueryも利用。画像もPhotoShopで多少加工。
+                            </p>
+                            <p>
+                                <a href="../profile-v1/index.html">
+                                    制作したサイトを見る →
+                                </a>
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="news-item">
+                        <button class="news-toggle">
+                            <time datetime="2026-06-29">2026.06.29</time>
+                            <span class="news-cat">制作</span>
+                            <span class="news-icon">▶</span>
+                            <span class="news-text">
+                                Family Archive制作開始
+                            </span>
+                        </button>
+
+                        <div class="news-detail">
+                            <p>
+                                中間課題として父向けに亡き母のサイトを制作。ナビの書き方やイラレの使い方を教わった後の中間課題。
+                            </p>
+                            <p>
+                                古いモノクロ写真からカラー化や動画はAIの力を借りようと思いついて作りました。
+                            </p>
+                            <p>
+                                まだ未完成なのでおやじに見せていません。おやじが喜ぶといいな。
+                            </p>
+                            <p>
+                                <a href="../family-archive/index.html">
+                                    制作したサイトを見る →
+                                </a>
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="news-item">
+                        <button class="news-toggle">
+                            <time datetime="2026-05-29">2026.05.29</time>
+                            <span class="news-cat">学び</span>
+                            <span class="news-icon">▶</span>
+                            <span class="news-text">
+                                最初のポートフォリオサイトを制作
+                            </span>
+
+                        </button>
+                        <div class="news-detail">
+                            <p>
+                                HTML/CSSを学び始めた頃の作品です。当時はAIとの対話を参考にツールチップを実装しました。
+                            </p>
+                            <p>
+                                今ではコードの意味も理解しながら改善できるようになりました。
+                            </p>
+                            <p>
+                                <a href="../profile-v0/index.html">
+                                    制作したサイトを見る →
+                                </a>
+                            </p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-cta">
+            <div class="container">
+                <h2 class="cta-title">Contact</h2>
+                <p class="cta-subtitle">ご連絡はこちらから</p>
+                <div class="sns-links">
+                    <a href="https://m.me/goemon310" class="sns-btn fb" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-facebook-messenger"></i>
+                        Facebook Messenger</a>
+                    <a href="https://www.linkedin.com/in/yoshinao-sato-ecandtrust" class="sns-btn linkedin"
+                        target="_blank" rel="noopener">
+                        <i class="fa-brands fa-linkedin"></i>
+                        LinkedIn</a>
+                    <a href="https://github.com/tsumugi-lab" class="sns-btn github" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-github"></i>
+                        GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <!-- <div class="footer-tsu-icon">
+                <img src="images/tsu-kimono.png" alt="「つ」の着物" class="hero-symbol">
+            </div> -->
+            <div class="footer-logo">
+                <img src="../images/logo-clear.png" alt="つむぎ研究所" class="footer-logo-img">
+            </div>
+            <p class="footer-message">
+                人・情報・文化を紡ぎ、
+                価値ある未来へ。
+            </p>
+            <p class="copyright">&copy; 2026 つむぎ研究所 All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+
+    <!-- TOPに戻るボタン -->
+    <a href="#" class="page-top-btn" id="js-page-top" aria-label="ページ上部へ戻る">
+        <img src="../images/tsu-netsuke-pagetop.svg" alt="ページの最初へ戻る">
+        <span class="page-top-text">TOP</span>
+    </a>
+
+</body>
+
+</html>

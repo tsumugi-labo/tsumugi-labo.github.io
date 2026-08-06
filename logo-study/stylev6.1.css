@@ -1,0 +1,691 @@
+/* ======================================
+   つむぎ研究所 ロゴ1
+====================================== */
+
+:root{
+
+    /* ロゴ全体サイズ */
+    --logo-size: 340px;
+
+    /* 糸 */
+    --thread-width:18px;
+    --thread-length:280px;
+
+    /* 糸の間隔 */
+    --thread-gap:8px;
+
+    /* 中央の空白 */
+    --center-gap:88px;
+
+    /* 横糸の長さ */
+    --horizontal-length:140px;
+
+    /* 色 */
+    --vertical-color:#181818;
+    --horizontal-top:#18388F;
+    --horizontal-bottom:#788CC4;
+
+}
+
+
+/* ========================= */
+
+body{
+
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:100vh;
+
+    background:#fff;
+
+}
+
+
+/* ========================= */
+
+.logo{
+
+    position:relative;
+
+    width:var(--logo-size);
+    height:var(--logo-size);
+
+}
+
+
+/*==========================
+    縦糸
+==========================*/
+
+.vertical{
+
+    position:absolute;
+
+    display:flex;
+
+    gap:var(--thread-gap);
+
+    top:30px;
+
+    z-index:10;
+
+}
+
+.vertical.left{
+
+    left:78px;
+
+}
+
+.vertical.right{
+
+    right:78px;
+
+}
+
+.vertical .thread{
+
+    width:var(--thread-width);
+
+    height:280px;
+
+    background:var(--vertical-color);
+
+    border-radius:999px;
+
+}
+
+
+/*==========================
+    横糸
+==========================*/
+
+.horizontal{
+
+    position:absolute;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:var(--thread-gap);
+
+    left:0;
+
+    z-index:20;
+
+}
+
+.horizontal.top{
+
+    top:92px;
+
+}
+
+.horizontal.bottom{
+
+    top:184px;
+
+}
+
+.horizontal .thread{
+
+    width:140px;
+
+    height:var(--thread-width);
+
+    border-radius:999px;
+
+}
+
+
+/* 左右で分ける */
+
+.horizontal.top{
+
+    width:100%;
+}
+
+.horizontal.bottom{
+
+    width:100%;
+}
+
+.horizontal .thread{
+
+    position:relative;
+}
+
+
+/* ---------- 上 ---------- */
+
+.horizontal.top .thread{
+
+    background:var(--horizontal-top);
+
+}
+
+.horizontal.top .thread::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:-200px;
+
+    width:140px;
+    height:100%;
+
+    background:inherit;
+
+    border-radius:999px;
+
+}
+
+
+/* ---------- 下 ---------- */
+
+.horizontal.bottom .thread{
+
+    background:var(--horizontal-bottom);
+
+}
+
+.horizontal.bottom .thread::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:-200px;
+
+    width:140px;
+    height:100%;
+
+    background:inherit;
+
+    border-radius:999px;
+
+}
+
+/* ==========================================
+   つむぎ研究所 ロゴ1
+   ========================================== */
+
+/* :root{
+
+    /* ロゴサイズ */
+    --logo-size: 320px;
+
+    /* 糸の太さ */
+    --thread: 16px;
+
+    /* 糸と糸の間隔 */
+    --gap: 8px;
+
+    /* 配色（3色） */
+    --vertical: #111111;
+    --horizontal-top: #18358C;
+    --horizontal-bottom: #7D92C8;
+
+} */
+
+
+/* ===============================
+   ロゴ全体
+   =============================== */
+
+/* .logo1{
+
+    position: relative;
+
+    width: var(--logo-size);
+    height: var(--logo-size);
+
+    margin:auto;
+
+}
+
+ */
+/* ===============================
+   共通
+   =============================== */
+
+/* .vertical-group,
+.horizontal-group{
+
+    position:absolute;
+
+} */
+
+
+/* ===============================
+   縦糸グループ
+   =============================== */
+
+/* .vertical-group{
+
+    display:flex;
+    gap:var(--gap);
+
+}
+ */
+/* .vertical-group .thread{
+
+    width:var(--thread);
+    height:96px;
+
+    background:var(--vertical);
+
+    border-radius:999px;
+
+} */
+
+
+/* 少しだけ自然な揺らぎ */
+
+/* .vertical-group .thread:nth-child(1){
+
+    transform:translateY(1px);
+
+} */
+
+/* .vertical-group .thread:nth-child(2){
+
+    transform:translateY(-1px);
+
+} */
+
+/* .vertical-group .thread:nth-child(3){
+
+    transform:translateY(2px);
+
+} */
+
+
+/* ===============================
+   横糸グループ
+   =============================== */
+
+/* .horizontal-group{
+
+    display:flex;
+    flex-direction:column;
+
+    gap:var(--gap);
+
+} */
+
+/* .horizontal-group .thread{
+
+    width:96px;
+    height:var(--thread);
+
+    border-radius:999px;
+
+} */
+
+
+/* 上横 */
+
+/* .horizontal-group.lt .thread,
+.horizontal-group.rt .thread{
+
+    background:var(--horizontal-top);
+
+} */
+
+
+/* 下横 */
+
+/* .horizontal-group.lb .thread,
+.horizontal-group.rb .thread{
+
+    background:var(--horizontal-bottom);
+
+} */
+
+
+/* 横糸の揺らぎ */
+
+/* .horizontal-group .thread:nth-child(1){
+
+    transform:translateX(1px);
+
+} */
+
+/* .horizontal-group .thread:nth-child(2){
+
+    transform:translateX(-1px);
+
+} */
+
+/* .horizontal-group .thread:nth-child(3){
+
+    transform:translateX(2px);
+
+} */
+
+
+/* ===============================
+   配置
+   =============================== */
+
+/* 縦糸 */
+
+/* .vertical-group.lt{
+
+    top:0;
+    left:74px;
+
+} */
+
+/* .vertical-group.lb{
+
+    top:160px;
+    left:74px;
+
+} */
+
+/* .vertical-group.rt{
+
+    top:0;
+    right:74px;
+
+} */
+
+/* .vertical-group.rb{
+
+    top:160px;
+    right:74px;
+
+} */
+
+
+/* 横糸 */
+
+/* .horizontal-group.lt{
+
+    top:74px;
+    left:0;
+
+} */
+
+/* .horizontal-group.lb{
+
+    bottom:74px;
+    left:0;
+
+} */
+
+/* .horizontal-group.rt{
+
+    top:74px;
+    right:0;
+
+} */
+
+/* .horizontal-group.rb{
+
+    bottom:74px;
+    right:0;
+
+} */
+
+/* =====================================
+   つむぎ研究所 ロゴ1
+   ===================================== */
+
+/* :root{
+
+    /* ロゴサイズ */
+    --logo-width: 320px;
+    --logo-height: 320px;
+
+    /* 線幅 */
+    --line-width: 18px;
+
+    /* 配色（全部で3色） */
+    --vertical-color: #222222;
+    --top-color: #2F80ED;
+    --bottom-color: #27AE60;
+
+} */
+
+
+/*==========================
+  ロゴ全体
+==========================*/
+
+/* .logo1{
+
+    position: relative;
+
+    width: var(--logo-width);
+    height: var(--logo-height);
+
+} */
+
+
+/*==========================
+  共通
+==========================*/
+
+/* .vertical,
+.horizontal{
+
+    position: absolute;
+    border-radius: 999px;
+
+} */
+
+
+/*==========================
+  縦糸
+==========================*/
+
+/* .vertical{
+
+    width: var(--line-width);
+    background: var(--vertical-color);
+
+} */
+
+
+/*==========================
+  上横糸
+==========================*/
+
+/* .horizontal.top{
+
+    height: var(--line-width);
+    background: var(--top-color);
+
+} */
+
+
+/*==========================
+  下横糸
+==========================*/
+
+/* .horizontal.bottom{
+
+    height: var(--line-width);
+    background: var(--bottom-color);
+
+} */
+
+
+/*==========================
+  各パーツ位置
+  （PowerPointに合わせて後で数値設定）
+==========================*/
+
+/* .v1{}
+.v2{}
+.v3{}
+.v4{}
+
+.h1{}
+.h2{}
+
+.h3{}
+.h4{} */
+
+/* ======================================
+   Tsumugi Logo Study
+====================================== */
+
+/* :root{
+
+    /* ---------- Colors ---------- */
+
+    --vertical-color:#2B2B2B;
+
+    --horizontal-top:#1D4076;
+
+    --horizontal-bottom:#88A79A;
+
+    /* --vertical: #444;
+
+    --horizontal-top: #163c70;
+
+    --horizontal-bottom: #7d95b2; */
+
+
+    /* ---------- Size ---------- */
+
+    --thread-width:18px;
+    --thread-length:92px;
+
+    --thread-gap:8px;
+
+    --group-gap:30px;
+
+    --corner-radius:9px;
+
+} */
+
+
+/* ====================================== */
+
+/* body{
+
+    margin:0;
+
+    background:#f8f8f5;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+} */
+
+
+/* ====================================== */
+
+/* .logo{
+
+    position:relative;
+
+    width:420px;
+
+    height:420px;
+
+}
+
+ */
+/* ====================================== */
+/* Vertical Thread Group */
+/* ====================================== */
+
+/* .v{
+
+    position:absolute;
+
+    width:var(--thread-width);
+
+    height:var(--thread-length);
+
+    background:var(--vertical-color);
+
+    box-shadow:
+
+        calc(var(--thread-width) + var(--thread-gap)) 0 var(--vertical-color),
+
+        calc((var(--thread-width) + var(--thread-gap))*2) 0 var(--vertical-color);
+
+} */
+
+
+/* ====================================== */
+/* Horizontal Thread Group */
+/* ====================================== */
+
+/* .h{
+
+    position:absolute;
+
+    width:var(--thread-length);
+
+    height:var(--thread-width);
+
+} */
+
+
+/* 上横 */
+
+/* .top{
+
+    background:var(--horizontal-top);
+
+    box-shadow:
+        0 calc(var(--thread-width)+var(--thread-gap)) var(--horizontal-top),
+        0 calc((var(--thread-width)+var(--thread-gap))*2) var(--horizontal-top);
+
+} */
+
+
+/* 下横 */
+
+/* .bottom{
+
+    background:var(--horizontal-bottom);
+
+    box-shadow:
+        0 calc(var(--thread-width)+var(--thread-gap)) var(--horizontal-bottom),
+        0 calc((var(--thread-width)+var(--thread-gap))*2) var(--horizontal-bottom);
+
+} */
+
+
+/* ====================================== */
+/* Corner Radius */
+/* ====================================== */
+
+/*
+あとで
+
+.left-top
+.right-top
+.left-bottom
+.right-bottom
+
+だけ
+
+border-radius
+
+を付けます。
+
+今は位置を決めることを優先します。
+*/
+
+
+

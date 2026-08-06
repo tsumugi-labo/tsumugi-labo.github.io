@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>きくえさんの紹介</title>
+    <!-- ↓ CSSファイルの読み込み -->
+    <link rel="stylesheet" href="css\common.css">
+    <link rel="stylesheet" href="css\top.css">
+    <style></style>
+    <!-- ↓ googleフォントを使う為の読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon-16x16.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon-180x180.png">
+    <!-- slick-carousel-jquery4 CSS -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://jsdelivr.net" >
+    <link rel="stylesheet" type="text/css" href="https://jsdelivr.net" > -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel-jquery4@4.0.2/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel-jquery4@4.0.2/slick/slick-theme.css" />
+
+    <!-- ↓ 初めにjQuery本体ファイルの読み込み -->
+    <script src="js/jquery-4.0.0.min.js"></script>
+    <!-- <script src="js/jquery-3.7.1.min.js"></script> -->
+
+    <!-- ↓ 次にプラグインのjsファイルの読み込み -->
+    <!-- slickが有名 -->
+    <!-- //JS -->
+    <!-- <script src="js/slick.js"></script> -->
+
+
+    <!-- jQuery 4.0.0 (または最新版)-->
+    <!-- <script src="https://jquery.com"></script> -->
+
+    <!-- slick-carousel-jquery4 JS -->
+    <!-- <script type="text/javascript" src="https://jsdelivr.net"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel-jquery4@4.0.2/slick/slick.min.js"></script>
+
+    <!-- ↓ 最後に自作jsファイルの読み込み -->
+    <script src="js/script.js"></script>
+
+    <style>
+        /* ここにCSSを書く */
+        .tip {
+            position: relative;
+        }
+
+        .tip-bubble {}
+    </style>
+</head>
+
+<body class="inner-1">
+    <header>
+        <!-- <h1>きくえさんの紹介</h1> -->
+        <h1>
+            <div class="mv"><img src="images/kikue-header-logo3.png" alt="きくえさんの写真から作った桜と一緒のヘッダーの絵" width="585"
+                    height="260"></div>
+        </h1>
+        <!-- <span class="tip"> -->
+        <!-- <span class="tip-icon">?</span> -->
+        <!-- <span class="tip-bubble" role="tooltip">きくえさんの写真から作った桜と一緒のヘッダーの絵</span> -->
+        <!-- </span> -->
+        <nav>
+            <ul class="flex">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">HTML&CSS</a></li>
+                <li><a href="#">Ai&Ps</a></li>
+                <li><a href="#">WebFlow</a></li>
+                <li><a href="#">JQuery</a></li>
+                <li><a href="https://witit-lunch.github.io/wit-lunch-map/
+">Works</a></li>
+                <li><a href="https://yosh310.github.io/">Note</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="mother-card mainv flex gr-2">
+        <div class="photo-wrapper">
+            <img src="images/kikue-mono.JPEG" class="photo mono" alt="モノクロの昭和40年頃　20歳頃の母" width="346" height="461">
+            <img src="images/kikue-color.PNG" class="photo color" alt="カラーにした昭和40年頃　20歳頃の母" width="346" height="461">
+            <!-- <img src="images/kikue-mono.JPEG" alt="昭和40年頃　20歳頃の母" width="346" height="461"> -->
+        </div>
+        <div class="caption">
+            <p class="line1">昭和40年頃</p>
+            <p class="line2">二十歳頃の母</p>
+            <p class="lineBR"><br></p>
+            <p class="line3">モノクロ写真から生まれた</p>
+            <p class="line4">若い頃の母に</p>
+            <p class="line5">少しだけ動いてもらった</p>
+            <p class="lineBR"><br></p>
+            <p class="line6"><a href="mother/mother.html">あの頃へ少しだけ戻るための入口</p>
+            <p class="line7"><a href="mother/mother.html"><br>▶ 写真館での母の動画を見る</p>
+
+        </div>
+    </div>
+
+    <main>
+        <section class="about fadeUp-trigger">
+            <h2>ABOUT</h2>
+            <dl>
+                <dt>出身</dt>
+                <dd><span class="tip" tabindex="0">大分県豊後大野市<span class="tip-bubble"
+                            role="tooltip">朝地町（あさじまち）は、かつて大分県南西部の大野郡西北部にあった町。2005年（平成17年）3月31日に大野郡の6町村と合併して豊後大野市。</span></span>
+                </dd>
+                <li></li>
+                <dt>好きなもの</dt>
+                <dd>カボス　チャーハン　果物</dd>
+                <dt>父が好きだったもの</dt>
+                <dd>肉そぼろ飯</dd>
+                <dt>自分の好物</dt>
+                <dd>鶏天　コンビーフ天　カレー　シチュー</dd>
+            </dl>
+        </section>
+
+        <section class="hobby fadeUp-trigger">
+            <h2>趣味</h2>
+            <ul>
+                <li>パッチワーク</li>
+                <li>刺繍</li>
+                <li>ピアノ</li>
+                <li>生け花</li>
+            </ul>
+        </section>
+
+        <section class="nigate fadeUp-trigger">
+            <h2>苦手なもの</h2>
+            <ul>
+                <li>へび</li>
+                <li>人前で目立つこと</li>
+                <li>贅沢</li>
+                <li>暗記</li>
+            </ul>
+        </section>
+
+        <div class="gr-1 hidariyose fadeUp-trigger">
+            <div class="inner-2">
+                <h2>
+                    <span class="ja news">最新情報</span>
+                </h2>
+                <dl>
+                    <div class="flex-hidaristart">
+                        <dt>2026.06.16
+                        </dt>
+                        <dd>ページ開設
+                        </dd>
+                    </div>
+                    <div class="flex-hidaristart">
+                        <dt>2026.06.15
+                        </dt>
+                        <dd>エース英会話教室のバナー成果物掲載
+                        </dd>
+                    </div>
+                </dl>
+
+                <p class="migiyose"><a href="#">一覧を見る</a></p>
+                <p>
+                <h3>
+                    <a class=shiro href="mother/okajyo.html">
+                        母のふるさと 竹田の岡城へ
+                    </a>
+                </h3>
+                </p>
+                <h2>
+                    <span>竹田市観光プロモーション</span>
+                </h2>
+                <dl>
+                    <div class="flex-hidaristart">
+                        <dt>2026.01.07
+                        </dt>
+                        <dd class="hidariyose"><a
+                                href="https://taketa.guide/topics/detail/e0f41a00-9764-434d-b196-924438c5f0a9">映画『メモリィズ』2026年6月公開決定！</a>
+                        </dd>
+                    </div>
+                    <div class="flex-hidaristart">
+                        <dt>2026.04.04
+                        </dt>
+                        <dd><a
+                                href="https://taketa.guide/topics/detail/6605648f-9833-428f-99c5-2e62b928fa52">時代劇ドラマ「はぐれ鴉」配信決定！</a>
+                        </dd>
+                    </div>
+                </dl>
+                <p class="migiyose"><a href="#">一覧を見る</a></p>
+            </div>
+        </div>
+
+        <div class="banner-area">
+            <h2>
+                <a>
+                    <span>バナー成果物</span>
+                </a>
+            </h2>
+            <ul class="flex">
+                <li>
+                    <div>
+                        <img src="images/ace_banner_01.png" alt="" width="336" height="280">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/ace_banner_02.png" alt="" width="336" height="280">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="images/ace_banner_03.png" alt="" width="336" height="280">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <img src="images/kikue5.png" alt="母の写真から作った絵" height="288">
+        <p><small>&copy;2026 Yoshinao Sato</small></p>
+    </footer>
+    <div class="to-top">
+        <a href="#"><img src="images/top.png" alt="ページの先頭に戻る" width="120"></a>
+    </div>
+
+    <div class="to-home">
+        <p class="smalltxt">
+            入口へ
+        </p>
+        <a href="#"><img src="images/home.png" alt="ページのHOMEに戻る" width="120"></a>
+    </div>
+
+</body>
+
+</html>

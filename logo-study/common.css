@@ -1,0 +1,146 @@
+/*==================================================
+  common.css
+  つむぎ研究所ロゴ Ver.8
+==================================================*/
+
+
+/*==================================================
+  Reset
+==================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+/*==================================================
+  Root Variables
+==================================================*/
+
+:root{
+
+    /* Logo */
+
+    --logo-size:400px;
+
+    /* Center */
+
+    --center-x:calc(var(--logo-size) / 2);
+    --center-y:calc(var(--logo-size) / 2);
+
+    /* Thread */
+
+    --thread-width:10px;
+    --thread-gap:4px;
+    --thread-radius:5px;
+
+    /* Bundle */
+
+    --bundle-width:calc(
+        (var(--thread-width) * 3) +
+        (var(--thread-gap) * 2)
+    );
+
+    /* Arm */
+
+    --arm-length:120px;
+
+    /* Colors */
+
+    --color-vertical:#d97c3f;
+
+    --color-horizontal-top:#d8b539;
+
+    --color-horizontal-bottom:#88a94b;
+
+    /* Layer */
+
+    --z-front:20;
+    --z-back:10;
+
+}
+
+
+/*==================================================
+  Body
+==================================================*/
+
+body{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    min-height:100vh;
+
+    background:#ffffff;
+
+}
+
+
+/*==================================================
+  Logo
+==================================================*/
+
+.logo{
+
+    position:relative;
+
+    width:var(--logo-size);
+    height:var(--logo-size);
+
+}
+
+
+/*==================================================
+  Arm
+==================================================*/
+
+.arm{
+
+    position:absolute;
+
+}
+
+
+/*==================================================
+  Origin
+==================================================*/
+
+.origin{
+
+    position:relative;
+
+}
+
+
+/*==================================================
+  Thread
+==================================================*/
+
+.thread{
+
+    position:absolute;
+
+    display:block;
+
+}
+
+
+/*==================================================
+  Layer
+==================================================*/
+
+.front{
+
+    z-index:var(--z-front);
+
+}
+
+.back{
+
+    z-index:var(--z-back);
+
+}

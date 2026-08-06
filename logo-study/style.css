@@ -1,0 +1,102 @@
+/*==================================================
+  Color Pattern Preview
+==================================================*/
+
+body{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    gap:80px;
+
+    padding:40px;
+
+}
+
+
+/*----------------------------------
+  Pattern A
+----------------------------------*/
+
+.pattern-a{
+
+    --color-vertical:#B56B3D;
+    --color-horizontal-top:#D7B542;
+    --color-horizontal-bottom:#8DAE45;
+
+}
+
+
+/*----------------------------------
+  Pattern B
+----------------------------------*/
+
+.pattern-b{
+
+    --color-vertical:#5B3A29;
+    --color-horizontal-top:#E8DFC9;
+    --color-horizontal-bottom:#355E8C;
+
+}
+
+
+/*----------------------------------
+  Pattern C
+----------------------------------*/
+
+.pattern-c{
+
+    --color-vertical:#C84A31;
+    --color-horizontal-top:#E2A42A;
+    --color-horizontal-bottom:#6B8E23;
+
+}
+
+
+/*----------------------------------
+  Pattern D
+----------------------------------*/
+
+.pattern-d{
+
+    --color-vertical:#243C7A;
+    --color-horizontal-top:#C6CCD3;
+    --color-horizontal-bottom:#7FBF6A;
+
+}
+
+
+/*----------------------------------
+  Vertical
+----------------------------------*/
+
+.logo .bundle.vertical span{
+
+    background:var(--color-vertical);
+
+}
+
+
+/*----------------------------------
+  Horizontal Top
+----------------------------------*/
+
+.logo .lu span,
+.logo .ru span{
+
+    background:var(--color-horizontal-top);
+
+}
+
+
+/*----------------------------------
+  Horizontal Bottom
+----------------------------------*/
+
+.logo .ld span,
+.logo .rd span{
+
+    background:var(--color-horizontal-bottom);
+
+}
